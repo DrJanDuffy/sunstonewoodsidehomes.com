@@ -20,7 +20,7 @@ const bodyFont = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sunstonewoodsidehomes.com'),
+  metadataBase: new URL('https://www.sunstonewoodsidehomes.com'),
   title: {
     default: 'Dr. Janet Duffy | Las Vegas Real Estate Advisor',
     template: '%s | Dr. Janet Duffy Realty',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: 'Dr. Janet Duffy | Las Vegas Real Estate Advisor',
     description:
       'Strategic buying, selling, and investment guidance for Sunstone, Summerlin, and the Las Vegas Valley.',
-    url: 'https://sunstonewoodsidehomes.com',
+    url: 'https://www.sunstonewoodsidehomes.com',
     siteName: 'Dr. Janet Duffy Real Estate',
     locale: 'en_US',
     type: 'website',
@@ -82,8 +82,8 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
-            url: 'https://sunstonewoodsidehomes.com',
-            logo: 'https://sunstonewoodsidehomes.com/og-image.png',
+            url: 'https://www.sunstonewoodsidehomes.com',
+            logo: 'https://www.sunstonewoodsidehomes.com/og-image.png',
             telephone: '(702) 766-7950',
             email: 'DrDuffySells@SunstoneWoodsideHomes.com',
             sameAs: [

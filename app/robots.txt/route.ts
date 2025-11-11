@@ -4,7 +4,7 @@ export function GET() {
   const body = `User-agent: *
 Allow: /
 
-Sitemap: https://sunstonewoodsidehomes.com/sitemap.xml
+Sitemap: https://www.sunstonewoodsidehomes.com/sitemap.xml
 `
 
   return new NextResponse(body, {
