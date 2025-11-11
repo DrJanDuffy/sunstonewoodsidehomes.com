@@ -138,7 +138,7 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.18),_rgba(8,17,30,0))]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
           <div className="flex-1 space-y-6 text-center lg:text-left">
-            <span className="inline-flex items-center justify-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+            <span className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-sm shadow-primary/30">
               Limited Time $20K Savings
             </span>
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">

@@ -75,8 +75,20 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="mx-auto mt-8 flex max-w-6xl flex-wrap justify-between gap-3 px-4 text-xs text-muted-foreground">
-        <p>© {new Date().getFullYear()} Dr. Janet Duffy. All rights reserved.</p>
-        <p>Equal Housing Opportunity • License #S.0199999</p>
+        <div className="space-y-2">
+          <p>
+            © {new Date().getFullYear()} Sunstone Woodside | Homes by Dr. Jan Duffy. All rights reserved.
+          </p>
+          <p>
+            Dr. Jan Duffy NV License S.0197614 | Berkshire Hathaway HomeServices Nevada Properties
+          </p>
+          <p>Representing buyers for homes in Sunstone Woodside by Woodside Homes</p>
+        </div>
+        <div className="space-y-2 text-right">
+          <p>© {new Date().getFullYear()} Berkshire Hathaway HomeServices Nevada Properties</p>
+          <p>Member of BHH Affiliates LLC franchise system | Equal Housing Opportunity</p>
+          <p>Property information not guaranteed - buyers advised to verify independently</p>
+        </div>
       </div>
     </footer>
   )
