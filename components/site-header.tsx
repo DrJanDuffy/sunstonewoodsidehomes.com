@@ -24,9 +24,6 @@ export default function SiteHeader() {
           >
             {CONTACT_PHONE}
           </Link>
-          <p className="text-sm text-muted-foreground">
-            Sunstone Woodside | Homes by Dr. Jan Duffy
-          </p>
         </div>
         <nav className="order-2 flex w-full flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-muted-foreground sm:order-none sm:w-auto sm:flex-nowrap">
           {navItems.map((item) => (
