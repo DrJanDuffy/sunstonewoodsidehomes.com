@@ -85,7 +85,7 @@ const faqs = [
   },
 ]
 
-const guideFaqs = getFaqsByCategory(['process', 'education'], [1, 2, 3])
+const guideFaqs = getFaqsByCategory(['process', 'education'], [1, 2, 3, 4])
 
 export default function BuyersGuidePage() {
   return (

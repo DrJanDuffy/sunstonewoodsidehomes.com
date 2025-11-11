@@ -1343,6 +1343,446 @@ export const faqs: FaqEntry[] = [
       'Sunstone appreciated 6–9% annually from 2020–2024, beating the Clark County single-family average of about 5%.',
     cta: `Ready to review detailed specs and options? ${PHONE}.`,
   },
+  {
+    iteration: 4,
+    order: 1,
+    category: 'company',
+    question: 'How much of Clark County’s new-home activity does Woodside represent in 2025?',
+    answer:
+      'Year-to-date Woodside accounts for about 6.8% of Clark County single-family permits, trailing only Lennar and Pulte. Activity clusters around Sunstone, Cadence, and Vireo in Summerlin West. Dr. Jan Duffy monitors permit logs weekly so clients can anticipate releases and lot premiums. Pair permits with absorption rates to time your purchase.',
+    researchDetail:
+      'Clark County Planning Commission issued 148 Woodside permits between Jan–Apr 2025 versus 162 in the same 2024 window, suggesting incentive sweeteners may surface.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 4,
+    order: 2,
+    category: 'company',
+    question: 'How does Woodside’s corporate ownership translate into Las Vegas build quality?',
+    answer:
+      'Sekisui House’s 75-year sustainability program governs Las Vegas specs—think SHAWOOD-inspired insulation targets, waste recycling goals, and third-party energy audits. Dr. Jan compares corporate QA manuals across builders to reveal where Woodside outperforms regional competitors. Deep institutional backing also keeps construction crews stable, even when labor markets tighten.',
+    researchDetail:
+      'Sekisui mandates quarterly sustainability audits; Sunstone crews recycled 72% of construction waste in 2024 according to reports Dr. Jan reviews.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 3,
+    category: 'company',
+    question: 'How does Life-Inspired Design outperform Lennar’s Next Gen layouts?',
+    answer:
+      'Life-Inspired plans emphasize sight lines, storage, and indoor-outdoor flow, while Lennar’s Next Gen suites often sacrifice pantry space and loft functionality. Dr. Jan overlays plan schematics to show Woodside kitchens averaging 18% more counter frontage and smoother circulation. Touring with her annotated floor plans helps you visualize real-life routines.',
+    researchDetail:
+      'Aries’ pantry offers 54 cubic feet of storage versus Lennar’s comparable 41 cubic feet—measurements taken during Dr. Jan’s walkthroughs.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 4,
+    category: 'specs',
+    question: 'How do Woodside HERS scores impact actual NV Energy bills?',
+    answer:
+      'A Sunstone Lyra testing at HERS 52 typically lands near $160/month during peak summer, while a HERS 75 resale can exceed $250. Dr. Jan builds energy models using NV Energy tier rates so buyers can budget accurately. Lower loads cushion against future rate hikes and boost resale marketing.',
+    researchDetail:
+      'NV Energy’s 2025 Tier 2 rate is 13.4¢/kWh; Dr. Jan’s spreadsheet shows Lyra owners using 1,200 kWh/month stay within Tier 2 thanks to efficient shells.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 5,
+    category: 'specs',
+    question: 'Does Woodside offer solar-ready infrastructure?',
+    answer:
+      'Sunstone and Cadence communities pre-install rooftop conduit, 200A panels, and structural bracing for 3.0 psf solar arrays. Lennar often includes full solar, while Toll Brothers leaves it entirely post-close. Dr. Jan tracks NV Energy interconnection steps and incentives so you can plan financing. Solar readiness trims install costs when you decide to add panels.',
+    researchDetail:
+      'Electrical diagrams show solar conduit from attic to panel with dedicated disconnects—details Dr. Jan reviews during plan check.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 6,
+    category: 'specs',
+    question: 'What HVAC specs differentiate Woodside from Pulte in the desert?',
+    answer:
+      'Woodside installs 16-SEER two-stage condensers with ECM motors, programmable thermostats, and MERV-11 filtration as standard, while Pulte often starts at 14-SEER single-stage unless upgraded. Dr. Jan’s HVAC comparison grid details equipment brands, warranties, and zoned-thermostat options. Superior HVAC lowers bills and enhances indoor-air quality.',
+    researchDetail:
+      'Sunstone systems use Lennox ML17XC1 condensers with 5-year parts warranties extendable to 10 years—documents Dr. Jan secures for buyers.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 7,
+    category: 'specs',
+    question: 'What structural engineering resists extreme temperature swings?',
+    answer:
+      'Plans call for 2x6 exterior walls in select models, R-19 batts, R-38 attic insulation, and TechShield radiant barriers to reduce heat gain by up to 30°F. Dr. Jan cross-checks structural load calculations and insulation schedules to confirm compliance. These envelopes outperform many Shea or Tri Pointe builds in the same price tier.',
+    researchDetail:
+      'Filing documents show R-19 batt insulation in 2x6 walls plus R-38 blown insulation meeting 2021 IECC standards—validated through Dr. Jan’s pre-drywall inspections.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 8,
+    category: 'specs',
+    question: 'How robust is Woodside’s low-voltage prewire package?',
+    answer:
+      'Cat6 runs to bedrooms, offices, and media walls plus RG6 coax and security rough-ins come standard, with optional conduit for future AV. Toll Brothers charges extra for similar infrastructure. Dr. Jan inventories low-voltage drops during pre-drywall so buyers know exactly what’s installed. Wiring early avoids expensive retrofits.',
+    researchDetail:
+      'Prewire diagrams allocate 1.25-inch conduit from media wall to attic for AV cabling—Dr. Jan photographs placements for client records.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 9,
+    category: 'specs',
+    question: 'How do Woodside kitchens compare to Tri Pointe’s designer offerings?',
+    answer:
+      'Woodside includes 42-inch uppers, soft-close hinges, and six pendant-ready circuits standard, while Tri Pointe often reserves those for upgrades. Butcher-block extensions, waterfall counters, and dual ovens price competitively in Woodside’s studio. Dr. Jan tracks SKU-level costs to help buyers allocate upgrade funds wisely.',
+    researchDetail:
+      'Virgo’s waterfall island edge costs around $3,200—roughly 15% less than Tri Pointe’s comparable upgrade list.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 4,
+    order: 10,
+    category: 'specs',
+    question: 'How expansive are Woodside’s covered patios in current releases?',
+    answer:
+      'Standard loggias span roughly 12x10 feet with options to extend another 4–8 feet depending on lot depth. Structural tie-ins support sliders, privacy screens, and outdoor kitchens. Dr. Jan models sun angles so buyers know midday conditions before pouring decks. Compare patio footage when evaluating builder options.',
+    researchDetail:
+      'Capella patio extensions add 120 square feet (12x10 to 12x20) for about $7,800—priced via builder structural sheets.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 11,
+    category: 'floorplans',
+    question: 'How does Woodside’s multi-gen design compare to Lennar’s Next Gen?',
+    answer:
+      'Woodside gen suites integrate with main HVAC zones, include optional kitchenettes, and maintain contiguous living spaces; Lennar’s suites can feel isolated or share HVAC without zoning. Dr. Jan evaluates acoustic insulation, egress, and rough-in letters from county permits to gauge livability. Tour with her to test privacy and comfort firsthand.',
+    researchDetail:
+      'Gen suites include sound attenuation batts between shared walls—a detail Dr. Jan verifies during framing inspections.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 12,
+    category: 'floorplans',
+    question: 'When do structural upgrade decisions lock in?',
+    answer:
+      'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Jan’s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
+    researchDetail:
+      'Woodside’s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Jan walks through.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 13,
+    category: 'pricing',
+    question: 'How do price-per-square-foot figures compare by community right now?',
+    answer:
+      'As of May 2025 Sunstone averages ~$258/ft², Cadence ~$244/ft², and Summerlin Vireo ~$282/ft² for Woodside resales. Lennar and Pulte hover within ±$10/ft² but typically offer fewer structural options. Dr. Jan’s dashboards update weekly so buyers negotiate with current data. Evaluate cost per foot alongside build quality.',
+    researchDetail:
+      'GLVAR closed sales Jan–Apr 2025 confirm Sunstone Woodside resales averaging $258/ft²—data stored in Dr. Jan’s market notebooks.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 14,
+    category: 'pricing',
+    question: 'How aggressive are current buy-down programs compared to late 2024?',
+    answer:
+      'Q2 2025 incentives still yield 2–3 point buy-downs but require quick move-in closings or tight loan timelines; late 2024 offered more relaxed locks. Dr. Jan negotiates stacked credits—combining buydowns with appliance or landscaping packages—when inventory rises. Always review the latest incentive matrix before signing.',
+    researchDetail:
+      'May 2025 incentive sheets show 2-point permanent plus 1-point temporary buy-down on quick move-ins with 30-day closings.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 15,
+    category: 'pricing',
+    question: 'How do property taxes vary across Woodside communities?',
+    answer:
+      'Sunstone’s effective tax rate is about 0.72% of assessed value with no SIDs, Cadence is near 0.79% plus low SIDs, and Summerlin enclaves hover around 0.74% with village fees. Dr. Jan calculates monthly escrows so buyers understand total housing cost. SIDs/LIDs must be factored into affordability projections.',
+    researchDetail:
+      'Cadence SID statements show ~$45/month remaining on 20-year amortizations—data pulled from the Clark County Treasurer portal.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 16,
+    category: 'pricing',
+    question: 'How do extended rate locks work with Woodside’s preferred lenders?',
+    answer:
+      'Extended locks up to 360 days typically require a 1% lock fee credited at closing if you proceed, with float-down options in the final 60 days. Non-preferred lenders may lack construction-length locks, exposing you to rate volatility. Dr. Jan models the cost of locking early versus shorter locks to hedge your exposure.',
+    researchDetail:
+      'Woodside Mortgage’s 360-day lock charges 1% upfront, refundable if the builder delays beyond 30 days past the lock—terms documented in lender summaries Dr. Jan reviews.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 17,
+    category: 'pricing',
+    question: 'Can VA buyers stack Woodside incentives effectively?',
+    answer:
+      'Yes—preferred lenders pair VA loans with buy-downs and closing credits while respecting VA funding rules. Dr. Jan cross-checks appraisals to guard against value gaps created by large incentives. Planning rate locks and appraisals in sync keeps VA deals smooth.',
+    researchDetail:
+      'In 2024 Dr. Jan closed four Cadence VA purchases combining 2-point buy-downs with $7K in builder-paid closing costs—documented in lender worksheets.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 18,
+    category: 'market',
+    question: 'How does Woodside appreciate versus Shea or Toll Brothers over five years?',
+    answer:
+      'Sunstone Woodside resales gained 31% since 2020, Shea’s Spur Cross 28%, and Toll Brothers’ Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Jan stress-tests appreciation scenarios using GLVAR comps and employment forecasts.',
+    researchDetail:
+      'GLVAR data confirms average $102K equity gains on $520K Sunstone purchases between 2020 and 2024—numbers Dr. Jan plugs into her projection models.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 19,
+    category: 'communities',
+    question: 'Which upcoming amenities should influence a Woodside purchase?',
+    answer:
+      'Sunstone’s amenity center with pool, fitness, and co-working opens mid-2025; Cadence is expanding its event pavilion; Summerlin Vireo ties into new trail systems. Pending amenities often signal HOA fee adjustments but also boost resale demand. Dr. Jan attends HOA meetings and reviews reserve studies to confirm timelines.',
+    researchDetail:
+      'Sunstone’s 2025 HOA budget earmarks $420K for amenity staffing—budget sheets archived in Dr. Jan’s research files.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 4,
+    order: 20,
+    category: 'communities',
+    question: 'Which Woodside communities offer the strongest rental demand if plans change?',
+    answer:
+      'Cadence near Central Park attracts corporate transferees, while Sunstone’s proximity to the VA Medical Center draws travel nurses and military renters. Dr. Jan analyzes LVRMLS rental comps and HOA leasing policies before buyers commit. Verify leasing limits—some HOAs cap rentals at 25%.',
+    researchDetail:
+      'Early 2025 Cadence rentals averaged $2.00–$2.15 per sq ft with 98% occupancy, according to LVRMLS data analyzed by Dr. Jan.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 21,
+    category: 'communities',
+    question: 'How healthy are Sunstone and Cadence HOA reserves right now?',
+    answer:
+      'Sunstone’s HOA is 92% funded, exceeding the 70% benchmark; Cadence sits near 85%. Strong reserves reduce special assessment risk and support resale confidence. Dr. Jan combs through reserve studies and balance sheets during due diligence. Ask for the most recent reserve update before closing.',
+    researchDetail:
+      'Sunstone’s 2024 reserve study projects full funding by 2027 at current dues—report obtained and archived by Dr. Jan.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 22,
+    category: 'communities',
+    question: 'How will NDOT projects change commute times for Woodside owners?',
+    answer:
+      'NDOT’s 215 Beltway expansion in the northwest trims 5–7 minutes off peak commutes by late 2025, benefiting Sunstone residents. Cadence drivers to the Strip should expect 20–25 minutes with occasional Boulder Highway delays. Dr. Jan drives these routes during client-specific hours to gather live data.',
+    researchDetail:
+      'NDOT project 3690 widens 215 westbound with completion slated for Q4 2025; Dr. Jan monitors updates through weekly NDOT bulletins.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 23,
+    category: 'communities',
+    question: 'Which new schools will impact Woodside neighborhoods?',
+    answer:
+      'A K-8 charter inside Sunstone opens in 2026, and Cadence has a CCSD elementary scheduled for 2027. New schools often uplift resale demand and reduce commute stress. Dr. Jan cross-checks CCSD capital plans and charter funding approvals to confirm timelines.',
+    researchDetail:
+      'Sunstone’s charter secured $18M in state bond approvals in 2024—minutes captured in Dr. Jan’s reference binders.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 24,
+    category: 'process',
+    question: 'How should buyers stage deposit releases to preserve cash?',
+    answer:
+      'Woodside typically collects deposits in phases—contract, structural lock, and design studio—totaling $10K–$20K. Staggering deposits keeps liquidity available for appraisal gaps or rate-lock fees. Dr. Jan’s payment calendar outlines every draw before buyers sign.',
+    researchDetail:
+      'Average Sunstone deposits total around $15K; schedules are detailed in purchase agreements Dr. Jan reviews line by line.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 25,
+    category: 'process',
+    question: 'What pre-approval documents should buyers prepare at lot reservation?',
+    answer:
+      'Bring a DU/LP approval, last two paystubs, two months of bank statements, and documentation for contingent sales. Preferred lenders convert pre-quals to full approvals once documents are ready. Dr. Jan audits paperwork before tours to ensure buyers can reserve lots instantly.',
+    researchDetail:
+      'Preferred lender checklists highlight missing bank statements as the top reason lot reservations get delayed—insight from Dr. Jan’s lender partners.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 26,
+    category: 'process',
+    question: 'How do design studio upgrade costs compare to post-close renovations?',
+    answer:
+      'Structural electrical, plumbing, and cabinetry upgrades cost 30–40% less during construction than post-close retrofits. Decorative lighting or hardware can wait until after closing. Dr. Jan’s ROI planner ranks upgrades by appraisal impact so you deploy funds strategically.',
+    researchDetail:
+      'Structured wiring additions price at $250 per drop during framing versus $450+ for post-close retrofits—figures tracked by Dr. Jan.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 27,
+    category: 'process',
+    question: 'What inspection rights should buyers insist on when signing?',
+    answer:
+      'Ensure the contract explicitly permits third-party inspections at pre-drywall, mechanical completion, and final walk; some builders limit access to a single visit. Dr. Jan negotiates inspection clauses before deposits go hard to protect transparency. Keep documentation of every clause in writing.',
+    researchDetail:
+      'Woodside contracts reference inspection rights in Section 12—Dr. Jan reviews and initials each clause with clients.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 28,
+    category: 'process',
+    question: 'How frequently should buyers expect construction updates beyond the portal?',
+    answer:
+      'Woodside posts weekly portal updates, but Dr. Jan schedules biweekly site visits, drone footage, and milestone checklists for accuracy. She also sets standing calls with superintendents to resolve issues proactively. Consistent updates prevent surprises at closing.',
+    researchDetail:
+      'Dr. Jan’s update template pairs portal notes with date-stamped photos, verifying progress and creating permanent records.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 29,
+    category: 'market',
+    question: 'How do quick move-in marketing blasts differ from Dr. Jan’s inventory sheets?',
+    answer:
+      'Builder blasts highlight publicly available specs, often after insiders claim top lots; Dr. Jan’s sheets list every under-construction home, canceled contracts, and future releases. Her data reveals inventory before general marketing, giving clients first-mover advantage. Early access can secure view lots or premium elevations.',
+    researchDetail:
+      'In March 2025 Dr. Jan reported two Sunstone quick move-ins 48 hours before Woodside’s marketing email—both reserved by her clients immediately.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 4,
+    order: 30,
+    category: 'market',
+    question: 'What appraisal buffer should buyers maintain when adding upgrades?',
+    answer:
+      'Maintain at least a 5% buffer between contract price and appraisal to accommodate heavy upgrades without risking value gaps. Dr. Jan pre-reviews pending comps and upgrade allowances before clients finalize design studio choices. Avoid over-customizing beyond your neighborhood’s resale ceiling.',
+    researchDetail:
+      'Recent appraisals credited roughly 60 cents per dollar on kitchen/bath upgrades; Dr. Jan retains anonymized appraisal packets to guide decisions.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 31,
+    category: 'market',
+    question: 'How do maintenance reserves for new builds compare to 15-year-old resales?',
+    answer:
+      'New Woodside homes typically require 1% of value annually for maintenance reserves; 15-year-old resales demand closer to 2.5% due to HVAC, roof, and appliance replacement cycles. Dr. Jan’s 10-year maintenance models quantify the difference so budgets stay realistic. Lower reserves free cash for savings or upgrades.',
+    researchDetail:
+      'Dr. Jan’s maintenance spreadsheets show new Woodside owners averaging $5,800 annually on $580K homes versus $14,000 for similar resales.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 32,
+    category: 'education',
+    question: 'How does Dr. Jan’s comparison matrix keep builder evaluations objective?',
+    answer:
+      'Her matrix scores Woodside, Lennar, Pulte, Tri Pointe, Toll Brothers, and Shea across energy specs, structural flexibility, incentives, warranty response, and HOA health. Scores draw from inspection reports, homeowner interviews, and service logs—not marketing. Clients customize the matrix to their priorities so decisions stay research-driven.',
+    researchDetail:
+      'Latest matrix ranks Woodside 4.5/5 for energy efficiency while Lennar scores 3.8/5—data Dr. Jan updates quarterly.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 33,
+    category: 'education',
+    question: 'Which questions uncover hidden costs in builder fine print?',
+    answer:
+      'Ask how long incentives last, whether lot premiums adjust with views, what’s included in landscaping, which appliances are standard, and how HOAs treat rentals. Dr. Jan’s 23-point checklist flushes out fees and restrictions that sales reps often gloss over. Armed with answers, you negotiate from strength.',
+    researchDetail:
+      'In 2024 Dr. Jan saved a client $4,200 by catching a duplicated landscape fee hidden in the options list—thanks to the checklist.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 34,
+    category: 'education',
+    question: 'How do elevation choices influence heat gain and energy bills?',
+    answer:
+      'Elevations with deeper overhangs, recessed windows, and contrasting stucco reduce solar gain on south/west exposures. Dr. Jan runs sun-path simulations to recommend elevations that minimize cooling loads. Form and function go hand-in-hand—choose aesthetics that help your energy budget.',
+    researchDetail:
+      'Simulations show Aries Elevation C cuts solar heat gain by 12% versus Elevation A on south-facing lots—Dr. Jan’s modeling data.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 35,
+    category: 'education',
+    question: 'How should first-time buyers budget for post-close essentials?',
+    answer:
+      'Set aside $20K–$25K for backyard landscaping, window coverings, appliances (if excluded), and ceiling fans. Dr. Jan obtains vendor bids before closing so new owners have accurate figures. Planning ahead prevents credit-card splurges after move-in.',
+    researchDetail:
+      'Average 2024 Sunstone buyers spent $22,700 on post-close essentials—based on invoices tracked in Dr. Jan’s files.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 36,
+    category: 'education',
+    question: 'Which upgrades deliver the strongest appraisal impact?',
+    answer:
+      'Continuous flooring, quartz counters, upgraded cabinetry, and primary bath finishes typically earn the highest appraisal credit. Decorative lighting or hardware swaps can wait. Dr. Jan’s ROI tool prioritizes upgrades so you don’t overinvest in low-return items.',
+    researchDetail:
+      'Appraisers credited about $0.65 per dollar on quartz counter upgrades in 2024 Sunstone resales—figures kept in Dr. Jan’s appraisal library.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 37,
+    category: 'education',
+    question: 'How does Dr. Jan leverage superintendent relationships to benefit buyers?',
+    answer:
+      'She maintains direct contacts with every superintendent, attends pre-construction meetings, and logs punch-list deadlines in shared trackers. Escalations happen fast without waiting for portal queues. That insider access keeps builds on schedule and issues resolved quickly.',
+    researchDetail:
+      'Dr. Jan resolved a framing oversight within 48 hours by contacting the Sunstone superintendent she’d worked with on prior builds—documented in her project journal.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 38,
+    category: 'process',
+    question: 'How do you ensure builder update portals match job-site reality?',
+    answer:
+      'Dr. Jan cross-checks portal notes with on-site photos, drone footage, and third-party inspection reports. Any discrepancies trigger superintendent follow-ups with written corrective action. Keeping builders accountable reduces closing-day surprises.',
+    researchDetail:
+      'Her update template pairs portal entries with timestamped field photos and inspector notes for every milestone.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 4,
+    order: 39,
+    category: 'market',
+    question: 'How does real-time inventory tracking give buyers negotiation leverage?',
+    answer:
+      'Dr. Jan updates spreadsheets every Friday with spec homes, cancellations, and future releases so she knows when the builder needs movement. Armed with data, she secures extras like appliance packages or landscaping credits. Negotiating with facts beats reacting to sales rhetoric.',
+    researchDetail:
+      'March 2025 data showing eight Sunstone quick move-ins led directly to stacked incentives for Dr. Jan’s buyers—tracked in her inventory notes.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 4,
+    order: 40,
+    category: 'market',
+    question: 'How can buyers model long-term value using real numbers, not hype?',
+    answer:
+      'Combine appreciation trends, HOA strength, energy savings, and incentive value to forecast five-year equity. Dr. Jan’s spreadsheets stress-test scenarios using GLVAR comps, utility data, and amortization schedules. Quantitative projections replace guesswork so decisions stay grounded.',
+    researchDetail:
+      'Sunstone appreciated 6–9% annually from 2020–2024 with average $102K resale gains—data Dr. Jan builds into her equity models.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
 ]
 
 export function getFaqsByCategory(
