@@ -19,13 +19,13 @@ export default function SiteHeader() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-4 px-4 py-5 sm:flex-nowrap sm:gap-6">
         <div className="flex flex-1 flex-col sm:flex-row sm:items-center sm:gap-6">
           <Link
-            href="/"
+            href={CONTACT_PHONE_LINK}
             className="text-lg font-semibold tracking-tight text-foreground transition hover:text-primary"
           >
-            Sunstone Woodside | Homes by Dr. Jan Duffy
+            {CONTACT_PHONE}
           </Link>
           <p className="text-sm text-muted-foreground">
-            Las Vegas new construction concierge service
+            Sunstone Woodside | Homes by Dr. Jan Duffy
           </p>
         </div>
         <nav className="order-2 flex w-full flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-muted-foreground sm:order-none sm:w-auto sm:flex-nowrap">
