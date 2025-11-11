@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { CONTACT_PHONE, CONTACT_PHONE_LINK, CONTACT_EMAIL } from '@/lib/site'
+import { CONTACT_PHONE, CONTACT_PHONE_LINK } from '@/lib/site'
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -37,20 +37,12 @@ export default function SiteHeader() {
           ))}
         </nav>
         <div className="flex flex-1 justify-end">
-          <div className="flex flex-col text-right text-xs text-muted-foreground sm:text-sm">
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="font-semibold text-primary transition hover:text-primary/80"
-            >
-              {CONTACT_EMAIL}
-            </a>
-            <Link
-              href={CONTACT_PHONE_LINK}
-              className="font-semibold text-foreground transition hover:text-primary"
-            >
-              {CONTACT_PHONE}
-            </Link>
-          </div>
+          <Link
+            href={CONTACT_PHONE_LINK}
+            className="text-sm font-semibold text-foreground transition hover:text-primary sm:text-base"
+          >
+            {CONTACT_PHONE}
+          </Link>
         </div>
       </div>
     </header>

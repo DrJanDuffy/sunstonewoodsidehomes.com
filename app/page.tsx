@@ -151,10 +151,10 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-start">
               <a
-                href={`mailto:${CONTACT_EMAIL}?subject=Capella%20at%20Sunstone%20Tour%20Request`}
+                href={CONTACT_PHONE_LINK}
                 className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90"
               >
-                Book a tour
+                Call to book a tour
               </a>
               <a
                 href="#models"
@@ -206,12 +206,12 @@ export default function HomePage() {
                 Reserve your spot to receive professional photography, model walkthrough videos, and
                 design studio palettes as soon as they are released.
               </p>
-              <a
-                href={`mailto:${CONTACT_EMAIL}?subject=Capella%20Media%20Preview`}
+              <Link
+                href="/contact"
                 className="mt-4 inline-flex items-center font-semibold text-primary transition hover:text-primary/80"
               >
-                Join the media list &rsaquo;
-              </a>
+                Connect with our concierge &rsaquo;
+              </Link>
             </div>
           </div>
         </div>
