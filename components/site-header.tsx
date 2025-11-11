@@ -22,10 +22,10 @@ export default function SiteHeader() {
             href="/"
             className="text-lg font-semibold tracking-tight text-foreground transition hover:text-primary"
           >
-            Dr. Janet Duffy Realty
+            Sunstone Woodside | Homes by Dr. Jan Duffy
           </Link>
           <p className="text-sm text-muted-foreground">
-            Personalized Las Vegas homebuyer guidance
+            Las Vegas new construction concierge service
           </p>
         </div>
         <nav className="order-2 flex w-full flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-muted-foreground sm:order-none sm:w-auto sm:flex-nowrap">
