@@ -4893,7 +4893,7 @@ export const faqs: FaqEntry[] = [
       'She charts five-year resale comps across Sunstone, Cadence, and Skye Canyon, adjusting for elevation, lot size, and upgrade tiers. Clients receive best-case, base-case, and conservative outlooks, so they understand equity swing ranges before committing. That realism keeps buy decisions grounded.',
     researchDetail:
       'Resale dashboards combine GLVAR MLS data, Builder Trade-in program stats, and rental absorption trends updated quarterly.',
-    cta: Ready to analyze the long-term value? Call/text .,
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
   },
 ]
 
