@@ -133,8 +133,8 @@ const resourceHighlights = [
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16">
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#d9e3df] via-background to-[#f4efe4] pt-24 pb-32 sm:pt-32 sm:pb-40">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(15,76,92,0.18),_rgba(8,19,26,0))]" />
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#e0e9ff] via-background to-[#f7faff] pt-24 pb-32 sm:pt-32 sm:pb-40">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.18),_rgba(8,17,30,0))]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <span className="inline-flex items-center justify-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
@@ -361,7 +361,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#0f4c5c] via-[#102c38] to-[#08131a] py-20 text-primary-foreground">
+      <section className="bg-gradient-to-br from-[#1d4ed8] via-[#0f172a] to-[#0b1120] py-20 text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
           <div className="flex-1 space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent">
@@ -408,7 +408,7 @@ export default function HomePage() {
               <p className="mt-2 text-sm text-muted-foreground">{service.description}</p>
             </article>
           ))}
-        </div>
+      </div>
       </section>
 
       <section className="bg-muted/10 py-20">
