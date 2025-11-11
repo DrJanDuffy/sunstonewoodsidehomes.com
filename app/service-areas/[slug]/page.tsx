@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Script from 'next/script'
 
 import { getServiceAreaBySlug, serviceAreas } from '@/lib/service-areas'
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_LINK } from '@/lib/site'
+
+const baseUrl = 'https://www.sunstonewoodsidehomes.com'
 
 type ServiceAreaPageProps = {
   params: Promise<{ slug: string }>
@@ -43,6 +46,36 @@ export default async function ServiceAreaPage({ params }: ServiceAreaPageProps) 
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-16">
+      <Script
+        id={`schema-service-area-${area.slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: `${baseUrl}/`,
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Service Areas',
+              item: `${baseUrl}/service-areas`,
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: area.name,
+              item: `${baseUrl}/service-areas/${area.slug}`,
+            },
+          ],
+        })}
+      </Script>
       <header className="space-y-4 text-center sm:text-left">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
           {area.name}
@@ -92,6 +125,21 @@ export default async function ServiceAreaPage({ params }: ServiceAreaPageProps) 
               </div>
             ))}
           </dl>
+          <div className="border-t border-border/60 pt-4">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+              Local living fast facts
+            </h4>
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+              {area.localDetails.map((detail) => (
+                <li key={detail.label} className="flex items-start gap-3">
+                  <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary/60" />
+                  <span>
+                    <span className="font-semibold text-foreground/80">{detail.label}:</span> {detail.value}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </aside>
       </section>
 

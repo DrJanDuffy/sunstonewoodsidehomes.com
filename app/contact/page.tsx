@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import {
@@ -14,6 +15,12 @@ const reasons = [
   'Review incentive stacking and design studio budgets.',
   'Coordinate relocation services and utility setup.',
 ]
+
+export const metadata: Metadata = {
+  title: 'Contact Dr. Jan Duffy | Sunstone Woodside Home Concierge',
+  description:
+    'Call or message Dr. Jan Duffy to book Sunstone tours, preview move-in ready homes, and plan your Las Vegas relocation support.',
+}
 
 export default function ContactPage() {
   return (

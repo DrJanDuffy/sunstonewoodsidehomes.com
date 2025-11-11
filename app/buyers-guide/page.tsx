@@ -1,6 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+import Script from 'next/script'
 
 import { CONTACT_EMAIL, CONTACT_PHONE_LINK, CONTACT_PHONE } from '@/lib/site'
+
+export const metadata: Metadata = {
+  title: 'Las Vegas New Construction Buyer Guide | Dr. Jan Duffy',
+  description:
+    'Follow a concierge roadmap for financing, design selections, and move-in milestones tailored to Sunstone Woodside homebuyers.',
+}
 
 const milestones = [
   {
@@ -48,6 +56,30 @@ const milestones = [
         href: `mailto:${CONTACT_EMAIL}?subject=Closing%20Checklist%20Request`,
       },
     ],
+  },
+]
+
+const conciergeHighlights = [
+  '360° move coordination including movers, painters, and utility set-up.',
+  'Post-close valuation checkpoints to track appreciation and equity growth.',
+  'Local partner introductions for schools, healthcare, and recreation clubs.',
+]
+
+const faqs = [
+  {
+    question: 'How long does a Sunstone or Cadence new construction home take to build?',
+    answer:
+      'Most Woodside Homes builds close in roughly six months once structural selections are finalized. Dr. Duffy reviews the construction calendar and milestone walk-throughs so you can plan rate locks, movers, and design studio visits with confidence.',
+  },
+  {
+    question: 'Can I stack builder incentives with lender credits or rate buy-downs?',
+    answer:
+      'Yes. Dr. Duffy coordinates with preferred lenders to layer builder flex dollars, buydowns, and closing-cost credits. She models “all-in” costs so you understand how incentives impact cash to close and monthly payments.',
+  },
+  {
+    question: 'What should I prepare before the design studio appointment?',
+    answer:
+      'Bring inspiration photos, must-have upgrades, and a working budget. Dr. Duffy shares curated lookbooks for Capella, Lyra, and Meridian collections, plus outlines which structural choices must be locked before the design visit.',
   },
 ]
 
@@ -173,6 +205,42 @@ export default function BuyersGuidePage() {
           </Link>
         </div>
       </section>
+
+      <section className="rounded-3xl border border-border bg-card/70 p-8 shadow-sm">
+        <h2 className="text-2xl font-semibold text-foreground">Buyer FAQs</h2>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Straight answers to the most common questions we receive from Sunstone and Henderson new
+          construction clients.
+        </p>
+        <div className="mt-6 space-y-4">
+          {faqs.map((faq) => (
+            <details
+              key={faq.question}
+              className="rounded-2xl border border-border/70 bg-background/70 p-4 text-sm text-muted-foreground"
+            >
+              <summary className="cursor-pointer text-base font-semibold text-foreground">
+                {faq.question}
+              </summary>
+              <p className="mt-3 leading-relaxed">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <Script id="schema-buyers-guide-faq" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer,
+            },
+          })),
+        })}
+      </Script>
     </div>
   )
 }

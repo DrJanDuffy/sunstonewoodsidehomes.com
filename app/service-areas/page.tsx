@@ -1,7 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { serviceAreas } from '@/lib/service-areas'
 import { CONTACT_EMAIL } from '@/lib/site'
+
+export const metadata: Metadata = {
+  title: 'Las Vegas Service Areas | Sunstone Woodside Neighborhood Guides',
+  description:
+    'Review Sunstone, Cadence, Summerlin, Skye Canyon, and Northwest Las Vegas insights curated by Dr. Jan Duffy for new construction buyers.',
+}
 
 export default function ServiceAreasIndexPage() {
   return (
@@ -41,7 +48,17 @@ export default function ServiceAreasIndexPage() {
                 <li key={highlight}>• {highlight}</li>
               ))}
             </ul>
-            <div className="mt-auto flex flex-col gap-2 pt-6">
+            <dl className="mt-4 space-y-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              {area.localDetails.map((detail) => (
+                <div key={detail.label} className="flex items-baseline justify-between gap-3">
+                  <dt className="font-semibold text-foreground/80">{detail.label}</dt>
+                  <dd className="text-right normal-case tracking-normal text-muted-foreground">
+                    {detail.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <div className="mt-auto space-y-3 pt-6">
               <Link
                 href={`/service-areas/${area.slug}`}
                 className="inline-flex items-center font-semibold text-primary transition hover:text-primary/80"

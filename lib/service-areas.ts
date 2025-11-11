@@ -21,6 +21,10 @@ export type ServiceArea = {
     label: string
     mailSubject: string
   }
+  localDetails: {
+    label: string
+    value: string
+  }[]
 }
 
 export const serviceAreas: ServiceArea[] = [
@@ -55,6 +59,11 @@ export const serviceAreas: ServiceArea[] = [
       label: 'Book a Capella model tour',
       mailSubject: 'Capella at Sunstone Model Tour Request',
     },
+    localDetails: [
+      { label: 'Zip code', value: '89143' },
+      { label: 'Commute', value: '20 min to Downtown Summerlin • 25 min to the Strip' },
+      { label: 'Outdoor access', value: 'Floyd Lamb Park + Mt. Charleston trailheads' },
+    ],
   },
   {
     slug: 'sunstone-master-plan',
@@ -87,6 +96,11 @@ export const serviceAreas: ServiceArea[] = [
       label: 'Schedule a Sunstone discovery tour',
       mailSubject: 'Sunstone Master Plan Tour Request',
     },
+    localDetails: [
+      { label: 'Zip code', value: '89143' },
+      { label: 'Retail nearby', value: 'Skye Canyon Marketplace, Centennial Center' },
+      { label: 'Outdoor perks', value: 'Sunstone Loop Trail, Gilcrease Orchard 10 minutes' },
+    ],
   },
   {
     slug: 'summerlin',
@@ -119,6 +133,11 @@ export const serviceAreas: ServiceArea[] = [
       label: 'Plan a Summerlin lifestyle tour',
       mailSubject: 'Summerlin Discovery Tour Request',
     },
+    localDetails: [
+      { label: 'Zip codes', value: '89135 • 89138 • 89144' },
+      { label: 'Commute', value: '20 min to Harry Reid Int’l via Summerlin Pkwy/I-215' },
+      { label: 'Lifestyle hubs', value: 'Downtown Summerlin, City National Arena, Red Rock Canyon' },
+    ],
   },
   {
     slug: 'skye-canyon',
@@ -151,6 +170,11 @@ export const serviceAreas: ServiceArea[] = [
       label: 'Schedule a Skye Canyon tour',
       mailSubject: 'Skye Canyon Tour Request',
     },
+    localDetails: [
+      { label: 'Zip code', value: '89166' },
+      { label: 'Commute', value: '30 min to the Strip • 45 min to Lee Canyon lifts' },
+      { label: 'Community perks', value: 'Skye Fit, Skye Center, resident trail network' },
+    ],
   },
   {
     slug: 'northwest-las-vegas',
@@ -183,6 +207,11 @@ export const serviceAreas: ServiceArea[] = [
       label: 'Book a Northwest Las Vegas preview',
       mailSubject: 'Northwest Las Vegas Tour Request',
     },
+    localDetails: [
+      { label: 'Zip codes', value: '89131 • 89130 • 89149' },
+      { label: 'Medical corridor', value: 'Centennial Hills Hospital + VA Medical Center within 10 min' },
+      { label: 'Growth focus', value: 'Villages at Tule Springs, Skye Hills retail expansion' },
+    ],
   },
 ]
 

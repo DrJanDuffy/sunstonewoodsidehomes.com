@@ -5,6 +5,10 @@ import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import SiteFooter from '@/components/site-footer'
 import SiteHeader from '@/components/site-header'
+import {
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+} from '@/lib/site'
 import './globals.css'
 
 const headingFont = Montserrat({
@@ -80,23 +84,63 @@ export default function RootLayout({
         <Script id="organization-schema" type="application/ld+json" strategy="beforeInteractive">
           {JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Organization',
+            '@type': ['RealEstateAgent', 'Organization'],
+            '@id': 'https://www.sunstonewoodsidehomes.com/#realestateagent',
             name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
+            legalName: 'Homes by Dr. Jan Duffy',
             url: 'https://www.sunstonewoodsidehomes.com',
             logo: 'https://www.sunstonewoodsidehomes.com/og-image.png',
-            telephone: '(702) 766-7950',
-            email: 'DrDuffySells@SunstoneWoodsideHomes.com',
-            sameAs: [
-              'https://www.facebook.com',
-              'https://www.instagram.com',
-            ],
+            image: 'https://www.sunstonewoodsidehomes.com/og-image.png',
+            telephone: CONTACT_PHONE,
+            email: CONTACT_EMAIL,
+            priceRange: '$$',
+            broker: {
+              '@type': 'RealEstateAgency',
+              name: 'Berkshire Hathaway HomeServices Nevada Properties',
+            },
+            hasCredential: {
+              '@type': 'EducationalOccupationalCredential',
+              credentialCategory: 'Real Estate License',
+              identifier: 'NV S.0197614',
+            },
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '(702) 766-7950',
+              telephone: CONTACT_PHONE,
               contactType: 'customer service',
               areaServed: 'US-NV',
               availableLanguage: ['English'],
+              hoursAvailable: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['https://schema.org/Monday'],
+                  opens: '14:00',
+                  closes: '17:00',
+                },
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: [
+                    'https://schema.org/Tuesday',
+                    'https://schema.org/Wednesday',
+                    'https://schema.org/Thursday',
+                    'https://schema.org/Friday',
+                    'https://schema.org/Saturday',
+                    'https://schema.org/Sunday',
+                  ],
+                  opens: '10:00',
+                  closes: '17:00',
+                },
+              ],
             },
+            areaServed: [
+              { '@type': 'City', name: 'Las Vegas', addressRegion: 'NV', addressCountry: 'US' },
+              { '@type': 'City', name: 'Henderson', addressRegion: 'NV', addressCountry: 'US' },
+              { '@type': 'City', name: 'North Las Vegas', addressRegion: 'NV', addressCountry: 'US' },
+            ],
+            knowsAbout: [
+              'Sunstone new construction homes',
+              'Cadence quick move-in homes',
+              'Las Vegas luxury real estate concierge services',
+            ],
             address: {
               '@type': 'PostalAddress',
               streetAddress: '10249 Celestial Pole St',

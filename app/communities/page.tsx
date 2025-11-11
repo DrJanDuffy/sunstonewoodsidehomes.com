@@ -1,6 +1,13 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { CONTACT_EMAIL, CONTACT_PHONE_LINK, CONTACT_PHONE } from '@/lib/site'
+
+export const metadata: Metadata = {
+  title: 'Sunstone & Northwest Las Vegas Communities | Dr. Jan Duffy',
+  description:
+    'Explore Capella at Sunstone, the broader master plan, and nearby Northwest Las Vegas amenities with guidance from Dr. Jan Duffy.',
+}
 
 const communitySections = [
   {

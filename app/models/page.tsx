@@ -1,7 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
 import { CONTACT_EMAIL } from '@/lib/site'
+
+export const metadata: Metadata = {
+  title: 'Capella Floor Plans | Sunstone Woodside Models in Las Vegas',
+  description:
+    'Compare the Aries, Taurus, and Virgo single-story plans with pricing, square footage, and concierge design insights for Sunstone Woodside Homes.',
+}
 
 export default function ModelsIndexPage() {
   return (

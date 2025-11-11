@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
@@ -130,6 +131,12 @@ const resourceHighlights = [
     href: '/communities',
   },
 ]
+
+export const metadata: Metadata = {
+  title: 'Sunstone Woodside Homes | Las Vegas New Construction Concierge',
+  description:
+    'Discover move-in ready inventory, Capella floor plans, and Las Vegas service areas with Dr. Jan Duffy’s concierge real estate guidance.',
+}
 
 export default function HomePage() {
   return (

@@ -20,6 +20,79 @@ const specs = (home: (typeof moveInReadyHomes)[number]) => [
 
 const parsePrice = (price: string) => Number(price.replace(/[^0-9]/g, ''))
 
+type CommunityContext = {
+  heading: string
+  summary: string
+  highlights: string[]
+  link?: string
+  linkLabel?: string
+}
+
+const cadenceContext: CommunityContext = {
+  heading: 'Cadence Henderson advantages',
+  summary:
+    'Cadence in Henderson 89011 offers lake-inspired trails, Central Park events, and quick access to Lake Las Vegas and the 215 Beltway.',
+  highlights: [
+    'Walk or bike to 50-acre Central Park, splash pads, and pickleball courts.',
+    'Minutes from Smith’s Marketplace, Cowabunga Bay, and Henderson medical campuses.',
+    'Easy commute to the Strip or airport via 215 Beltway and Boulder Highway connector.',
+  ],
+  link: '/communities',
+  linkLabel: 'See Las Vegas communities',
+}
+
+const sunstoneContext: CommunityContext = {
+  heading: 'Sunstone Northwest Las Vegas perks',
+  summary:
+    'Sunstone’s 89143 master plan delivers desert-modern architecture, mountain views, and rapid access to US-95 for Summerlin and Strip commutes.',
+  highlights: [
+    'Trail network links Capella, Lyra, and Serenata villages with pocket parks.',
+    'Close to Skye Canyon Marketplace, Gilcrease Orchard, and Floyd Lamb Park.',
+    '21-minute drive to Downtown Summerlin and pro sports venues.',
+  ],
+  link: '/service-areas/sunstone-master-plan',
+  linkLabel: 'Explore the Sunstone guide',
+}
+
+const capellaContext: CommunityContext = {
+  heading: 'Capella at Sunstone lifestyle',
+  summary:
+    'Capella showcases Woodside’s single-story designs within Sunstone’s amenity-rich northwest corridor near Centennial Hills.',
+  highlights: [
+    'Low-maintenance lots with mountain backdrops and evening trail temperatures.',
+    'Choice of three floor plans with multi-gen, retreat, and flex options.',
+    'Minutes to Centennial Hills Hospital, Costco, and Skye Canyon retail.',
+  ],
+  link: '/service-areas/capella-at-sunstone',
+  linkLabel: 'Tour Capella insights',
+}
+
+const summerlinContext: CommunityContext = {
+  heading: 'Summerlin elevated living',
+  summary:
+    'Summerlin’s 89138 villages deliver resort amenities, Red Rock Canyon access, and award-winning schools within 20 minutes of the Strip.',
+  highlights: [
+    'Downtown Summerlin retail, dining, and entertainment minutes away.',
+    'Proximity to City National Arena, Las Vegas Ballpark, and Red Rock Casino.',
+    'Access to top-ranked CCSD and private school campuses.',
+  ],
+  link: '/service-areas/summerlin',
+  linkLabel: 'View the Summerlin guide',
+}
+
+const communityContext: Record<string, CommunityContext> = {
+  'Meridian at Cadence': cadenceContext,
+  'Ambridge at Cadence': cadenceContext,
+  'Acacia at Cadence': cadenceContext,
+  'Ashwood at Cadence': cadenceContext,
+  'Serenata at Cadence': cadenceContext,
+  'Adair at Cadence': cadenceContext,
+  'Lyra Collection I at Sunstone': sunstoneContext,
+  'Lyra Collection II at Sunstone': sunstoneContext,
+  'Capella at Sunstone': capellaContext,
+  'Vireo at Summerlin': summerlinContext,
+}
+
 export async function generateStaticParams() {
   return moveInReadyHomes.map((home) => ({ slug: home.slug }))
 }
@@ -57,6 +130,19 @@ export default async function MoveInReadyDetailPage({
     notFound()
   }
 
+  const context =
+    communityContext[home.community] ?? {
+      heading: `${home.city} lifestyle essentials`,
+      summary: `${home.community} places you near daily conveniences, schools, and recreation throughout ${home.city}.`,
+      highlights: [
+        'Tour with Dr. Duffy to pinpoint commute times, school options, and HOA perks.',
+        'Compare nearby move-in ready inventory to secure the best incentives.',
+        'Leverage concierge partners for movers, utilities, and design studio selections.',
+      ],
+      link: '/service-areas',
+      linkLabel: 'Review all service areas',
+    }
+
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-16">
       <Script
@@ -74,13 +160,51 @@ export default async function MoveInReadyDetailPage({
             '@type': 'Brand',
             name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
           },
+          seller: {
+              '@type': 'RealEstateAgent',
+              name: 'Dr. Jan Duffy',
+              url: `${baseUrl}/contact`,
+              telephone: CONTACT_PHONE,
+              areaServed: ['Las Vegas NV', 'Henderson NV'],
+          },
           offers: {
             '@type': 'Offer',
             price: parsePrice(home.price),
             priceCurrency: 'USD',
             availability: 'https://schema.org/InStock',
             url: `${baseUrl}/move-in-ready/${home.slug}`,
+            itemCondition: 'https://schema.org/NewCondition',
           },
+        })}
+      </Script>
+      <Script
+        id={`schema-breadcrumb-${home.slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: `${baseUrl}/`,
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Move-In Ready Homes',
+              item: `${baseUrl}/move-in-ready`,
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name: `${home.planName} ${home.lot}`,
+              item: `${baseUrl}/move-in-ready/${home.slug}`,
+            },
+          ],
         })}
       </Script>
       <nav className="text-sm text-muted-foreground">
@@ -150,17 +274,26 @@ export default async function MoveInReadyDetailPage({
           </ul>
         </article>
         <aside className="space-y-4 rounded-3xl border border-dashed border-border/70 bg-background/70 p-6 text-sm text-muted-foreground">
-          <h3 className="text-base font-semibold text-foreground">Neighborhood snapshot</h3>
-          <p>
-            Minutes from Cadence Central Park amenities, top-rated charter schools, and freeway
-            access—or explore Sunstone trails if you are touring the Northwest valley listings. Dive deeper into each area on our{' '}
-            <Link href="/service-areas" className="text-primary underline-offset-2 hover:underline">
-              service area overview
+          <h3 className="text-base font-semibold text-foreground">{context.heading}</h3>
+          <p>{context.summary}</p>
+          <ul className="space-y-2">
+            {context.highlights.map((highlight) => (
+              <li key={highlight} className="flex items-start gap-2 text-muted-foreground">
+                <span className="mt-1 inline-block h-2 w-2 rounded-full bg-primary/60" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+          {context.link ? (
+            <Link
+              href={context.link}
+              className="inline-flex items-center font-semibold text-primary underline-offset-2 hover:underline"
+            >
+              {context.linkLabel ?? 'Explore neighborhood insights'} &rsaquo;
             </Link>
-            .
-          </p>
+          ) : null}
           <div className="rounded-2xl border border-border/70 bg-card/70 p-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Imaging your furniture? Ask Dr. Duffy for the full design studio spec sheet and floor plan PDFs, and compare layouts in our{' '}
+            Imagining your furniture? Ask Dr. Duffy for the full design studio spec sheet and floor plan PDFs, and compare layouts in our{' '}
             <Link href="/models" className="text-primary underline-offset-2 hover:underline">
               model gallery
             </Link>
