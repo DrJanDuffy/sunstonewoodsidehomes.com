@@ -1,20 +1,22 @@
 
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Montserrat, Source_Sans_3 } from 'next/font/google'
 import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import SiteFooter from '@/components/site-footer'
 import SiteHeader from '@/components/site-header'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const headingFont = Montserrat({
   subsets: ['latin'],
+  variable: '--font-heading',
+  weight: ['400', '500', '600', '700'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const bodyFont = Source_Sans_3({
   subsets: ['latin'],
+  variable: '--font-body',
+  weight: ['300', '400', '500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -77,7 +79,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
