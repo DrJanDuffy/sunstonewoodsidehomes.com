@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
+import { DeferredRender } from '@/components/deferred-render'
 import { FaqSection } from '@/components/faq-section'
 import { getFaqsByCategory } from '@/lib/faqs'
 import { moveInReadyHomes } from '@/lib/move-in-ready'
@@ -134,6 +135,9 @@ const resourceHighlights = [
   },
 ]
 
+const realScoutLink =
+  'https://drjanduffy.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNDE2Nw=='
+
 const homepageFaqs = getFaqsByCategory(['company'], [1, 2, 3, 4, 5])
 
 export const metadata: Metadata = {
@@ -145,8 +149,8 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16">
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#e0e9ff] via-background to-[#f7faff] pt-24 pb-32 sm:pt-32 sm:pb-40">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.18),_rgba(8,17,30,0))]" />
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#e1e9fb] via-background to-[#f8faff] pt-24 pb-32 sm:pt-32 sm:pb-40">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.16),_rgba(8,17,30,0))]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
           <div className="flex-1 space-y-6 text-center lg:text-left">
             <span className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-sm shadow-primary/30">
@@ -189,7 +193,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="flex-1 space-y-4">
-            <div className="rounded-3xl border border-border/70 bg-card/80 p-6 shadow-lg backdrop-blur">
+            <div className="rounded-3xl border border-border/70 bg-card/90 p-6 shadow-lg">
               <h2 className="text-xl font-semibold text-foreground">Sales Center &amp; Contact</h2>
               <p className="mt-2 text-sm text-muted-foreground">{CONTACT_ADDRESS}</p>
               <dl className="mt-6 space-y-4 text-sm">
@@ -224,7 +228,7 @@ export default function HomePage() {
                 Equal Housing Opportunity • Brokered by Sunstone Woodside Homes
               </p>
             </div>
-            <div className="hidden rounded-3xl border border-dashed border-border/70 bg-background/70 p-6 text-sm text-muted-foreground shadow-sm lg:block">
+            <div className="hidden rounded-3xl border border-dashed border-border/70 bg-background/80 p-6 text-sm text-muted-foreground shadow-sm lg:block">
               <p className="font-semibold text-foreground">Design gallery coming soon</p>
               <p className="mt-1">
                 Reserve your spot to receive professional photography, model walkthrough videos, and
@@ -262,8 +266,7 @@ export default function HomePage() {
               Need keys in 60 days or less?
             </h2>
             <p className="text-sm text-muted-foreground">
-              Browse designer-curated homes across Cadence, Sunstone, and Summerlin that are ready now.
-              Filter by community, price, or bedroom count and secure a private tour with Dr. Duffy.
+              Browse designer-curated homes across Cadence, Sunstone, and Summerlin that are ready now. Filter by community, price, or bedroom count and secure a private tour with Dr. Duffy.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -295,7 +298,7 @@ export default function HomePage() {
                     href={`/move-in-ready/${home.slug}`}
                     className="text-xs font-semibold text-primary transition hover:text-primary/80"
                   >
-                    Details &rsaquo;
+                    Details ›
                   </Link>
                 </li>
               ))}
@@ -303,6 +306,80 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <DeferredRender
+        fallback={
+          <section className="mx-auto max-w-6xl px-4">
+            <div className="h-[420px] animate-pulse rounded-3xl border border-border/60 bg-muted/40" />
+          </section>
+        }
+      >
+        <section className="mx-auto max-w-6xl px-4">
+          <div className="grid gap-6 rounded-3xl border border-border/70 bg-card/85 p-8 shadow-sm md:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+              Live Woodside Inventory Feed
+            </p>
+            <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+              Unlock real-time Woodside listings across Las Vegas
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Explore the live Woodside Homes search curated by Dr. Duffy. Track price drops, new releases, and move-in ready homes across Sunstone, Cadence, and Summerlin without waiting for marketing emails.
+            </p>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" aria-hidden />
+                <span>Filter by community, price point, and delivery timeline in one dashboard.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" aria-hidden />
+                <span>Set alerts for Sunstone, Cadence, or Summerlin quick move-ins as soon as they appear.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" aria-hidden />
+                <span>Sync with Dr. Duffy’s concierge team to schedule tours or request pricing sheets instantly.</span>
+              </li>
+            </ul>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={realScoutLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+              >
+                Browse live Woodside listings
+              </a>
+              <a
+                href={`mailto:${CONTACT_EMAIL}?subject=Woodside%20Listing%20Alert%20Setup`}
+                className="inline-flex items-center justify-center rounded-full border border-input px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted"
+              >
+                Request personalized alerts
+              </a>
+            </div>
+          </div>
+            <div className="space-y-4 rounded-3xl border border-dashed border-border/70 bg-background/80 p-6 text-sm text-muted-foreground">
+            <h3 className="text-base font-semibold text-foreground">What you’ll track</h3>
+            <dl className="space-y-3">
+              <div>
+                <dt className="text-xs uppercase tracking-[0.25em] text-primary">Communities covered</dt>
+                <dd className="mt-1 text-sm text-muted-foreground">Capella at Sunstone, Lyra, Dove Rock, Cadence enclaves, and more.</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-[0.25em] text-primary">Updates included</dt>
+                <dd className="mt-1 text-sm text-muted-foreground">Daily price changes, incentive notes, and quick move-in availability.</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-[0.25em] text-primary">Support</dt>
+                <dd className="mt-1 text-sm text-muted-foreground">Dr. Duffy monitors listings, coordinates tours, and confirms incentive eligibility.</dd>
+              </div>
+            </dl>
+            <p className="rounded-2xl border border-border/60 bg-background/80 p-4 text-xs text-muted-foreground">
+              Prefer a guided tour of the dashboard? Email for a live walkthrough and listing setup tailored to your move-in timeline.
+            </p>
+          </div>
+          </div>
+        </section>
+      </DeferredRender>
 
       <FaqSection
         title="Woodside Homes Company Knowledge Base"

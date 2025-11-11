@@ -8,6 +8,7 @@ import {
   CONTACT_PHONE_LINK,
   SALES_HOURS,
 } from '@/lib/site'
+import { DeferredRender } from '@/components/deferred-render'
 
 const reasons = [
   'Schedule a private tour of Capella model homes.',
@@ -15,6 +16,11 @@ const reasons = [
   'Review incentive stacking and design studio budgets.',
   'Coordinate relocation services and utility setup.',
 ]
+
+const MAP_EMBED_URL =
+  'https://maps.google.com/maps?q=10249%20Celestial%20Pole%20St%20Las%20Vegas%2C%20NV%2089143&output=embed'
+const MAP_DIRECTIONS_URL =
+  'https://www.google.com/maps/dir/?api=1&destination=10249+Celestial+Pole+St+Las+Vegas+NV+89143'
 
 export const metadata: Metadata = {
   title: 'Contact Dr. Duffy | Sunstone Woodside Home Concierge',
@@ -131,9 +137,45 @@ export default function ContactPage() {
             <h3 className="text-xs uppercase tracking-[0.25em] text-primary">Top requests</h3>
             <ul className="mt-2 space-y-2">
               {reasons.map((reason) => (
-                <li key={reason}>• {reason}</li>
+                <li key={reason} className="flex items-start gap-2">
+                  <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-primary" aria-hidden />
+                  <span>{reason}</span>
+                </li>
               ))}
             </ul>
+          </div>
+          <div className="space-y-4 rounded-2xl border border-border/60 bg-background/80 p-4">
+            <h3 className="text-sm font-semibold text-foreground">Plan your visit</h3>
+            <p>
+              Use Google Maps to confirm travel time, preview street views, and save the sales center to your favorites so
+              directions are one tap away when you tour.
+            </p>
+            <a
+              href={MAP_DIRECTIONS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition hover:bg-primary/90"
+            >
+              Open directions in Google Maps
+            </a>
+            <DeferredRender
+              fallback={
+                <div className="h-[220px] w-full animate-pulse rounded-xl border border-border/60 bg-muted/40" />
+              }
+            >
+              <div className="overflow-hidden rounded-xl border border-border/60">
+                <iframe
+                  title="Google Maps location for Dr. Duffy's Sunstone sales center"
+                  src={MAP_EMBED_URL}
+                  width="100%"
+                  height="220"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </DeferredRender>
           </div>
         </aside>
       </section>

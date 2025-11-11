@@ -14,13 +14,15 @@ import './globals.css'
 const headingFont = Montserrat({
   subsets: ['latin'],
   variable: '--font-heading',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '600', '700'],
+  display: 'swap',
 })
 
 const bodyFont = Source_Sans_3({
   subsets: ['latin'],
   variable: '--font-body',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '600'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
