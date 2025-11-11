@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Script from 'next/script'
 
 import {
   getMoveInReadyHomeBySlug,
@@ -8,12 +9,16 @@ import {
 } from '@/lib/move-in-ready'
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_LINK } from '@/lib/site'
 
+const baseUrl = 'https://sunstonewoodsidehomes.com'
+
 const specs = (home: (typeof moveInReadyHomes)[number]) => [
   { label: 'Bedrooms', value: home.beds },
   { label: 'Bathrooms', value: home.baths },
   { label: 'Garage', value: home.garage },
   { label: 'Square Feet', value: home.squareFeet },
 ]
+
+const parsePrice = (price: string) => Number(price.replace(/[^0-9]/g, ''))
 
 export async function generateStaticParams() {
   return moveInReadyHomes.map((home) => ({ slug: home.slug }))
@@ -54,6 +59,30 @@ export default async function MoveInReadyDetailPage({
 
   return (
     <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-16">
+      <Script
+        id={`schema-move-in-ready-${home.slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: `${home.planName} ${home.lot}`,
+          description: home.description,
+          sku: home.slug,
+          brand: {
+            '@type': 'Brand',
+            name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
+          },
+          offers: {
+            '@type': 'Offer',
+            price: parsePrice(home.price),
+            priceCurrency: 'USD',
+            availability: 'https://schema.org/InStock',
+            url: `${baseUrl}/move-in-ready/${home.slug}`,
+          },
+        })}
+      </Script>
       <nav className="text-sm text-muted-foreground">
         <Link href="/move-in-ready" className="hover:text-primary">
           Move-In Ready

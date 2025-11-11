@@ -77,6 +77,36 @@ export default function RootLayout({
             gtag('config', 'G-1HCM0VVVP8');
           `}
         </Script>
+        <Script id="organization-schema" type="application/ld+json" strategy="beforeInteractive">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
+            url: 'https://sunstonewoodsidehomes.com',
+            logo: 'https://sunstonewoodsidehomes.com/og-image.png',
+            telephone: '(702) 766-7950',
+            email: 'DrDuffySells@SunstoneWoodsideHomes.com',
+            sameAs: [
+              'https://www.facebook.com',
+              'https://www.instagram.com',
+            ],
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '(702) 766-7950',
+              contactType: 'customer service',
+              areaServed: 'US-NV',
+              availableLanguage: ['English'],
+            },
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: '10249 Celestial Pole St',
+              addressLocality: 'Las Vegas',
+              addressRegion: 'NV',
+              postalCode: '89143',
+              addressCountry: 'US',
+            },
+          })}
+        </Script>
       </head>
       <body
         className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
