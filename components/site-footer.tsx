@@ -24,7 +24,7 @@ export default function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-3">
           <p className="text-sm font-semibold text-foreground">
-            Dr. Janet Duffy Realty
+            Dr. Duffyet Duffy Realty
           </p>
           <p className="text-sm text-muted-foreground">
             Dedicated to guiding homebuyers through Sunstone, Summerlin, and the
@@ -85,10 +85,10 @@ export default function SiteFooter() {
       <div className="mx-auto mt-8 flex max-w-6xl flex-wrap justify-between gap-3 px-4 text-xs text-muted-foreground">
         <div className="space-y-2">
           <p>
-            © {new Date().getFullYear()} Sunstone Woodside | Homes by Dr. Jan Duffy. All rights reserved.
+            © {new Date().getFullYear()} Sunstone Woodside | Homes by Dr. Duffy. All rights reserved.
           </p>
           <p>
-            Dr. Jan Duffy NV License S.0197614 | Berkshire Hathaway HomeServices Nevada Properties
+            Dr. Duffy NV License S.0197614 | Berkshire Hathaway HomeServices Nevada Properties
           </p>
           <p>Representing buyers for homes in Sunstone Woodside by Woodside Homes</p>
         </div>

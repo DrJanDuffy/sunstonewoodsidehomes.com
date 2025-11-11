@@ -9,7 +9,7 @@ import { getFaqsByCategory } from '@/lib/faqs'
 export const metadata: Metadata = {
   title: 'Las Vegas Service Areas | Sunstone Woodside Neighborhood Guides',
   description:
-    'Review Sunstone, Cadence, Summerlin, Skye Canyon, and Northwest Las Vegas insights curated by Dr. Jan Duffy for new construction buyers.',
+    'Review Sunstone, Cadence, Summerlin, Skye Canyon, and Northwest Las Vegas insights curated by Dr. Duffy for new construction buyers.',
 }
 
 const marketFaqs = getFaqsByCategory(['market'], [1, 2, 3, 4, 5])

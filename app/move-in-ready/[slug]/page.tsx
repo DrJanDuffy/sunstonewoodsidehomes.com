@@ -158,11 +158,11 @@ export default async function MoveInReadyDetailPage({
           sku: home.slug,
           brand: {
             '@type': 'Brand',
-            name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
+            name: 'Sunstone Woodside | Homes by Dr. Duffy',
           },
           seller: {
               '@type': 'RealEstateAgent',
-              name: 'Dr. Jan Duffy',
+              name: 'Dr. Duffy',
               url: `${baseUrl}/contact`,
               telephone: CONTACT_PHONE,
               areaServed: ['Las Vegas NV', 'Henderson NV'],

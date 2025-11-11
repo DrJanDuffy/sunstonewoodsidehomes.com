@@ -6,9 +6,9 @@ import { FaqSection } from '@/components/faq-section'
 import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
-  title: 'Sunstone & Northwest Las Vegas Communities | Dr. Jan Duffy',
+  title: 'Sunstone & Northwest Las Vegas Communities | Dr. Duffy',
   description:
-    'Explore Capella at Sunstone, the broader master plan, and nearby Northwest Las Vegas amenities with guidance from Dr. Jan Duffy.',
+    'Explore Capella at Sunstone, the broader master plan, and nearby Northwest Las Vegas amenities with guidance from Dr. Duffy.',
 }
 
 const communitySections = [

@@ -26,13 +26,13 @@ const bodyFont = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.sunstonewoodsidehomes.com'),
   title: {
-    default: 'Dr. Janet Duffy | Las Vegas Real Estate Advisor',
-    template: '%s | Dr. Janet Duffy Realty',
+    default: 'Dr. Duffyet Duffy | Las Vegas Real Estate Advisor',
+    template: '%s | Dr. Duffyet Duffy Realty',
   },
   description:
-    'Work with Dr. Janet Duffy for tailored Las Vegas real estate guidance. Unlock equity insights, discover show-ready listings, and secure high-performing investments.',
+    'Work with Dr. Duffyet Duffy for tailored Las Vegas real estate guidance. Unlock equity insights, discover show-ready listings, and secure high-performing investments.',
   keywords: [
-    'Dr. Janet Duffy',
+    'Dr. Duffyet Duffy',
     'Las Vegas real estate',
     'Sunstone Woodside Homes',
     'buy home Las Vegas',
@@ -43,18 +43,18 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Dr. Janet Duffy | Las Vegas Real Estate Advisor',
+    title: 'Dr. Duffyet Duffy | Las Vegas Real Estate Advisor',
     description:
       'Strategic buying, selling, and investment guidance for Sunstone, Summerlin, and the Las Vegas Valley.',
     url: 'https://www.sunstonewoodsidehomes.com',
-    siteName: 'Dr. Janet Duffy Real Estate',
+    siteName: 'Dr. Duffyet Duffy Real Estate',
     locale: 'en_US',
     type: 'website',
     images: ['/og-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr. Janet Duffy | Las Vegas Real Estate Advisor',
+    title: 'Dr. Duffyet Duffy | Las Vegas Real Estate Advisor',
     description:
       'Personalized Las Vegas real estate strategies for buyers, sellers, and investors.',
     images: ['/og-image.png'],
@@ -86,8 +86,8 @@ export default function RootLayout({
             '@context': 'https://schema.org',
             '@type': ['RealEstateAgent', 'Organization'],
             '@id': 'https://www.sunstonewoodsidehomes.com/#realestateagent',
-            name: 'Sunstone Woodside | Homes by Dr. Jan Duffy',
-            legalName: 'Homes by Dr. Jan Duffy',
+            name: 'Sunstone Woodside | Homes by Dr. Duffy',
+            legalName: 'Homes by Dr. Duffy',
             url: 'https://www.sunstonewoodsidehomes.com',
             logo: 'https://www.sunstonewoodsidehomes.com/og-image.png',
             image: 'https://www.sunstonewoodsidehomes.com/og-image.png',

@@ -139,7 +139,7 @@ const homepageFaqs = getFaqsByCategory(['company'], [1, 2, 3, 4, 5])
 export const metadata: Metadata = {
   title: 'Sunstone Woodside Homes | Las Vegas New Construction Concierge',
   description:
-    'Discover move-in ready inventory, Capella floor plans, and Las Vegas service areas with Dr. Jan Duffy’s concierge real estate guidance.',
+    'Discover move-in ready inventory, Capella floor plans, and Las Vegas service areas with Dr. Duffy’s concierge real estate guidance.',
 }
 
 export default function HomePage() {
@@ -372,7 +372,7 @@ export default function HomePage() {
               Navigate the homebuyer experience with confidence
             </h2>
             <p className="mt-3 text-lg text-muted-foreground">
-              From discovery sessions to closing day, Dr. Janet Duffy keeps every step transparent,
+              From discovery sessions to closing day, Dr. Duffyet Duffy keeps every step transparent,
               organized, and aligned with your goals.
             </p>
           </div>

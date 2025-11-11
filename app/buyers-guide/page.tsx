@@ -7,7 +7,7 @@ import { FaqSection } from '@/components/faq-section'
 import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
-  title: 'Las Vegas New Construction Buyer Guide | Dr. Jan Duffy',
+  title: 'Las Vegas New Construction Buyer Guide | Dr. Duffy',
   description:
     'Follow a concierge roadmap for financing, design selections, and move-in milestones tailored to Sunstone Woodside homebuyers.',
 }
@@ -98,7 +98,7 @@ export default function BuyersGuidePage() {
           Navigate your Sunstone purchase with expert precision
         </h1>
         <p className="text-lg text-muted-foreground">
-          From the first tour to your final walk-through, Dr. Janet Duffy translates builder
+          From the first tour to your final walk-through, Dr. Duffyet Duffy translates builder
           timelines, financing nuances, and design studio choices into clear next steps. Use
           this roadmap to stay confident and on track.
         </p>

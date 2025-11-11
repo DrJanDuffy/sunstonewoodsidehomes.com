@@ -4,7 +4,7 @@
 - **Week 1:** Publish a market pulse blog (Sunstone, Cadence, Summerlin inventory + incentives).
 - **Week 2:** Spotlight a move-in-ready home with lifestyle photos; cross-link to detail page and contact form.
 - **Week 3:** Share a neighborhood guide update (schools, commute, parks) with embeds from `/service-areas` pages.
-- **Week 4:** Release a testimonial or concierge success story highlighting Dr. Jan Duffy’s process.
+- **Week 4:** Release a testimonial or concierge success story highlighting Dr. Duffy’s process.
 
 ## Backlink & partnership targets
 - Las Vegas relocation blogs (pitch Sunstone trail + master plan features).

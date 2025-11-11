@@ -9,7 +9,7 @@ import { getFaqsByCategory } from '@/lib/faqs'
 export const metadata: Metadata = {
   title: 'New Construction Financing Strategies | Sunstone Woodside',
   description:
-    'Compare lender partners, rate lock tactics, and incentive stacking strategies for Capella at Sunstone buyers with Dr. Jan Duffy.',
+    'Compare lender partners, rate lock tactics, and incentive stacking strategies for Capella at Sunstone buyers with Dr. Duffy.',
 }
 
 const lenderPartners = [

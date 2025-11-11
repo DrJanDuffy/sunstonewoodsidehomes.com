@@ -26,7 +26,7 @@ export function FaqSection({ id, title, faqs, className, limit, showMoreHref }: 
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Faq Library</p>
         <h2 className="text-2xl font-semibold text-foreground">{title}</h2>
         <p className="text-sm text-muted-foreground">
-          Every answer is rooted in field research Dr. Jan Duffy conducts for Las Vegas Woodside buyers. Use these insights to
+          Every answer is rooted in field research Dr. Duffy conducts for Las Vegas Woodside buyers. Use these insights to
           benchmark specifications, incentives, and timelines before you tour.
         </p>
       </div>

@@ -9,9 +9,9 @@ import {
 } from '@/lib/faqs'
 
 export const metadata: Metadata = {
-  title: 'Woodside Homes Las Vegas FAQs | Research Library by Dr. Jan Duffy',
+  title: 'Woodside Homes Las Vegas FAQs | Research Library by Dr. Duffy',
   description:
-    'Comprehensive Woodside Homes FAQ resource curated by Dr. Jan Duffy—covering builder background, specifications, pricing, communities, buying process, market research, and buyer education tools.',
+    'Comprehensive Woodside Homes FAQ resource curated by Dr. Duffy—covering builder background, specifications, pricing, communities, buying process, market research, and buyer education tools.',
 }
 
 export default function FaqLibraryPage() {
@@ -25,7 +25,7 @@ export default function FaqLibraryPage() {
           Woodside Homes Research FAQ Library
         </h1>
         <p className="text-lg text-muted-foreground">
-          Dr. Jan Duffy has closed more than 500 Las Vegas new construction transactions, capturing field data,
+          Dr. Duffy has closed more than 500 Las Vegas new construction transactions, capturing field data,
           inspection notes, incentive models, and market insights for every Woodside community. Use this FAQ library to
           explore builder specs, pricing strategies, community research, and buyer education tools—all backed by
           verifiable data.

@@ -5,9 +5,9 @@ import { FaqSection } from '@/components/faq-section'
 import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
-  title: 'Move-In Ready Homes | Sunstone Woodside by Dr. Jan Duffy',
+  title: 'Move-In Ready Homes | Sunstone Woodside by Dr. Duffy',
   description:
-    'Filter designer-curated move-in-ready homes across Cadence, Sunstone, and Summerlin with concierge guidance from Dr. Jan Duffy.',
+    'Filter designer-curated move-in-ready homes across Cadence, Sunstone, and Summerlin with concierge guidance from Dr. Duffy.',
 }
 
 const moveInReadyFaqs = getFaqsByCategory(['specs'], [1, 2, 3, 4, 5])
