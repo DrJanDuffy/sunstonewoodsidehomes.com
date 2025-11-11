@@ -1,286 +1,248 @@
-'use client'
+import Link from 'next/link'
 
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-import PromptComponent from './components/prompt-component'
-import ApiKeyError from './components/api-key-error'
-import RateLimitDialog from './components/rate-limit-dialog'
-import ErrorDialog from './components/error-dialog'
-import { useApiValidation } from '../lib/hooks/useApiValidation'
+const CONTACT_EMAIL = 'DrDuffySells@SunstoneWoodsideHomes.com'
+
+const services = [
+  {
+    title: 'Sell for Maximum Equity',
+    description:
+      'List with a data-backed pricing strategy, concierge staging, and Sunstone buyer demand insights.',
+    cta: 'Request a valuation',
+    href: `mailto:${CONTACT_EMAIL}?subject=Sunstone%20Home%20Valuation`,
+  },
+  {
+    title: 'Find Your Next Home',
+    description:
+      'Unlock private tours, curated new construction options, and neighborhood comparisons across the Las Vegas Valley.',
+    cta: 'Start a home search',
+    href: `mailto:${CONTACT_EMAIL}?subject=Las%20Vegas%20Home%20Search`,
+  },
+  {
+    title: 'Invest With Confidence',
+    description:
+      'Evaluate rental income, cash flow, and appreciation potential for Sunstone and Greater Las Vegas properties.',
+    cta: 'Schedule an investment review',
+    href: `mailto:${CONTACT_EMAIL}?subject=Las%20Vegas%20Investment%20Consultation`,
+  },
+]
+
+const neighborhoodHighlights = [
+  {
+    name: 'Sunstone by Woodside Homes',
+    detail:
+      'Smart-home ready floor plans, energy efficiency, and master-planned amenities minutes from Red Rock Canyon.',
+  },
+  {
+    name: 'Summerlin',
+    detail:
+      'Top-ranked schools, village parks, and luxury retail at Downtown Summerlin with quick Strip access.',
+  },
+  {
+    name: 'Northwest Las Vegas',
+    detail:
+      'Gated communities, larger lot sizes, and convenient proximity to the 215 Beltway for daily commutes.',
+  },
+]
 
 export default function HomePage() {
-  const router = useRouter()
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [projects, setProjects] = useState<any[]>([])
-  const [projectsLoaded, setProjectsLoaded] = useState(false)
-  const [selectedProjectId, setSelectedProjectId] = useState('new')
-  const [selectedChatId, setSelectedChatId] = useState('new')
-  const [projectChats, setProjectChats] = useState<any[]>([])
-  const [showRateLimitDialog, setShowRateLimitDialog] = useState(false)
-  const [rateLimitInfo, setRateLimitInfo] = useState<{
-    resetTime?: string
-    remaining?: number
-  }>({})
-  const [showErrorDialog, setShowErrorDialog] = useState(false)
-  const [errorMessage, setErrorMessage] = useState('')
-
-  // API validation on page load
-  const { isValidating, showApiKeyError } = useApiValidation()
-
-  // Load projects on page mount (only if API is valid)
-  useEffect(() => {
-    if (!isValidating && !showApiKeyError) {
-      loadProjectsWithCache()
-    }
-  }, [isValidating, showApiKeyError])
-
-  const loadProjectsWithCache = async () => {
-    // First, try to load from sessionStorage for immediate display
-    try {
-      const cachedProjects = sessionStorage.getItem('projects')
-      if (cachedProjects) {
-        const parsedProjects = JSON.parse(cachedProjects)
-        setProjects(parsedProjects)
-        setProjectsLoaded(true)
-      }
-    } catch (err) {
-      // Silently handle cache loading errors
-    }
-
-    // Then fetch fresh data in the background
-    loadProjects()
-  }
-
-  const loadProjects = async () => {
-    try {
-      const response = await fetch('/api/projects')
-      if (response.ok) {
-        const data = await response.json()
-        const projectsData = data.data || data || []
-        setProjects(projectsData)
-        setProjectsLoaded(true)
-
-        // Store in sessionStorage for next time
-        try {
-          sessionStorage.setItem('projects', JSON.stringify(projectsData))
-        } catch (err) {
-          // Silently handle cache storage errors
-        }
-      } else if (response.status === 401) {
-        const errorData = await response.json()
-        if (errorData.error === 'API_KEY_MISSING') {
-          // API key error is now handled by useApiValidation hook
-          return
-        }
-      }
-    } catch (err) {
-      // Silently handle project loading errors
-    } finally {
-      // Mark as loaded even if there was an error
-      setProjectsLoaded(true)
-    }
-  }
-
-  const loadProjectChatsWithCache = async (projectId: string) => {
-    // First, try to load from sessionStorage for immediate display
-    try {
-      const cachedChats = sessionStorage.getItem(`project-chats-${projectId}`)
-      if (cachedChats) {
-        const parsedChats = JSON.parse(cachedChats)
-        setProjectChats(parsedChats)
-      }
-    } catch (err) {
-      // Silently handle cache loading errors
-    }
-
-    // Then fetch fresh data in the background
-    try {
-      const response = await fetch(`/api/projects/${projectId}`)
-      if (response.ok) {
-        const data = await response.json()
-        const chatsData = data.chats || []
-        setProjectChats(chatsData)
-
-        // Store in sessionStorage for next time
-        try {
-          sessionStorage.setItem(
-            `project-chats-${projectId}`,
-            JSON.stringify(chatsData),
-          )
-        } catch (err) {
-          // Silently handle cache storage errors
-        }
-      }
-    } catch (err) {
-      // Silently handle project chats loading errors
-    }
-  }
-
-  const handleProjectChange = async (newProjectId: string) => {
-    if (newProjectId === 'new') {
-      // Stay on homepage for new project
-      setSelectedProjectId('new')
-      setSelectedChatId('new')
-      setProjectChats([])
-    } else {
-      // Redirect to the selected project page
-      router.push(`/projects/${newProjectId}`)
-    }
-  }
-
-  const handleChatChange = (newChatId: string) => {
-    setSelectedChatId(newChatId)
-  }
-
-  const handleSubmit = async (
-    prompt: string,
-    settings: { modelId: string; imageGenerations: boolean; thinking: boolean },
-    attachments?: { url: string; name?: string; type?: string }[],
-  ) => {
-    setIsLoading(true)
-    setError(null)
-
-    try {
-      const response = await fetch('/api/generate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message: prompt,
-          modelId: settings.modelId,
-          imageGenerations: settings.imageGenerations,
-          thinking: settings.thinking,
-          ...(attachments && attachments.length > 0 && { attachments }),
-        }),
-      })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-
-        // Check for API key error
-        if (response.status === 401 && errorData.error === 'API_KEY_MISSING') {
-          // API key error is now handled by useApiValidation hook
-          return
-        }
-
-        // Check for rate limit error
-        if (
-          response.status === 429 &&
-          errorData.error === 'RATE_LIMIT_EXCEEDED'
-        ) {
-          setRateLimitInfo({
-            resetTime: errorData.resetTime,
-            remaining: errorData.remaining,
-          })
-          setShowRateLimitDialog(true)
-          return
-        }
-
-        setErrorMessage(errorData.error || 'Failed to generate app')
-        setShowErrorDialog(true)
-        return
-      }
-
-      const data = await response.json()
-
-      // Redirect to the new chat
-      if (data.id || data.chatId) {
-        const newChatId = data.id || data.chatId
-        const projectId = data.projectId || 'default' // Fallback project
-        router.push(`/projects/${projectId}/chats/${newChatId}`)
-        return
-      }
-    } catch (err) {
-      setErrorMessage(
-        err instanceof Error
-          ? err.message
-          : 'Failed to generate app. Please try again.',
-      )
-      setShowErrorDialog(true)
-    } finally {
-      setIsLoading(false)
-    }
-  }
-
-  // Show API key error page if needed
-  if (showApiKeyError) {
-    return <ApiKeyError />
-  }
-
   return (
-    <div className="relative min-h-dvh bg-background">
-      {/* Homepage Welcome Message */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div
-          className="text-center px-4 sm:px-6"
-          style={{ transform: 'translateY(-25%)' }}
-        >
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4 text-pretty">
-            Simple v0
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            This is a demo of the{' '}
-            <a
-              href="https://v0.dev/docs/api/platform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-muted-foreground underline"
-            >
-              v0 Platform API
-            </a>
-            . Build your own AI app builder with programmatic access to v0's app
-            generation pipeline.
-          </p>
-
-          {/* Mobile-only GitHub link */}
-          <div className="sm:hidden mt-6 flex items-center justify-center">
-            <a
-              href="https://github.com/vercel/simple-v0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-muted hover:bg-muted/80 text-muted-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="currentColor"
+    <div className="flex flex-col gap-24 pb-16">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-primary/10 via-background to-background pt-24 pb-28 sm:pt-32 sm:pb-36">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(29,78,216,0.2),_rgba(15,23,42,0))]" />
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-4 text-center lg:flex-row lg:items-start lg:text-left">
+          <div className="flex-1 space-y-6">
+            <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-primary">
+              Las Vegas Real Estate Expertise
+            </span>
+            <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+              Move with confidence alongside Dr. Janet Duffy
+            </h1>
+            <p className="text-lg text-muted-foreground sm:text-xl">
+              Personalized strategies for Sunstone, Summerlin, and the entire
+              Las Vegas Valley. From unlocking equity to securing high-performing
+              investments, Dr. Duffy brings doctoral-level research and local
+              market savvy to every transaction.
+            </p>
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-start">
+              <a
+                href={`mailto:${CONTACT_EMAIL}?subject=Private%20Consultation%20Request`}
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90"
               >
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-              </svg>
-              View on GitHub
+                Book a consultation
+              </a>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center rounded-full border border-input px-6 py-3 text-base font-semibold text-foreground transition hover:bg-muted"
+              >
+                Explore services
+              </a>
+            </div>
+            <div className="flex flex-col gap-1 text-sm text-muted-foreground sm:flex-row sm:items-center sm:gap-3">
+              <span>Brokered by Sunstone Woodside Homes</span>
+              <span className="hidden h-1 w-1 rounded-full bg-muted-foreground sm:inline-block" />
+              <span>Fair Housing Compliant • License #S.0199999</span>
+            </div>
+          </div>
+          <div className="flex-1 rounded-3xl border border-border bg-background/60 p-6 backdrop-blur lg:max-w-sm">
+            <h2 className="text-xl font-semibold text-foreground">
+              Ready when you are
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Share your goals and ideal move timeline. Dr. Duffy will call within one
+              business day with next steps tailored to your needs.
+            </p>
+            <dl className="mt-6 space-y-4 text-sm">
+              <div className="flex items-start gap-3">
+                <dt className="font-semibold text-foreground">Consultations</dt>
+                <dd className="text-muted-foreground">Virtual or in-home, 7 days a week</dd>
+              </div>
+              <div className="flex items-start gap-3">
+                <dt className="font-semibold text-foreground">Buyer Services</dt>
+                <dd className="text-muted-foreground">
+                  Private tours, lender introductions, relocation playbooks
+                </dd>
+              </div>
+              <div className="flex items-start gap-3">
+                <dt className="font-semibold text-foreground">Seller Services</dt>
+                <dd className="text-muted-foreground">
+                  Pricing analytics, staging concierge, national exposure
+                </dd>
+              </div>
+              <div className="flex items-start gap-3">
+                <dt className="font-semibold text-foreground">Investors</dt>
+                <dd className="text-muted-foreground">
+                  Rental comps, ROI projections, property management referrals
+                </dd>
+              </div>
+            </dl>
+            <a
+              href={`mailto:${CONTACT_EMAIL}?subject=Las%20Vegas%20Real%20Estate%20Inquiry`}
+              className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-primary bg-primary/10 px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary/20"
+            >
+              Email Dr. Duffy &rsaquo;
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <PromptComponent
-        onSubmit={handleSubmit}
-        isLoading={isLoading}
-        placeholder="Describe your app..."
-        showDropdowns={projectsLoaded}
-        projects={projects}
-        projectChats={projectChats}
-        currentProjectId={selectedProjectId}
-        currentChatId={selectedChatId}
-        onProjectChange={handleProjectChange}
-        onChatChange={handleChatChange}
-      />
+      <section id="services" className="mx-auto max-w-6xl px-4">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+            Guidance for every stage of ownership
+          </h2>
+          <p className="mt-3 text-lg text-muted-foreground">
+            Tailored plans for sellers, buyers, and investors across the Las Vegas
+            Valley with a laser focus on your desired outcome.
+          </p>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="flex h-full flex-col rounded-3xl border border-border bg-card/80 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+            >
+              <h3 className="text-xl font-semibold text-foreground">
+                {service.title}
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-muted-foreground">
+                {service.description}
+              </p>
+              <a
+                href={service.href}
+                className="mt-6 inline-flex items-center font-semibold text-primary transition hover:text-primary/80"
+              >
+                {service.cta} &rsaquo;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <RateLimitDialog
-        isOpen={showRateLimitDialog}
-        onClose={() => setShowRateLimitDialog(false)}
-        resetTime={rateLimitInfo.resetTime}
-        remaining={rateLimitInfo.remaining}
-      />
+      <section className="bg-muted/30 py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+                Data-driven decisions backed by local insight
+              </h2>
+              <p className="mt-4 text-base text-muted-foreground">
+                Dr. Duffy blends academic research with hands-on market expertise to
+                clarify comps, navigate contingencies, and protect your timeline. Expect
+                weekly status updates, proactive negotiation strategies, and transparent
+                communication from list to close.
+              </p>
+              <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-primary" />
+                  Seller net sheets and buyer cost analyses tailored to your financing
+                  plan.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-primary" />
+                  Preferred network of inspectors, stagers, lenders, and contractors.
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-2 w-2 rounded-full bg-primary" />
+                  Secure digital document signing with milestone alerts and reminders.
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-3xl border border-border bg-background p-8 shadow-lg">
+              <h3 className="text-xl font-semibold text-foreground">
+                Neighborhood spotlights
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Explore lifestyle, amenities, and projected appreciation across the most
+                desirable Northwest Las Vegas communities.
+              </p>
+              <ul className="mt-6 space-y-5">
+                {neighborhoodHighlights.map((item) => (
+                  <li key={item.name} className="rounded-2xl border border-border/60 p-4">
+                    <h4 className="text-base font-semibold text-foreground">
+                      {item.name}
+                    </h4>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.detail}</p>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={`mailto:${CONTACT_EMAIL}?subject=Neighborhood%20Discovery%20Session`}
+                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+              >
+                Plan a neighborhood tour
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <ErrorDialog
-        isOpen={showErrorDialog}
-        onClose={() => setShowErrorDialog(false)}
-        message={errorMessage}
-      />
+      <section className="mx-auto max-w-5xl px-4 text-center">
+        <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+          Let&apos;s tailor your next move
+        </h2>
+        <p className="mt-3 text-lg text-muted-foreground">
+          Share your goals—relocation, upsizing, downsizing, or building a portfolio—and
+          receive a custom roadmap curated for the Las Vegas market.
+        </p>
+        <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=Meet%20Dr.%20Duffy`}
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground transition hover:bg-primary/90"
+          >
+            Email Dr. Duffy
+          </a>
+          <Link
+            href="tel:+17025551234"
+            className="inline-flex items-center justify-center rounded-full border border-input px-6 py-3 text-base font-semibold text-foreground transition hover:bg-muted"
+          >
+            Call (702) 555-1234
+          </Link>
+        </div>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Serving Sunstone Woodside Homes, Summerlin, and Greater Las Vegas with integrity
+          and equal housing commitment.
+        </p>
+      </section>
     </div>
   )
 }
