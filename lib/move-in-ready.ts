@@ -698,3 +698,7 @@ export const moveInReadyHomes: MoveInReadyHome[] = [
   },
 ]
 
+export function getMoveInReadyHomeBySlug(slug: string) {
+  return moveInReadyHomes.find((home) => home.slug === slug)
+}
+
