@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
+import { moveInReadyHomes } from '@/lib/move-in-ready'
 import {
   CONTACT_ADDRESS,
   CONTACT_EMAIL,
@@ -224,6 +225,58 @@ export default function HomePage() {
               <p className="text-sm text-muted-foreground">{stat.label}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4">
+        <div className="grid gap-6 rounded-3xl border border-border bg-gradient-to-br from-[#1d4ed8]/10 via-background to-[#f7faff] p-8 shadow-sm lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="space-y-4">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
+              Move-In Ready Collection
+            </p>
+            <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
+              Need keys in 60 days or less?
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Browse designer-curated homes across Cadence, Sunstone, and Summerlin that are ready now.
+              Filter by community, price, or bedroom count and secure a private tour with Dr. Duffy.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/move-in-ready"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
+              >
+                View move-in ready homes
+              </Link>
+              <a
+                href={`mailto:${CONTACT_EMAIL}?subject=Move-In%20Ready%20Collection%20Inquiry`}
+                className="inline-flex items-center justify-center rounded-full border border-input px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted"
+              >
+                Request curated list
+              </a>
+            </div>
+          </div>
+          <div className="space-y-3 rounded-3xl border border-dashed border-border/70 bg-background/70 p-6 text-sm text-muted-foreground">
+            <h3 className="text-base font-semibold text-foreground">Featured inventory</h3>
+            <ul className="space-y-2">
+              {moveInReadyHomes.slice(0, 3).map((home) => (
+                <li key={home.slug} className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="font-semibold text-foreground">{home.planName}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {home.community} • {home.price}
+                    </p>
+                  </div>
+                  <Link
+                    href={`/move-in-ready/${home.slug}`}
+                    className="text-xs font-semibold text-primary transition hover:text-primary/80"
+                  >
+                    Details &rsaquo;
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

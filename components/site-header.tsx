@@ -5,6 +5,7 @@ import { CONTACT_PHONE, CONTACT_PHONE_LINK, CONTACT_EMAIL } from '@/lib/site'
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/models', label: 'Home Plans' },
+  { href: '/move-in-ready', label: 'Move-In Ready' },
   { href: '/buyers-guide', label: 'Buyer Journey' },
   { href: '/communities', label: 'Communities' },
   { href: '/service-areas', label: 'Service Areas' },
