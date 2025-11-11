@@ -11,6 +11,7 @@ import {
 const footerNav = [
   { href: '/models', label: 'Home Plans' },
   { href: '/buyers-guide', label: 'Buyer Journey' },
+  { href: '/service-areas', label: 'Service Areas' },
   { href: '/communities', label: 'Communities' },
   { href: '/financing', label: 'Financing' },
   { href: '/contact', label: 'Contact' },

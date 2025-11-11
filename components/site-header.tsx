@@ -7,6 +7,7 @@ const navItems = [
   { href: '/models', label: 'Home Plans' },
   { href: '/buyers-guide', label: 'Buyer Journey' },
   { href: '/communities', label: 'Communities' },
+  { href: '/service-areas', label: 'Service Areas' },
   { href: '/financing', label: 'Financing' },
   { href: '/contact', label: 'Contact' },
 ]
