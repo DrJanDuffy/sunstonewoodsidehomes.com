@@ -29,9 +29,6 @@ export function FaqSection({ title, faqs, className }: FaqSectionProps) {
             className="rounded-2xl border border-border/70 bg-background/80 p-6 shadow-sm"
           >
             <header className="space-y-1">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">
-                Iteration {faq.iteration}
-              </p>
               <h3 className="text-lg font-semibold text-foreground">Q: {faq.question}</h3>
             </header>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">A: {faq.answer}</p>
