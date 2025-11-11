@@ -20,6 +20,71 @@ export type FaqEntry = {
 
 const PHONE = '(702) 766-7950'
 
+export const faqCategoryMeta: Record<
+  FaqCategory,
+  { title: string; description: string; anchor: string }
+> = {
+  company: {
+    title: 'Woodside Homes Background & Builder Positioning',
+    description:
+      'Understand Woodside Homes’ history, corporate backing, and why Dr. Jan Duffy evaluates their process differently from other Las Vegas builders.',
+    anchor: 'company',
+  },
+  specs: {
+    title: 'Specifications, Energy Performance & Smart Technology',
+    description:
+      'Dive into the technical details—energy efficiency, smart-home integrations, structural engineering, and finish quality verified through Dr. Jan’s field research.',
+    anchor: 'specs',
+  },
+  floorplans: {
+    title: 'Floor Plans, Customization Paths & Indoor-Outdoor Flow',
+    description:
+      'Compare layouts, multi-gen options, patio extensions, and customization strategies backed by real measurements and ROI analysis.',
+    anchor: 'floorplans',
+  },
+  pricing: {
+    title: 'Pricing, Incentives, Financing & Cost Planning',
+    description:
+      'See how incentives, rate buy-downs, closing costs, and appraisal strategies align with Woodside’s new construction offerings.',
+    anchor: 'pricing',
+  },
+  communities: {
+    title: 'Communities, Amenities & Lifestyle Fit',
+    description:
+      'Evaluate Sunstone, Cadence, Summerlin, and other Woodside enclaves using commute analytics, HOA health, and amenity timelines.',
+    anchor: 'communities',
+  },
+  process: {
+    title: 'Buying Process, Inspections & Construction Management',
+    description:
+      'Learn each step—from lot reservation to move-in—with Dr. Jan’s checklists, inspection protocols, and coordination strategies.',
+    anchor: 'process',
+  },
+  market: {
+    title: 'Market Research, Equity Forecasts & Investment Planning',
+    description:
+      'Leverage appreciation data, resale performance, and rental analytics to make informed long-term decisions.',
+    anchor: 'market',
+  },
+  education: {
+    title: 'Buyer Education, Planning Tools & Post-Close Support',
+    description:
+      'Access planning frameworks, design guidance, maintenance calendars, and onboarding support tailored to new construction buyers.',
+    anchor: 'education',
+  },
+}
+
+export const orderedFaqCategories: FaqCategory[] = [
+  'company',
+  'specs',
+  'floorplans',
+  'pricing',
+  'communities',
+  'process',
+  'market',
+  'education',
+]
+
 export const faqs: FaqEntry[] = [
   // Iteration 1 - Company & Philosophy
   {

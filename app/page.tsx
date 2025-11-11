@@ -308,6 +308,8 @@ export default function HomePage() {
         title="Woodside Homes Company Knowledge Base"
         faqs={homepageFaqs}
         className="mt-12"
+        limit={6}
+        showMoreHref="/faqs#company"
       />
 
       <section id="models" className="mx-auto max-w-6xl px-4">

@@ -21,6 +21,8 @@ export default function MoveInReadyIndexPage() {
           title="Woodside Specification & Technology FAQs"
           faqs={moveInReadyFaqs}
           className="mt-12"
+          limit={6}
+          showMoreHref="/faqs#specs"
         />
       </div>
     </>

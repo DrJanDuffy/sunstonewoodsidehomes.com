@@ -71,6 +71,8 @@ export default function ModelsIndexPage() {
         title="Woodside Floor Plan & Customization FAQs"
         faqs={modelFaqs}
         className="mt-16"
+        limit={6}
+        showMoreHref="/faqs#floorplans"
       />
     </div>
   )

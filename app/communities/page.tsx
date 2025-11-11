@@ -153,6 +153,8 @@ export default function CommunitiesPage() {
         title="Woodside Community & Lifestyle FAQs"
         faqs={communityFaqs}
         className="mt-16"
+        limit={6}
+        showMoreHref="/faqs#communities"
       />
     </div>
   )

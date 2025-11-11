@@ -84,6 +84,8 @@ export default function ServiceAreasIndexPage() {
         title="Woodside Market Research & Investment FAQs"
         faqs={marketFaqs}
         className="mt-16"
+        limit={6}
+        showMoreHref="/faqs#market"
       />
     </div>
   )

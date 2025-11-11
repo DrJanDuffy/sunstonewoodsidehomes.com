@@ -2,18 +2,26 @@ import { cn } from '@/lib/utils'
 import type { FaqEntry } from '@/lib/faqs'
 
 type FaqSectionProps = {
+  id?: string
   title: string
   faqs: FaqEntry[]
   className?: string
+  limit?: number
+  showMoreHref?: string
 }
 
-export function FaqSection({ title, faqs, className }: FaqSectionProps) {
-  if (!faqs.length) {
+export function FaqSection({ id, title, faqs, className, limit, showMoreHref }: FaqSectionProps) {
+  const items = limit && limit > 0 ? faqs.slice(0, limit) : faqs
+
+  if (!items.length) {
     return null
   }
 
   return (
-    <section className={cn('space-y-6 rounded-3xl border border-border bg-card/70 p-8 shadow-sm', className)}>
+    <section
+      id={id}
+      className={cn('space-y-6 rounded-3xl border border-border bg-card/70 p-8 shadow-sm', className)}
+    >
       <div className="space-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary">Faq Library</p>
         <h2 className="text-2xl font-semibold text-foreground">{title}</h2>
@@ -23,7 +31,7 @@ export function FaqSection({ title, faqs, className }: FaqSectionProps) {
         </p>
       </div>
       <div className="space-y-6">
-        {faqs.map((faq) => (
+        {items.map((faq) => (
           <article
             key={`${faq.iteration}-${faq.order}`}
             className="rounded-2xl border border-border/70 bg-background/80 p-6 shadow-sm"
@@ -43,6 +51,16 @@ export function FaqSection({ title, faqs, className }: FaqSectionProps) {
           </article>
         ))}
       </div>
+      {showMoreHref ? (
+        <div>
+          <a
+            href={showMoreHref}
+            className="inline-flex items-center justify-center rounded-full border border-input px-5 py-2 text-sm font-semibold text-foreground transition hover:bg-muted"
+          >
+            View all FAQs
+          </a>
+        </div>
+      ) : null}
     </section>
   )
 }

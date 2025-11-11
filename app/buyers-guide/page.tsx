@@ -214,6 +214,8 @@ export default function BuyersGuidePage() {
         title="Woodside Buying Process & Buyer Education FAQs"
         faqs={guideFaqs}
         className="mt-16"
+        limit={6}
+        showMoreHref="/faqs#process"
       />
 
       <section className="rounded-3xl border border-border bg-card/70 p-8 shadow-sm">

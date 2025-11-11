@@ -191,6 +191,8 @@ export default function FinancingPage() {
         title="Woodside Pricing, Incentives & Financing FAQs"
         faqs={financingFaqs}
         className="mt-16"
+        limit={6}
+        showMoreHref="/faqs#pricing"
       />
 
       <Script id="schema-financing-faq" type="application/ld+json" strategy="afterInteractive">
