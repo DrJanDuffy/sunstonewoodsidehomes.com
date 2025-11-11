@@ -72,7 +72,7 @@ const conciergeSupport = [
   'Align lender deadlines with construction milestones to avoid rush fees.',
 ]
 
-const financingFaqs = getFaqsByCategory(['pricing'], [1, 2])
+const financingFaqs = getFaqsByCategory(['pricing'], [1, 2, 3])
 
 export default function FinancingPage() {
   return (

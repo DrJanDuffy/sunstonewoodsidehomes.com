@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'Review Sunstone, Cadence, Summerlin, Skye Canyon, and Northwest Las Vegas insights curated by Dr. Jan Duffy for new construction buyers.',
 }
 
-const marketFaqs = getFaqsByCategory(['market'], [1, 2])
+const marketFaqs = getFaqsByCategory(['market'], [1, 2, 3])
 
 export default function ServiceAreasIndexPage() {
   return (

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Filter designer-curated move-in-ready homes across Cadence, Sunstone, and Summerlin with concierge guidance from Dr. Jan Duffy.',
 }
 
-const moveInReadyFaqs = getFaqsByCategory(['specs'], [1, 2])
+const moveInReadyFaqs = getFaqsByCategory(['specs'], [1, 2, 3])
 
 export default function MoveInReadyIndexPage() {
   return (
