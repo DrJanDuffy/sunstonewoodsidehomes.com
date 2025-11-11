@@ -134,7 +134,7 @@ const resourceHighlights = [
   },
 ]
 
-const homepageFaqs = getFaqsByCategory(['company'], [1, 2, 3, 4])
+const homepageFaqs = getFaqsByCategory(['company'], [1, 2, 3, 4, 5])
 
 export const metadata: Metadata = {
   title: 'Sunstone Woodside Homes | Las Vegas New Construction Concierge',

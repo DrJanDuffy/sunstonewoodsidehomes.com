@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'Compare the Aries, Taurus, and Virgo single-story plans with pricing, square footage, and concierge design insights for Sunstone Woodside Homes.',
 }
 
-const modelFaqs = getFaqsByCategory(['floorplans'], [1, 2, 3, 4])
+const modelFaqs = getFaqsByCategory(['floorplans'], [1, 2, 3, 4, 5])
 
 export default function ModelsIndexPage() {
   return (

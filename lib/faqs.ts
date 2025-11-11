@@ -1783,6 +1783,446 @@ export const faqs: FaqEntry[] = [
       'Sunstone appreciated 6–9% annually from 2020–2024 with average $102K resale gains—data Dr. Jan builds into her equity models.',
     cta: `Ready to review detailed specs and options? ${PHONE}.`,
   },
+  {
+    iteration: 5,
+    order: 1,
+    category: 'company',
+    question: 'Why do relocation buyers seek Dr. Jan’s guidance on Woodside specifically?',
+    answer:
+      'Relocation clients lean on Dr. Jan because she keeps a proprietary database of 500+ new construction closings, including every Woodside superintendent, designer, and warranty lead. She benchmarks lifestyle perks, commute realities, and HOA rules before you even tour. That prework saves days of guesswork for families arriving from out of state.',
+    researchDetail:
+      'Dr. Jan’s relocation matrix cross-references school scores, hospital commute times, and HOA reserves for each active Woodside neighborhood.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 5,
+    order: 2,
+    category: 'company',
+    question: 'How does Dr. Jan verify Woodside’s build quality beyond brochures?',
+    answer:
+      'She performs independent field audits, pulling county inspection logs, warranty claims, and third-party reports to validate builder claims. Those findings feed into her comparison charts so buyers see objective data. It’s buyer-side research—not marketing—from someone who has walked every construction phase.',
+    researchDetail:
+      'Clark County’s online inspection portal shows pass/fail notes; Dr. Jan archives them for each Woodside phase to spot recurring issues.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 3,
+    category: 'company',
+    question: 'What makes Woodside’s sales process smoother when Dr. Jan is involved?',
+    answer:
+      'Her relationships with sales counselors and superintendents remove friction—appointments get scheduled faster, structural deadlines stay clear, and escalation paths open immediately. Buyers still sign directly with Woodside, but Dr. Jan keeps the builder accountable at every step. It’s a buyer advocate working alongside the onsite team.',
+    researchDetail:
+      'Dr. Jan stores escalation contact trees for each community so buyers reach decision-makers within hours, not days.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 4,
+    category: 'specs',
+    question: 'How does Dr. Jan audit energy specs to protect buyer budgets?',
+    answer:
+      'She reviews mechanical schedules, HERS certificates, and NV Energy usage projections for every plan. Those numbers feed a 10-year cost-of-ownership model comparing Woodside to resale options. Buyers see how efficiency lowers total monthly spend, which often justifies higher upfront pricing.',
+    researchDetail:
+      'Energy models in Dr. Jan’s workbook use NV Energy tiered rates, builder-provided kWh estimates, and insulation specs verified during pre-drywall.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 5,
+    category: 'specs',
+    question: 'How does Dr. Jan confirm smart-home tech works out of the box?',
+    answer:
+      'She coordinates low-voltage walkthroughs at pre-drywall to verify Cat6 drops, conduit locations, and panel terminations. After closing, her tech partners perform activation checks so Wi-Fi thermostats, smart garages, and security prewires go live without surprises. Buyer convenience stays front and center.',
+    researchDetail:
+      'Pre-drywall punch lists include photos of each low-voltage drop, signed off by the superintendent and stored in the client’s portal.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 6,
+    category: 'specs',
+    question: 'What structural details does Dr. Jan document during inspections?',
+    answer:
+      'She photographs framing connections, anchor bolts, moisture barriers, and insulation coverage during third-party inspections. Any variance from plans goes into a correction log shared with the superintendent. That documentation protects warranties and future resale confidence.',
+    researchDetail:
+      'Her inspection binder includes labeled photos of sill plate anchors, roof truss hangers, and HVAC duct sealing for each buyer.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 7,
+    category: 'specs',
+    question: 'How does Dr. Jan compare Woodside’s kitchens to other builders from a cooking perspective?',
+    answer:
+      'Beyond listing finishes, she measures counter frontage, storage cubic footage, and appliance clearance for each plan. Then she contrasts the data with Lennar, Pulte, and Tri Pointe models so culinary buyers know which layout supports their workflow. It’s ergonomics backed by tape-measure research.',
+    researchDetail:
+      'Her kitchen worksheet records island length, pantry volume, and fridge clearance for every model toured.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 8,
+    category: 'specs',
+    question: 'What does Dr. Jan evaluate in Woodside’s desert engineering package?',
+    answer:
+      'She inspects attic ventilation, radiant barrier coverage, stucco expansion joints, and garage insulation to confirm desert-ready execution. Those findings get compared with Clark County code baselines and competitor specs. Buyers see where Woodside excels and where upgrades might help.',
+    researchDetail:
+      'Inspection logs note temperature differentials between attic and living space to verify radiant barrier performance.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 9,
+    category: 'floorplans',
+    question: 'How does Dr. Jan personalize floor-plan tours for each household?',
+    answer:
+      'She arrives with lifestyle questionnaires, furniture dimensions, and work-from-home needs compiled from discovery calls. During tours she overlays those needs onto plan options, capturing video and commentary for replay. Buyers leave knowing exactly how each space can flex for their family.',
+    researchDetail:
+      'Her plan playbooks include annotated diagrams showing desk placement, storage solutions, and traffic patterns specific to each client.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 5,
+    order: 10,
+    category: 'floorplans',
+    question: 'Why does Dr. Jan track option pricing down to the SKU level?',
+    answer:
+      'Because builder pricing shifts quarterly, she maintains historical logs of every structural and design option selected by clients. That data reveals which upgrades hold value and which ones inflate appraisals. Buyers decide upgrades with clarity instead of guesswork.',
+    researchDetail:
+      'Dr. Jan’s option ledger lists cost deltas for sliders, gen suites, and design packages dating back five years.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 11,
+    category: 'floorplans',
+    question: 'How does Dr. Jan vet indoor/outdoor flow for entertainers?',
+    answer:
+      'She measures slider widths, patio depth, and kitchen pass-through lines while noting prevailing wind and sun angles. Her clients receive patio staging layouts showing how many guests the space can host comfortably. Entertaining becomes a planned experience, not an afterthought.',
+    researchDetail:
+      'Sun studies Dr. Jan runs in Sunstone show evening shade coverage on north-facing patios extending 75% of the yard.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 12,
+    category: 'floorplans',
+    question: 'What structural pitfalls does Dr. Jan help buyers avoid post-cutoff?',
+    answer:
+      'She flags commonly forgotten items—soft water loops, hose bibs, floor outlets, bathroom blocking—that cannot be added cheaply later. Clients sign off on a structural checklist before the day-21 deadline. That diligence eliminates costly change orders after framing.',
+    researchDetail:
+      'Her structural checklist covers 42 line items, including accessible shower blocking and EV conduit placement.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 13,
+    category: 'pricing',
+    question: 'How does Dr. Jan model pricing scenarios for hesitant buyers?',
+    answer:
+      'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent “true cost” sheet before they sign.',
+    researchDetail:
+      'Her pricing model references builder option sheets, lender quotes, tax calculators, and NV Energy projections for each plan.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 14,
+    category: 'pricing',
+    question: 'How does Dr. Jan test incentive packages for hidden trade-offs?',
+    answer:
+      'She compares APR and lender fees with and without incentives, then checks closing statements from prior Woodside buyers. If a credit disappears, she renegotiates or shifts lenders. Incentives become a math equation, not a marketing headline.',
+    researchDetail:
+      'Closing disclosure archives reveal where incentives cannibalized other credits—insights Dr. Jan uses to negotiate revisions.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 15,
+    category: 'pricing',
+    question: 'What equity forecasts does Dr. Jan provide before contract?',
+    answer:
+      'She projects five-year appreciation using GLVAR comps, HOA reserves, amenity build-out status, and job-growth forecasts. Buyers see best, base, and conservative equity paths. That analysis makes long-term value part of the initial decision, not hindsight.',
+    researchDetail:
+      'Forecast models incorporate Moody’s employment data, GLVAR price trends, and HOA reserve projections stored in Dr. Jan’s analytics suite.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 16,
+    category: 'pricing',
+    question: 'How does Dr. Jan coach buyers through appraisal contingencies?',
+    answer:
+      'She reviews MLS pendings, builder closings, and option spend ratios to estimate appraisal risk. If risk is high, she positions backup comps, requests option credits, or strategizes appraisal reconsiderations. Buyers enter contract knowing exactly how to guard against value gaps.',
+    researchDetail:
+      'Her appraisal toolkit includes pre-written reconsideration templates and comp packages that align with VA, FHA, and conventional guidelines.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 17,
+    category: 'market',
+    question: 'How does Dr. Jan monitor resale performance for future exit strategies?',
+    answer:
+      'She tracks MLS resale data monthly, noting days on market, list-to-sale ratios, price-per-foot shifts, and buyer feedback trends. Those insights feed into exit strategy plans she shares with current buyers. You purchase with a resale roadmap already mapped out.',
+    researchDetail:
+      'Her resale dashboard covers 2020–present transactions for every Woodside community, color-coded by appreciation tiers.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 18,
+    category: 'market',
+    question: 'How does Dr. Jan help investors evaluate Woodside rental potential?',
+    answer:
+      'She analyzes rental comps, HOA leasing caps, property management fees, and prospective tenant pools for each community. Investors receive cash-flow projections with conservative vacancy rates and maintenance reserves. Decision-making stays data-driven, not speculative.',
+    researchDetail:
+      'Rental worksheets pull from LVRMLS leases, AirDNA short-term metrics where allowed, and SNWA utility averages.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 19,
+    category: 'communities',
+    question: 'How does Dr. Jan match buyers to the right Woodside community?',
+    answer:
+      'Her intake process evaluates commute requirements, school needs, lifestyle amenities, and future growth preferences. She then overlays those criteria with Sunstone, Cadence, and Summerlin data. Buyers tour only the communities that truly fit their goals.',
+    researchDetail:
+      'Community scorecards rate each neighborhood on seven metrics—from HOA health to trail networks—compiled by Dr. Jan.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 20,
+    category: 'communities',
+    question: 'How does Dr. Jan evaluate HOA documents for Woodside buyers?',
+    answer:
+      'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
+    researchDetail:
+      'Sunstone HOA reserves currently sit above 90% funded; Dr. Jan verifies numbers in annual filings prior to buyer commitments.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 21,
+    category: 'communities',
+    question: 'How does Dr. Jan incorporate commute analytics into community decisions?',
+    answer:
+      'She runs live drive tests at the buyer’s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
+    researchDetail:
+      'NDOT project timelines and average travel times get stored in her commute dashboard for Sunstone, Cadence, and Summerlin.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 22,
+    category: 'communities',
+    question: 'How does Dr. Jan prep buyers for future amenity rollouts?',
+    answer:
+      'She confirms amenity budgets, construction schedules, and staffing plans directly with HOA boards and developer meetings. Buyers know when pools, parks, or co-working spaces truly open. That transparency protects against overpromised features.',
+    researchDetail:
+      'HOA meeting minutes documenting amenity timelines are saved in her digital client binders for reference.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 23,
+    category: 'communities',
+    question: 'How does Dr. Jan evaluate school pathways for growing families?',
+    answer:
+      'She maps zoning boundaries, magnet/charter applications, and private-school commute times, then aligns them with each buyer’s goals. Education becomes part of the site-selection matrix. No buyer is surprised by rezoning after moving in.',
+    researchDetail:
+      'She monitors CCSD zoning proposals and charter board approvals, storing PDFs in each client’s planning portal.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 24,
+    category: 'process',
+    question: 'How does Dr. Jan keep builders accountable during construction?',
+    answer:
+      'She maintains spreadsheet trackers with milestone dates, superintendent commitments, and punch-list items. Weekly updates compare promised progress with actual site photos. Escalations happen fast if timelines slip.',
+    researchDetail:
+      'Milestone trackers log framing, mechanical, drywall, cabinets, and final clean dates alongside superintendent sign-offs.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 25,
+    category: 'process',
+    question: 'How does she assist with design studio overwhelm?',
+    answer:
+      'Before appointments she curates mood boards, resale-friendly palettes, and cost ladders keyed to each buyer’s budget. During the session she tracks totals in real time, calling out selections that hurt appraisals. Buyers leave with curated design packages instead of impulse picks.',
+    researchDetail:
+      'Design spreadsheets include line-by-line pricing with notes on resale impact and maintenance considerations.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 26,
+    category: 'process',
+    question: 'How does Dr. Jan prepare buyers for move-in orientation?',
+    answer:
+      'She provides a walk-through checklist covering appliance demos, warranty contacts, smart-home setup, and punch-list verification. Each orientation gets recorded so buyers can reference builder explanations later. Move-in day feels organized, not chaotic.',
+    researchDetail:
+      'Orientation checklists list 68 inspection points, from sprinkler zones to smart-thermostat programming, all signed off at closing.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 27,
+    category: 'process',
+    question: 'What post-close support does Dr. Jan offer Woodside owners?',
+    answer:
+      'She schedules 30-day and 11-month warranty check-ins, connects owners with vetted landscapers and tech integrators, and keeps valuation updates on file. Her buyers stay plugged into community resources and equity forecasts long after they get keys.',
+    researchDetail:
+      'Warranty checklists include photos and issue logs uploaded to Woodside’s portal with superintendent acknowledgment.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 5,
+    order: 28,
+    category: 'market',
+    question: 'How does she differentiate speculative hype from actual demand?',
+    answer:
+      'By tracking MLS absorption, permit filings, employment reports, and rental occupancy, Dr. Jan spots real demand drivers. She shares those dashboards with clients so they can sense when markets soften or heat up. Decisions lean on hard numbers, not sales pitches.',
+    researchDetail:
+      'Her demand dashboard pairs GLVAR absorption rates with Nevada DETR employment forecasts for each submarket.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 29,
+    category: 'market',
+    question: 'How does Dr. Jan support buyers negotiating lot premiums?',
+    answer:
+      'She compares premium pricing history, viewshed analytics, and resale comps to show which premiums return value. If a lot doesn’t justify the premium, she finds alternatives or negotiates concessions. Buyers leverage evidence, not emotion.',
+    researchDetail:
+      'Lot premium logs track price deltas versus final appraised value for more than 80 Woodside contracts.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 30,
+    category: 'market',
+    question: 'What rental safeguards does she recommend for Woodside investors?',
+    answer:
+      'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
+    researchDetail:
+      'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 31,
+    category: 'education',
+    question: 'How does Dr. Jan teach first-time buyers the new construction process?',
+    answer:
+      'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
+    researchDetail:
+      'Onboarding packets include an 18-step roadmap with milestone checklists tailored to Woodside’s build cadence.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 32,
+    category: 'education',
+    question: 'How does she help buyers balance dream upgrades with resale reality?',
+    answer:
+      'By ranking upgrades into “must-have,” “nice-to-have,” and “personal indulgence” categories, then showing how each affects appraisals and resale demand. Buyers can still personalize, but they do so with clear insight into future ROI. Luxury wants stay aligned with equity goals.',
+    researchDetail:
+      'Upgrade scorecards grade selections on cost, maintenance, and appraisal credit so buyers see trade-offs instantly.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 33,
+    category: 'education',
+    question: 'How does Dr. Jan help buyers compare Woodside to resale alternatives?',
+    answer:
+      'She builds total cost-of-ownership comparisons factoring upgrade budgets, utilities, maintenance, and financing scenarios. Resale tours follow alongside new construction so buyers experience both paths. The final decision comes from informed contrast, not speculation.',
+    researchDetail:
+      'Comparison worksheets combine MLS comps, utility estimates, and projected maintenance for 10-year horizons.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 34,
+    category: 'education',
+    question: 'How does she vet third-party contractors who finish Woodside homes?',
+    answer:
+      'Dr. Jan maintains a vetted vendor list for landscaping, window coverings, technology integration, and home maintenance. Vendors must carry proper licensing, insurance, and Woodside familiarity before joining her roster. Buyers plug into trusted resources immediately after close.',
+    researchDetail:
+      'Vendor scorecards log license verification dates, insurance certificates, and client satisfaction ratings.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 35,
+    category: 'education',
+    question: 'How does Dr. Jan prevent surprise costs during closing?',
+    answer:
+      'She pre-audits closing statements, cross-referencing incentive agreements, proration tables, and rate-lock fees. Any discrepancy gets flagged before signing. Buyers sit at the closing table knowing every line item is accurate.',
+    researchDetail:
+      'Closing audit sheets compare loan estimates with final disclosures to ensure incentives and credits carry through.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 36,
+    category: 'process',
+    question: 'How does she manage inspection follow-ups so nothing slips?',
+    answer:
+      'Each inspection finding enters a shared tracker with due dates and superintendent acknowledgments. Dr. Jan verifies completion personally or through third-party inspectors. Buyers never wonder whether punch-list items were addressed.',
+    researchDetail:
+      'Inspection follow-up tracker links photos, superintendent responses, and completion timestamps for accountability.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 37,
+    category: 'process',
+    question: 'What communication cadence does Dr. Jan establish with builders?',
+    answer:
+      'She sets weekly email updates, biweekly field visits, and milestone calls with superintendents at contract signing. Those cadences go into writing so everyone stays aligned. Buyers enjoy transparent, predictable communication for the entire build.',
+    researchDetail:
+      'Communication templates summarize progress, photos, and next steps in a consistent format shared with buyers.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 5,
+    order: 38,
+    category: 'market',
+    question: 'How does Dr. Jan help buyers plan for market shifts after closing?',
+    answer:
+      'She provides annual valuation check-ins, refinance reviews, and rental strategy updates. Buyers know when equity milestones or rate drops make sense to act on. Homeownership becomes a managed asset, not a static purchase.',
+    researchDetail:
+      'Annual equity reports combine current MLS comps, amortization progress, and utility savings totals from Dr. Jan’s databases.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 39,
+    category: 'market',
+    question: 'How does she incorporate regional economic data into the buying decision?',
+    answer:
+      'Dr. Jan tracks job growth, tourism metrics, and corporate relocations to gauge housing demand. She overlays those indicators with Woodside release schedules so buyers buy into strength, not softness. It’s macroeconomics applied directly to your lot decision.',
+    researchDetail:
+      'Her economic dashboard blends Moody’s Analytics employment forecasts with LVCVA tourism stats and Las Vegas Convention pipeline updates.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 5,
+    order: 40,
+    category: 'education',
+    question: 'How does Dr. Jan keep buyers confident from contract to close?',
+    answer:
+      'She backs every step with research—option ROI, inspection data, incentive math, commute analytics, and equity forecasts. Buyers know facts before they sign, not after. Confidence comes from having a dedicated research partner throughout the journey.',
+    researchDetail:
+      'Clients receive a digital binder housing every checklist, report, and timeline update for reference long after closing.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
 ]
 
 export function getFaqsByCategory(

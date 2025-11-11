@@ -65,7 +65,7 @@ const areaSpotlights = [
   },
 ]
 
-const communityFaqs = getFaqsByCategory(['communities'], [1, 2, 3, 4])
+const communityFaqs = getFaqsByCategory(['communities'], [1, 2, 3, 4, 5])
 
 export default function CommunitiesPage() {
   return (
