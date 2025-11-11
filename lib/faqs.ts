@@ -33,7 +33,7 @@ export const faqCategoryMeta: Record<
   specs: {
     title: 'Specifications, Energy Performance & Smart Technology',
     description:
-      "Dive into the technical details—energy efficiency, smart-home integrations, structural engineering, and finish quality verified through Dr. Duffy's field research.",
+      "Dive into the technical details—energy efficiency, smart-home integrations, structural engineering, and finish quality verified through Dr. Duffy\'s field research.",
     anchor: 'specs',
   },
   floorplans: {
@@ -45,7 +45,7 @@ export const faqCategoryMeta: Record<
   pricing: {
     title: 'Pricing, Incentives, Financing & Cost Planning',
     description:
-      "See how incentives, rate buy-downs, closing costs, and appraisal strategies align with Woodside's new construction offerings.",
+      "See how incentives, rate buy-downs, closing costs, and appraisal strategies align with Woodside\'s new construction offerings.",
     anchor: 'pricing',
   },
   communities: {
@@ -57,7 +57,7 @@ export const faqCategoryMeta: Record<
   process: {
     title: 'Buying Process, Inspections & Construction Management',
     description:
-      "Learn each step—from lot reservation to move-in—with Dr. Duffy's checklists, inspection protocols, and coordination strategies.",
+      "Learn each step—from lot reservation to move-in—with Dr. Duffy\'s checklists, inspection protocols, and coordination strategies.",
     anchor: 'process',
   },
   market: {
@@ -129,12 +129,12 @@ export const faqs: FaqEntry[] = [
       'Buyers should expect 6–8 months from contract to delivery when starting a fresh build, assuming weather and supply chains stay normal. Structural decisions lock by week four, with design studio deadlines around framing. Dr. Duffy maintains Gantt charts from past clients to flag milestone slippage and coordinate inspections. Use that timeline to plan rate locks and lease transitions.',
     researchDetail:
       'Dr. Duffy schedules pre-drywall, electrical, and blue-tape walkthroughs at weeks 8, 14, and 24 to keep construction accountable.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 1,
     order: 5,
-    category: \'process',
+    category: 'process',
     question: 'How does Woodside\'s warranty support compare to other builders?',
     answer:
       'Woodside provides a one-year workmanship, two-year systems, and ten-year structural warranty administered through their Customer Care portal. Response times average 5–10 business days, which Dr. Duffy tracks against Lennar, Pulte, and Tri Pointe benchmarks. Homeowners also receive a maintenance manual to prevent voided claims. Review the warranty matrix to understand what\'s covered post-close.',
@@ -239,12 +239,12 @@ export const faqs: FaqEntry[] = [
       'Standard packages include covered loggias, paver patios, and gas stub-outs for outdoor kitchens. Some communities allow full-width patio extensions and pool-ready electrical. Dr. Duffy coordinates landscape architects to design desert-friendly backyards that align with HOA guidelines. Plan shading, turf, and hardscape early to control costs.',
     researchDetail:
       'Sunstone HOA permits pergolas up to 12 feet deep without extra engineering when attached to the home.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 1,
     order: 15,
-    category: \'floorplans',
+    category: 'floorplans',
     question: 'What\'s the difference between building and buying move-in ready?',
     answer:
       'Move-in ready inventory carries designer-selected finishes and can close in 30–60 days, while a ground-up build takes 6–8 months but offers full customization. Price premiums for quick move-ins average $10–$18 per square foot depending on upgrades. Dr. Duffy compares equity projections for both paths to guide timing and budget. Decide based on lease end dates and personalization priorities.',
@@ -349,12 +349,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25 minutes from the Strip via US-95, Cadence is 20 minutes to the airport via I-215, and Summerlin drops to 15 minutes from Downtown Summerlin employers. Dr. Duffy maps traffic trends at peak hours to set realistic commute expectations. Test routes at your actual work schedule before finalizing a lot.',
     researchDetail:
       'Spur Cross (another builder) adds eight minutes to the Strip compared with Sunstone, illustrating why lot selection matters.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 1,
     order: 25,
-    category: \'communities',
+    category: 'communities',
     question: 'What schools serve Woodside communities?',
     answer:
       'Sunstone feeds into Bozarth Elementary, Escobedo Middle, and Centennial High, while Cadence offers access to Lake Mead Christian Academy plus Clark County public schools. Summerlin provides magnet and private options. Dr. Duffy provides ratings and commute times to align school choices with lifestyle. Verify rezoning plans before selecting a lot.',
@@ -459,12 +459,12 @@ export const faqs: FaqEntry[] = [
       'Focus on structural cutoffs, included features, HOA fees, lot premiums, build timeline, warranty response times, and current incentives. Ask for spec sheets, energy ratings, and design studio appointment windows. Dr. Duffy supplies a 23-point checklist to clients before builder tours. Thorough questions reveal hidden costs and timeline risks.',
     researchDetail:
       'Always clarify whether landscaping, appliances, and window coverings are included—policies vary by community and elevation.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 1,
     order: 35,
-    category: \'education',
+    category: 'education',
     question: 'How do elevations differ from floor plans?',
     answer:
       'Elevations change exterior aesthetics—stucco patterns, stone, rooflines—while the floor plan defines interior layout. Elevation pricing ranges $3,500–$12,000 depending on detail. Dr. Duffy reviews CCRs to ensure HOA approval and confirms structural differences tied to elevations. Choose elevations that align with resale appeal and sun exposure.',
@@ -570,12 +570,12 @@ export const faqs: FaqEntry[] = [
       'New builds typically span 6–7.5 months from contract to closing, with framing delivered around week 12 and drywall complete by week 19. Supply-chain delays eased in 2024, though monsoon season can add a week or two. Dr. Duffy maintains milestone trackers and superintendent contacts to keep timelines realistic. Align rate locks and lease end dates with this schedule.',
     researchDetail:
       'Dr. Duffy\'s 2024 clients averaged 205 days from structural lock to keys, with only two delays exceeding 14 days.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 2,
     order: 5,
-    category: \'process',
+    category: 'process',
     question: 'How does Woodside\'s warranty support compare to other builders?',
     answer:
       'The one/two/ten-year warranty structure mirrors industry leaders, with portal-based requests and local superintendents handling dispatch. Average response time in 2024 ran 5.6 days, beating Lennar and Pulte\'s 7+ day averages. Dr. Duffy surveys homeowners quarterly to validate service levels and escalation pathways. Review the warranty manual before closing so you know coverage boundaries.',
@@ -680,12 +680,12 @@ export const faqs: FaqEntry[] = [
       'Covered loggias, pavers, gas stub-outs, and prewired fans come standard; upgrades extend patios, add fireplaces, or install multi-slide doors. Communities enforce design guidelines, so planning early prevents change-order issues. Dr. Duffy partners with landscape architects to budget pool or turf installs within HOA standards. Use sun studies to orient patios effectively.',
     researchDetail:
       'Sunstone HOA allows 600 sq ft of artificial turf with no secondary approval; Cadence caps turf at 40% of the rear yard.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 2,
     order: 15,
-    category: \'floorplans',
+    category: 'floorplans',
     question: 'What\'s the difference between building and buying move-in ready?',
     answer:
       'Move-in ready homes close within 30–60 days and usually list 3–5% above base to cover upgrades and lot premiums; ground-up builds take longer but allow full personalization. Dr. Duffy models total costs—including carry costs and option spend—to determine which fits your timing and equity goals. Consider lease expiration, rate trends, and customization appetite.',
@@ -790,12 +790,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages about 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add ten extra minutes, so Dr. Duffy drives routes at your expected schedule. Plan around future 215 Beltway improvements too.',
     researchDetail:
       'Centennial Hills Medical Center is under ten minutes from Sunstone, making it a top pick for medical professionals.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 2,
     order: 25,
-    category: \'communities',
+    category: 'communities',
     question: 'What schools serve Woodside communities?',
     answer:
       'Sunstone zones to Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus new charter options; Summerlin provides magnet and private programs. A K-8 charter is planned inside Sunstone for 2026. Dr. Duffy compiles boundary maps, ratings, and commute times so education goals guide the lot decision. Verify future rezoning with the district.',
@@ -900,12 +900,12 @@ export const faqs: FaqEntry[] = [
       'Concentrate on structural cut-off dates, included features, HOA dues, lot premiums, build timeline, inspection access, and incentive requirements. Request energy ratings, design studio calendars, and sample option price lists. Dr. Duffy equips clients with a 23-point checklist covering these details. The right questions expose hidden costs and timeline risks.',
     researchDetail:
       'Always confirm whether soft water loops, landscaping, appliances, and window coverings are included—policies differ by community and elevation.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 2,
     order: 35,
-    category: \'education',
+    category: 'education',
     question: 'How do elevations differ from floor plans?',
     answer:
       'Elevations change exterior styling—stucco, stone, rooflines—while floor plans dictate interior layout. Elevations can adjust window placement, parapet heights, and covered entry depth, affecting natural light and curb appeal. Dr. Duffy reviews HOA color palettes and elevation premiums so buyers grasp costs and sun impacts. Pick elevations that balance style with climate performance.',
@@ -1010,12 +1010,12 @@ export const faqs: FaqEntry[] = [
       'Woodside quotes 6–8 months, but Dr. Duffy\'s 2024 clients averaged roughly 205 days from structural lock to keys. Only two closings slipped more than two weeks, usually during monsoon storms. She builds contingency calendars for rate locks, lease ends, and movers so you stay ahead of surprises. Align your financing strategy with that real-world cadence.',
     researchDetail:
       'Typical milestone timing: pre-drywall week 12, drywall complete week 19, trims by week 23—validated by Dr. Duffy\'s onsite checklists.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 3,
     order: 5,
-    category: \'process',
+    category: 'process',
     question: 'How responsive is Woodside\'s warranty team compared with competitors?',
     answer:
       'Warranty tickets averaged 5–6 business days to resolution in 2024, beating Lennar\'s 7+ day metro average and matching Tri Pointe\'s speed. Dr. Duffy maintains escalation contacts with every superintendent to shorten repair times when needed. Knowing those metrics gives buyers confidence beyond marketing promises. Keep the service portal bookmarked and document any issues promptly.',
@@ -1076,12 +1076,12 @@ export const faqs: FaqEntry[] = [
       'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Duffy\'s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
     researchDetail:
       'Woodside\'s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Duffy walks through.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 3,
     order: 11,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How does Dr. Duffy model pricing scenarios for hesitant buyers?',
     answer:
       'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent "true cost" sheet before they sign.',
@@ -1164,12 +1164,12 @@ export const faqs: FaqEntry[] = [
       'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
     researchDetail:
       'Sunstone HOA reserves currently sit above 90% funded; Dr. Duffy verifies numbers in annual filings prior to buyer commitments.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 3,
     order: 19,
-    category: \'communities',
+    category: 'communities',
     question: 'How does Dr. Duffy incorporate commute analytics into community decisions?',
     answer:
       'She runs live drive tests at the buyer\'s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
@@ -1274,12 +1274,12 @@ export const faqs: FaqEntry[] = [
       'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
     researchDetail:
       'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 3,
     order: 29,
-    category: \'education',
+    category: 'education',
     question: 'How does Dr. Duffy teach first-time buyers the new construction process?',
     answer:
       'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
@@ -1384,12 +1384,12 @@ export const faqs: FaqEntry[] = [
       'She backs every step with research—option ROI, inspection data, incentive math, commute analytics, and equity forecasts. Buyers know facts before they sign, not after. Confidence comes from having a dedicated research partner throughout the journey.',
     researchDetail:
       'Clients receive a digital binder housing every checklist, report, and timeline update for reference long after closing.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 4,
     order: 1,
-    category: \'company',
+    category: 'company',
     question: 'How much of Clark County\'s new-home activity does Woodside represent in 2025?',
     answer:
       'Year-to-date Woodside accounts for about 6.8% of Clark County single-family permits, trailing only Lennar and Pulte. Activity clusters around Sunstone, Cadence, and Vireo in Summerlin West. Dr. Duffy monitors permit logs weekly so clients can anticipate releases and lot premiums. Pair permits with absorption rates to time your purchase.',
@@ -1428,12 +1428,12 @@ export const faqs: FaqEntry[] = [
       'A Sunstone Lyra testing at HERS 52 typically lands near $160/month during peak summer, while a HERS 75 resale can exceed $250. Dr. Duffy builds energy models using NV Energy tier rates so buyers can budget accurately. Lower loads cushion against future rate hikes and boost resale marketing.',
     researchDetail:
       'NV Energy\'s 2025 Tier 2 rate is 13.4¢/kWh; Dr. Duffy\'s spreadsheet shows Lyra owners using 1,200 kWh/month stay within Tier 2 thanks to efficient shells.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 4,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'Does Woodside offer solar-ready infrastructure?',
     answer:
       'Sunstone and Cadence communities pre-install rooftop conduit, 200A panels, and structural bracing for 3.0 psf solar arrays. Lennar often includes full solar, while Toll Brothers leaves it entirely post-close. Dr. Duffy tracks NV Energy interconnection steps and incentives so you can plan financing. Solar readiness trims install costs when you decide to add panels.',
@@ -1516,12 +1516,12 @@ export const faqs: FaqEntry[] = [
       'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Duffy\'s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
     researchDetail:
       'Woodside\'s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Duffy walks through.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 4,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How do price-per-square-foot figures compare by community right now?',
     answer:
       'As of May 2025 Sunstone averages ~$258/ft², Cadence ~$244/ft², and Summerlin Vireo ~$282/ft² for Woodside resales. Lennar and Pulte hover within ±$10/ft² but typically offer fewer structural options. Dr. Duffy\'s dashboards update weekly so buyers negotiate with current data. Evaluate cost per foot alongside build quality.',
@@ -1626,12 +1626,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages about 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add ten extra minutes, so Dr. Duffy drives routes at your expected schedule. Plan around future 215 Beltway improvements too.',
     researchDetail:
       'Centennial Hills Medical Center is under ten minutes from Sunstone, making it a top pick for medical professionals.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 4,
     order: 23,
-    category: \'communities',
+    category: 'communities',
     question: 'How do school options stack up for Woodside buyers?',
     answer:
       'Sunstone feeds Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus CCSD schools; Summerlin provides magnet and private options. A K-8 charter is planned inside Sunstone for 2026. Dr. Duffy compiles boundary maps, ratings, and commute times so education goals guide the lot decision. Verify future rezoning with the district.',
@@ -1736,12 +1736,12 @@ export const faqs: FaqEntry[] = [
       'Her matrix scores Woodside, Lennar, Pulte, Tri Pointe, Toll Brothers, and Shea across energy specs, structural flexibility, incentives, warranty response, and HOA health. Scores draw from inspection reports, homeowner interviews, and service logs—not marketing. Clients customize the matrix to their priorities so decisions stay research-driven.',
     researchDetail:
       'Latest matrix ranks Woodside 4.5/5 for energy efficiency while Lennar scores 3.8/5—data Dr. Duffy updates quarterly.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 4,
     order: 33,
-    category: \'education',
+    category: 'education',
     question: 'Which questions uncover hidden costs in builder fine print?',
     answer:
       'Ask how long incentives last, whether lot premiums adjust with views, what\'s included in landscaping, which appliances are standard, and how HOAs treat rentals. Dr. Duffy\'s 23-point checklist flushes out fees and restrictions that sales reps often gloss over. Armed with answers, you negotiate from strength.',
@@ -1868,12 +1868,12 @@ export const faqs: FaqEntry[] = [
       'She reviews mechanical schedules, HERS certificates, and NV Energy usage projections for every plan. Those numbers feed a 10-year cost-of-ownership model comparing Woodside to resale options. Buyers see how efficiency lowers total monthly spend, which often justifies higher upfront pricing.',
     researchDetail:
       'Energy models in Dr. Duffy\'s workbook use NV Energy tiered rates, builder-provided kWh estimates, and insulation specs verified during pre-drywall.',
-    cta: `Let's compare all your options - call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options - call/text ${PHONE}.`,
   },
   {
     iteration: 5,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'How does Dr. Duffy confirm smart-home tech works out of the box?',
     answer:
       'She coordinates low-voltage walkthroughs at pre-drywall to verify Cat6 drops, conduit locations, and panel terminations. After closing, her tech partners perform activation checks so Wi-Fi thermostats, smart garages, and security prewires go live without surprises. Buyer convenience stays front and center.',
@@ -1956,12 +1956,12 @@ export const faqs: FaqEntry[] = [
       'She flags commonly forgotten items—soft water loops, hose bibs, floor outlets, bathroom blocking—that cannot be added cheaply later. Clients sign off on a structural checklist before the day-21 deadline. That diligence eliminates costly change orders after framing.',
     researchDetail:
       'Her structural checklist covers 42 line items, including accessible shower blocking and EV conduit placement.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 5,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How does Dr. Duffy model pricing scenarios for hesitant buyers?',
     answer:
       'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent "true cost" sheet before they sign.',
@@ -2044,12 +2044,12 @@ export const faqs: FaqEntry[] = [
       'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
     researchDetail:
       'Sunstone HOA reserves currently sit above 90% funded; Dr. Duffy verifies numbers in annual filings prior to buyer commitments.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 5,
     order: 21,
-    category: \'communities',
+    category: 'communities',
     question: 'How does Dr. Duffy incorporate commute analytics into community decisions?',
     answer:
       'She runs live drive tests at the buyer\'s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
@@ -2154,12 +2154,12 @@ export const faqs: FaqEntry[] = [
       'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
     researchDetail:
       'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 5,
     order: 31,
-    category: \'education',
+    category: 'education',
     question: 'How does Dr. Duffy teach first-time buyers the new construction process?',
     answer:
       'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
@@ -2264,12 +2264,12 @@ export const faqs: FaqEntry[] = [
       'She backs every step with research—option ROI, inspection data, incentive math, commute analytics, and equity forecasts. Buyers know facts before they sign, not after. Confidence comes from having a dedicated research partner throughout the journey.',
     researchDetail:
       'Clients receive a digital binder housing every checklist, report, and timeline update for reference long after closing.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 6,
     order: 1,
-    category: \'company',
+    category: 'company',
     question: 'How much of Clark County\'s new-home activity does Woodside represent in 2025?',
     answer:
       'Year-to-date Woodside accounts for about 6.8% of Clark County single-family permits, trailing only Lennar and Pulte. Activity clusters around Sunstone, Cadence, and Vireo in Summerlin West. Dr. Duffy monitors permit logs weekly so clients can anticipate releases and lot premiums. Pair permits with absorption rates to time your purchase.',
@@ -2308,12 +2308,12 @@ export const faqs: FaqEntry[] = [
       'A Sunstone Lyra testing at HERS 52 typically lands near $160/month during peak summer, while a HERS 75 resale can exceed $250. Dr. Duffy builds energy models using NV Energy tier rates so buyers can budget accurately. Lower loads cushion against future rate hikes and boost resale marketing.',
     researchDetail:
       'NV Energy\'s 2025 Tier 2 rate is 13.4¢/kWh; Dr. Duffy\'s spreadsheet shows Lyra owners using 1,200 kWh/month stay within Tier 2 thanks to efficient shells.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 6,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'Does Woodside offer solar-ready infrastructure?',
     answer:
       'Sunstone and Cadence communities pre-install rooftop conduit, 200A panels, and structural bracing for 3.0 psf solar arrays. Lennar often includes full solar, while Toll Brothers leaves it entirely post-close. Dr. Duffy tracks NV Energy interconnection steps and incentives so you can plan financing. Solar readiness trims install costs when you decide to add panels.',
@@ -2396,12 +2396,12 @@ export const faqs: FaqEntry[] = [
       'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Duffy\'s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
     researchDetail:
       'Woodside\'s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Duffy walks through.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 6,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How do price-per-square-foot figures compare by community right now?',
     answer:
       'As of May 2025 Sunstone averages ~$258/ft², Cadence ~$244/ft², and Summerlin Vireo ~$282/ft² for Woodside resales. Lennar and Pulte hover within ±$10/ft² but typically offer fewer structural options. Dr. Duffy\'s dashboards update weekly so buyers negotiate with current data. Evaluate cost per foot alongside build quality.',
@@ -2506,12 +2506,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages about 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add ten extra minutes, so Dr. Duffy drives routes at your expected schedule. Plan around future 215 Beltway improvements too.',
     researchDetail:
       'Centennial Hills Medical Center is under ten minutes from Sunstone, making it a top pick for medical professionals.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 6,
     order: 23,
-    category: \'communities',
+    category: 'communities',
     question: 'How do school options stack up for Woodside buyers?',
     answer:
       'Sunstone feeds Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus CCSD schools; Summerlin provides magnet and private options. A K-8 charter is planned inside Sunstone for 2026. Dr. Duffy compiles boundary maps, ratings, and commute times so education goals guide the lot decision. Verify future rezoning with the district.',
@@ -2616,12 +2616,12 @@ export const faqs: FaqEntry[] = [
       'Her matrix scores Woodside, Lennar, Pulte, Tri Pointe, Toll Brothers, and Shea across energy specs, structural flexibility, incentives, warranty response, and HOA health. Scores draw from inspection reports, homeowner interviews, and service logs—not marketing. Clients customize the matrix to their priorities so decisions stay research-driven.',
     researchDetail:
       'Latest matrix ranks Woodside 4.5/5 for energy efficiency while Lennar scores 3.8/5—data Dr. Duffy updates quarterly.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 6,
     order: 33,
-    category: \'education',
+    category: 'education',
     question: 'Which questions uncover hidden costs in builder fine print?',
     answer:
       'Ask how long incentives last, whether lot premiums adjust with views, what\'s included in landscaping, which appliances are standard, and how HOAs treat rentals. Dr. Duffy\'s 23-point checklist flushes out fees and restrictions that sales reps often gloss over. Armed with answers, you negotiate from strength.',
@@ -2748,12 +2748,12 @@ export const faqs: FaqEntry[] = [
       'She reviews mechanical schedules, HERS certificates, and NV Energy usage projections for every plan. Those numbers feed a 10-year cost-of-ownership model comparing Woodside to resale options. Buyers see how efficiency lowers total monthly spend, which often justifies higher upfront pricing.',
     researchDetail:
       'Energy models in Dr. Duffy\'s workbook use NV Energy tiered rates, builder-provided kWh estimates, and insulation specs verified during pre-drywall.',
-    cta: `Let's compare all your options - call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options - call/text ${PHONE}.`,
   },
   {
     iteration: 7,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'How does Dr. Duffy confirm smart-home tech works out of the box?',
     answer:
       'She coordinates low-voltage walkthroughs at pre-drywall to verify Cat6 drops, conduit locations, and panel terminations. After closing, her tech partners perform activation checks so Wi-Fi thermostats, smart garages, and security prewires go live without surprises. Buyer convenience stays front and center.',
@@ -2836,12 +2836,12 @@ export const faqs: FaqEntry[] = [
       'She flags commonly forgotten items—soft water loops, hose bibs, floor outlets, bathroom blocking—that cannot be added cheaply later. Clients sign off on a structural checklist before the day-21 deadline. That diligence eliminates costly change orders after framing.',
     researchDetail:
       'Her structural checklist covers 42 line items, including accessible shower blocking and EV conduit placement.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 7,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How does Dr. Duffy model pricing scenarios for hesitant buyers?',
     answer:
       'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent "true cost" sheet before they sign.',
@@ -2924,12 +2924,12 @@ export const faqs: FaqEntry[] = [
       'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
     researchDetail:
       'Sunstone HOA reserves currently sit above 90% funded; Dr. Duffy verifies numbers in annual filings prior to buyer commitments.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 7,
     order: 21,
-    category: \'communities',
+    category: 'communities',
     question: 'How does Dr. Duffy incorporate commute analytics into community decisions?',
     answer:
       'She runs live drive tests at the buyer\'s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
@@ -3034,12 +3034,12 @@ export const faqs: FaqEntry[] = [
       'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
     researchDetail:
       'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 7,
     order: 31,
-    category: \'education',
+    category: 'education',
     question: 'How does Dr. Duffy teach first-time buyers the new construction process?',
     answer:
       'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
@@ -3144,12 +3144,12 @@ export const faqs: FaqEntry[] = [
       'She backs every step with research—option ROI, inspection data, incentive math, commute analytics, and equity forecasts. Buyers know facts before they sign, not after. Confidence comes from having a dedicated research partner throughout the journey.',
     researchDetail:
       'Clients receive a digital binder housing every checklist, report, and timeline update for reference long after closing.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 8,
     order: 1,
-    category: \'company',
+    category: 'company',
     question: 'How much of Clark County\'s new-home activity does Woodside represent in 2025?',
     answer:
       'Year-to-date Woodside accounts for about 6.8% of Clark County single-family permits, trailing only Lennar and Pulte. Activity clusters around Sunstone, Cadence, and Vireo in Summerlin West. Dr. Duffy monitors permit logs weekly so clients can anticipate releases and lot premiums. Pair permits with absorption rates to time your purchase.',
@@ -3188,12 +3188,12 @@ export const faqs: FaqEntry[] = [
       'A Sunstone Lyra testing at HERS 52 typically lands near $160/month during peak summer, while a HERS 75 resale can exceed $250. Dr. Duffy builds energy models using NV Energy tier rates so buyers can budget accurately. Lower loads cushion against future rate hikes and boost resale marketing.',
     researchDetail:
       'NV Energy\'s 2025 Tier 2 rate is 13.4¢/kWh; Dr. Duffy\'s spreadsheet shows Lyra owners using 1,200 kWh/month stay within Tier 2 thanks to efficient shells.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 8,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'Does Woodside offer solar-ready infrastructure?',
     answer:
       'Sunstone and Cadence communities pre-install rooftop conduit, 200A panels, and structural bracing for 3.0 psf solar arrays. Lennar often includes full solar, while Toll Brothers leaves it entirely post-close. Dr. Duffy tracks NV Energy interconnection steps and incentives so you can plan financing. Solar readiness trims install costs when you decide to add panels.',
@@ -3276,12 +3276,12 @@ export const faqs: FaqEntry[] = [
       'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Duffy\'s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
     researchDetail:
       'Woodside\'s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Duffy walks through.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 8,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How do price-per-square-foot figures compare by community right now?',
     answer:
       'As of May 2025 Sunstone averages ~$258/ft², Cadence ~$244/ft², and Summerlin Vireo ~$282/ft² for Woodside resales. Lennar and Pulte hover within ±$10/ft² but typically offer fewer structural options. Dr. Duffy\'s dashboards update weekly so buyers negotiate with current data. Evaluate cost per foot alongside build quality.',
@@ -3386,12 +3386,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages about 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add ten extra minutes, so Dr. Duffy drives routes at your expected schedule. Plan around future 215 Beltway improvements too.',
     researchDetail:
       'Centennial Hills Medical Center is under ten minutes from Sunstone, making it a top pick for medical professionals.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 8,
     order: 23,
-    category: \'communities',
+    category: 'communities',
     question: 'How do school options stack up for Woodside buyers?',
     answer:
       'Sunstone feeds Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus CCSD schools; Summerlin provides magnet and private options. A K-8 charter is planned inside Sunstone for 2026. Dr. Duffy compiles boundary maps, ratings, and commute times so education goals guide the lot decision. Verify future rezoning with the district.',
@@ -3496,12 +3496,12 @@ export const faqs: FaqEntry[] = [
       'Her matrix scores Woodside, Lennar, Pulte, Tri Pointe, Toll Brothers, and Shea across energy specs, structural flexibility, incentives, warranty response, and HOA health. Scores draw from inspection reports, homeowner interviews, and service logs—not marketing. Clients customize the matrix to their priorities so decisions stay research-driven.',
     researchDetail:
       'Latest matrix ranks Woodside 4.5/5 for energy efficiency while Lennar scores 3.8/5—data Dr. Duffy updates quarterly.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 8,
     order: 33,
-    category: \'education',
+    category: 'education',
     question: 'Which questions uncover hidden costs in builder fine print?',
     answer:
       'Ask how long incentives last, whether lot premiums adjust with views, what\'s included in landscaping, which appliances are standard, and how HOAs treat rentals. Dr. Duffy\'s 23-point checklist flushes out fees and restrictions that sales reps often gloss over. Armed with answers, you negotiate from strength.',
@@ -3628,12 +3628,12 @@ export const faqs: FaqEntry[] = [
       'She reviews mechanical schedules, HERS certificates, and NV Energy usage projections for every plan. Those numbers feed a 10-year cost-of-ownership model comparing Woodside to resale options. Buyers see how efficiency lowers total monthly spend, which often justifies higher upfront pricing.',
     researchDetail:
       'Energy models in Dr. Duffy\'s workbook use NV Energy tiered rates, builder-provided kWh estimates, and insulation specs verified during pre-drywall.',
-    cta: `Let's compare all your options - call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options - call/text ${PHONE}.`,
   },
   {
     iteration: 9,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'How does Dr. Duffy confirm smart-home tech works out of the box?',
     answer:
       'She coordinates low-voltage walkthroughs at pre-drywall to verify Cat6 drops, conduit locations, and panel terminations. After closing, her tech partners perform activation checks so Wi-Fi thermostats, smart garages, and security prewires go live without surprises. Buyer convenience stays front and center.',
@@ -3716,12 +3716,12 @@ export const faqs: FaqEntry[] = [
       'She flags commonly forgotten items—soft water loops, hose bibs, floor outlets, bathroom blocking—that cannot be added cheaply later. Clients sign off on a structural checklist before the day-21 deadline. That diligence eliminates costly change orders after framing.',
     researchDetail:
       'Her structural checklist covers 42 line items, including accessible shower blocking and EV conduit placement.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 9,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How does Dr. Duffy model pricing scenarios for hesitant buyers?',
     answer:
       'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent "true cost" sheet before they sign.',
@@ -3804,12 +3804,12 @@ export const faqs: FaqEntry[] = [
       'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
     researchDetail:
       'Sunstone HOA reserves currently sit above 90% funded; Dr. Duffy verifies numbers in annual filings prior to buyer commitments.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 9,
     order: 21,
-    category: \'communities',
+    category: 'communities',
     question: 'How does Dr. Duffy incorporate commute analytics into community decisions?',
     answer:
       'She runs live drive tests at the buyer\'s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
@@ -3914,12 +3914,12 @@ export const faqs: FaqEntry[] = [
       'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
     researchDetail:
       'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 9,
     order: 31,
-    category: \'education',
+    category: 'education',
     question: 'How does Dr. Duffy teach first-time buyers the new construction process?',
     answer:
       'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
@@ -4024,12 +4024,12 @@ export const faqs: FaqEntry[] = [
       'She backs every step with research—option ROI, inspection data, incentive math, commute analytics, and equity forecasts. Buyers know facts before they sign, not after. Confidence comes from having a dedicated research partner throughout the journey.',
     researchDetail:
       'Clients receive a digital binder housing every checklist, report, and timeline update for reference long after closing.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 10,
     order: 1,
-    category: \'company',
+    category: 'company',
     question: 'How much of Clark County\'s new-home activity does Woodside represent in 2025?',
     answer:
       'Year-to-date Woodside accounts for about 6.8% of Clark County single-family permits, trailing only Lennar and Pulte. Activity clusters around Sunstone, Cadence, and Vireo in Summerlin West. Dr. Duffy monitors permit logs weekly so clients can anticipate releases and lot premiums. Pair permits with absorption rates to time your purchase.',
@@ -4068,12 +4068,12 @@ export const faqs: FaqEntry[] = [
       'A Sunstone Lyra testing at HERS 52 typically lands near $160/month during peak summer, while a HERS 75 resale can exceed $250. Dr. Duffy builds energy models using NV Energy tier rates so buyers can budget accurately. Lower loads cushion against future rate hikes and boost resale marketing.',
     researchDetail:
       'NV Energy\'s 2025 Tier 2 rate is 13.4¢/kWh; Dr. Duffy\'s spreadsheet shows Lyra owners using 1,200 kWh/month stay within Tier 2 thanks to efficient shells.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 10,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'Does Woodside offer solar-ready infrastructure?',
     answer:
       'Sunstone and Cadence communities pre-install rooftop conduit, 200A panels, and structural bracing for 3.0 psf solar arrays. Lennar often includes full solar, while Toll Brothers leaves it entirely post-close. Dr. Duffy tracks NV Energy interconnection steps and incentives so you can plan financing. Solar readiness trims install costs when you decide to add panels.',
@@ -4156,12 +4156,12 @@ export const faqs: FaqEntry[] = [
       'Structural selections (gen suites, sliders, patio extensions, garage conversions) must lock within 21 days of contract; after that only design finishes can change. Dr. Duffy\'s structural checklist ensures buyers prioritize items with framing impact before the cutoff. Missing the window means expensive change orders or post-close remodels.',
     researchDetail:
       'Woodside\'s structural change policy increases costs 20% after day 21—spelled out in purchase agreement addenda Dr. Duffy walks through.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 10,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How do price-per-square-foot figures compare by community right now?',
     answer:
       'As of May 2025 Sunstone averages ~$258/ft², Cadence ~$244/ft², and Summerlin Vireo ~$282/ft² for Woodside resales. Lennar and Pulte hover within ±$10/ft² but typically offer fewer structural options. Dr. Duffy\'s dashboards update weekly so buyers negotiate with current data. Evaluate cost per foot alongside build quality.',
@@ -4266,12 +4266,12 @@ export const faqs: FaqEntry[] = [
       'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages about 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add ten extra minutes, so Dr. Duffy drives routes at your expected schedule. Plan around future 215 Beltway improvements too.',
     researchDetail:
       'Centennial Hills Medical Center is under ten minutes from Sunstone, making it a top pick for medical professionals.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 10,
     order: 23,
-    category: \'communities',
+    category: 'communities',
     question: 'How do school options stack up for Woodside buyers?',
     answer:
       'Sunstone feeds Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus CCSD schools; Summerlin provides magnet and private options. A K-8 charter is planned inside Sunstone for 2026. Dr. Duffy compiles boundary maps, ratings, and commute times so education goals guide the lot decision. Verify future rezoning with the district.',
@@ -4376,12 +4376,12 @@ export const faqs: FaqEntry[] = [
       'Her matrix scores Woodside, Lennar, Pulte, Tri Pointe, Toll Brothers, and Shea across energy specs, structural flexibility, incentives, warranty response, and HOA health. Scores draw from inspection reports, homeowner interviews, and service logs—not marketing. Clients customize the matrix to their priorities so decisions stay research-driven.',
     researchDetail:
       'Latest matrix ranks Woodside 4.5/5 for energy efficiency while Lennar scores 3.8/5—data Dr. Duffy updates quarterly.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 10,
     order: 33,
-    category: \'education',
+    category: 'education',
     question: 'Which questions uncover hidden costs in builder fine print?',
     answer:
       'Ask how long incentives last, whether lot premiums adjust with views, what\'s included in landscaping, which appliances are standard, and how HOAs treat rentals. Dr. Duffy\'s 23-point checklist flushes out fees and restrictions that sales reps often gloss over. Armed with answers, you negotiate from strength.',
@@ -4508,12 +4508,12 @@ export const faqs: FaqEntry[] = [
       'She reviews mechanical schedules, HERS certificates, and NV Energy usage projections for every plan. Those numbers feed a 10-year cost-of-ownership model comparing Woodside to resale options. Buyers see how efficiency lowers total monthly spend, which often justifies higher upfront pricing.',
     researchDetail:
       'Energy models in Dr. Duffy\'s workbook use NV Energy tiered rates, builder-provided kWh estimates, and insulation specs verified during pre-drywall.',
-    cta: `Let's compare all your options - call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options - call/text ${PHONE}.`,
   },
   {
     iteration: 11,
     order: 5,
-    category: \'specs',
+    category: 'specs',
     question: 'How does Dr. Duffy confirm smart-home tech works out of the box?',
     answer:
       'She coordinates low-voltage walkthroughs at pre-drywall to verify Cat6 drops, conduit locations, and panel terminations. After closing, her tech partners perform activation checks so Wi-Fi thermostats, smart garages, and security prewires go live without surprises. Buyer convenience stays front and center.',
@@ -4596,12 +4596,12 @@ export const faqs: FaqEntry[] = [
       'She flags commonly forgotten items—soft water loops, hose bibs, floor outlets, bathroom blocking—that cannot be added cheaply later. Clients sign off on a structural checklist before the day-21 deadline. That diligence eliminates costly change orders after framing.',
     researchDetail:
       'Her structural checklist covers 42 line items, including accessible shower blocking and EV conduit placement.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 11,
     order: 13,
-    category: \'pricing',
+    category: 'pricing',
     question: 'How does Dr. Duffy model pricing scenarios for hesitant buyers?',
     answer:
       'She builds side-by-side comparisons with base price, structural upgrades, design packages, incentives, taxes, HOA dues, and expected utilities. That spreadsheet updates live as new incentives publish. Buyers get a transparent "true cost" sheet before they sign.',
@@ -4684,12 +4684,12 @@ export const faqs: FaqEntry[] = [
       'She reviews covenants, budgets, reserve studies, and rental caps with a focus on long-term sustainability. Any red flags—like underfunded reserves or strict design limits—get flagged before contract. You enter with eyes wide open.',
     researchDetail:
       'Sunstone HOA reserves currently sit above 90% funded; Dr. Duffy verifies numbers in annual filings prior to buyer commitments.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 11,
     order: 21,
-    category: \'communities',
+    category: 'communities',
     question: 'How does Dr. Duffy incorporate commute analytics into community decisions?',
     answer:
       'She runs live drive tests at the buyer\'s actual rush-hour schedule, logs Waze and NDOT updates, and tracks upcoming road projects. That data informs lot orientation and community selection. Commute comfort becomes a quantified metric, not a guess.',
@@ -4794,12 +4794,12 @@ export const faqs: FaqEntry[] = [
       'She reviews HOA short-term rules, secures landlord insurance quotes, and outlines cash reserves for vacancy and repairs. Investors also get introductions to vetted property managers familiar with Woodside warranties. Passive income stays protected.',
     researchDetail:
       'Her landlord readiness guide details HOA rental caps, SNWA utility averages, and expected maintenance allowances per community.',
-    cta: `Let's compare all your options – call/text ${PHONE}.`,
+    cta: `Let\'s compare all your options – call/text ${PHONE}.`,
   },
   {
     iteration: 11,
     order: 31,
-    category: \'education',
+    category: 'education',
     question: 'How does Dr. Duffy teach first-time buyers the new construction process?',
     answer:
       'She hosts onboarding sessions covering financing, structural deadlines, inspections, warranty, and move-in logistics. Each buyer receives a timeline dashboard and glossary so unfamiliar terms never become roadblocks. Education is proactive, not reactionary.',
