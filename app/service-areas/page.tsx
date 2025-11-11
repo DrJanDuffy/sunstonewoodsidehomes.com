@@ -10,13 +10,21 @@ export default function ServiceAreasIndexPage() {
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
           Service Areas
         </p>
-        <h1 className="text-balance text-4xl font-semibold text-foreground sm:text-5xl">
-          Your guide to Northwest Las Vegas living
+        <h1 className="text-balance text-4xl font-bold text-foreground sm:text-5xl">
+          Live where desert adventure meets modern convenience
         </h1>
         <p className="text-lg text-muted-foreground">
-          Explore Dr. Janet Duffy’s core markets—Sunstone, Summerlin, Skye Canyon, and
-          surrounding Northwest Las Vegas communities. Compare lifestyle, amenities, pricing, and
-          buyer insights before you tour.
+          Capella at Sunstone places you moments from trails, regional parks, and all the daily
+          essentials. Dr. Duffy curates neighborhood tours that showcase how each pocket fits your
+          move-in goals. Compare quick-closing options in the{' '}
+          <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:underline">
+            move-in-ready collection
+          </Link>{' '}
+          and reach out through our{' '}
+          <Link href="/contact" className="text-primary underline-offset-2 hover:underline">
+            concierge team
+          </Link>
+          .
         </p>
       </header>
 

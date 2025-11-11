@@ -29,7 +29,15 @@ export default function SiteFooter() {
           <p className="text-sm text-muted-foreground">
             Dedicated to guiding homebuyers through Sunstone, Summerlin, and the
             Greater Las Vegas Valley with data-driven strategy and concierge
-            service.
+            service. Browse our{' '}
+            <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:underline">
+              move-in-ready homes
+            </Link>{' '}
+            and schedule a tour from the{' '}
+            <Link href="/contact" className="text-primary underline-offset-2 hover:underline">
+              contact page
+            </Link>
+            .
           </p>
         </div>
 

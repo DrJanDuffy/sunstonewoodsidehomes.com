@@ -146,8 +146,15 @@ export default function HomePage() {
             </h1>
             <p className="text-lg text-muted-foreground sm:text-xl">
               Explore Woodside Homes’ newest collection of one-level residences with premium finishes,
-              energy efficiency, and sweeping mountain views. Book a private tour to experience
-              move-in ready homes and designer model plans today.
+              energy efficiency, and sweeping mountain views. Learn about each neighborhood inside our{' '}
+              <Link href="/service-areas" className="text-primary underline-offset-2 hover:underline">
+                service area guide
+              </Link>{' '}
+              and preview fully furnished options in the{' '}
+              <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:underline">
+                move-in-ready collection
+              </Link>
+              .
             </p>
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-start">
               <a
@@ -163,6 +170,12 @@ export default function HomePage() {
                 View home plans
               </a>
             </div>
+            <Link
+              href="/service-areas"
+              className="inline-flex items-center justify-center text-sm font-semibold text-primary underline-offset-2 hover:underline"
+            >
+              Explore all Sunstone and Cadence communities &rsaquo;
+            </Link>
           </div>
           <div className="flex-1 space-y-4">
             <div className="rounded-3xl border border-border/70 bg-card/80 p-6 shadow-lg backdrop-blur">

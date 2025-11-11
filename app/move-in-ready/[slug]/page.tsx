@@ -153,10 +153,18 @@ export default async function MoveInReadyDetailPage({
           <h3 className="text-base font-semibold text-foreground">Neighborhood snapshot</h3>
           <p>
             Minutes from Cadence Central Park amenities, top-rated charter schools, and freeway
-            access—or explore Sunstone trails if you are touring the Northwest valley listings.
+            access—or explore Sunstone trails if you are touring the Northwest valley listings. Dive deeper into each area on our{' '}
+            <Link href="/service-areas" className="text-primary underline-offset-2 hover:underline">
+              service area overview
+            </Link>
+            .
           </p>
           <div className="rounded-2xl border border-border/70 bg-card/70 p-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            Imaging your furniture? Ask Dr. Duffy for the full design studio spec sheet and floor plan PDFs.
+            Imaging your furniture? Ask Dr. Duffy for the full design studio spec sheet and floor plan PDFs, and compare layouts in our{' '}
+            <Link href="/models" className="text-primary underline-offset-2 hover:underline">
+              model gallery
+            </Link>
+            .
           </div>
         </aside>
       </section>
@@ -185,7 +193,11 @@ export default async function MoveInReadyDetailPage({
           >
             {CONTACT_EMAIL}
           </a>{' '}
-          to secure a private tour window or request a same-day video walk-through.
+          to secure a private tour window or request a same-day video walk-through. Want to compare other quick closings? Visit the{' '}
+          <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:underline">
+            full move-in-ready collection
+          </Link>
+          .
         </p>
       </section>
     </div>
