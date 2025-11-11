@@ -3,12 +3,16 @@ import Link from 'next/link'
 
 import { serviceAreas } from '@/lib/service-areas'
 import { CONTACT_EMAIL } from '@/lib/site'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
   title: 'Las Vegas Service Areas | Sunstone Woodside Neighborhood Guides',
   description:
     'Review Sunstone, Cadence, Summerlin, Skye Canyon, and Northwest Las Vegas insights curated by Dr. Jan Duffy for new construction buyers.',
 }
+
+const marketFaqs = getFaqsByCategory(['market'], [1, 2])
 
 export default function ServiceAreasIndexPage() {
   return (
@@ -75,6 +79,12 @@ export default function ServiceAreasIndexPage() {
           </article>
         ))}
       </section>
+
+      <FaqSection
+        title="Woodside Market Research & Investment FAQs"
+        faqs={marketFaqs}
+        className="mt-16"
+      />
     </div>
   )
 }

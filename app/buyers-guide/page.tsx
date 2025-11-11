@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 import { CONTACT_EMAIL, CONTACT_PHONE_LINK, CONTACT_PHONE } from '@/lib/site'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
   title: 'Las Vegas New Construction Buyer Guide | Dr. Jan Duffy',
@@ -82,6 +84,8 @@ const faqs = [
       'Bring inspiration photos, must-have upgrades, and a working budget. Dr. Duffy shares curated lookbooks for Capella, Lyra, and Meridian collections, plus outlines which structural choices must be locked before the design visit.',
   },
 ]
+
+const guideFaqs = getFaqsByCategory(['process', 'education'], [1, 2])
 
 export default function BuyersGuidePage() {
   return (
@@ -205,6 +209,12 @@ export default function BuyersGuidePage() {
           </Link>
         </div>
       </section>
+
+      <FaqSection
+        title="Woodside Buying Process & Buyer Education FAQs"
+        faqs={guideFaqs}
+        className="mt-16"
+      />
 
       <section className="rounded-3xl border border-border bg-card/70 p-8 shadow-sm">
         <h2 className="text-2xl font-semibold text-foreground">Buyer FAQs</h2>

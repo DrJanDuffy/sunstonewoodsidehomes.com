@@ -1,0 +1,922 @@
+export type FaqCategory =
+  | 'company'
+  | 'specs'
+  | 'floorplans'
+  | 'pricing'
+  | 'communities'
+  | 'process'
+  | 'market'
+  | 'education'
+
+export type FaqEntry = {
+  iteration: number
+  order: number
+  category: FaqCategory
+  question: string
+  answer: string
+  researchDetail: string
+  cta: string
+}
+
+const PHONE = '(702) 766-7950'
+
+export const faqs: FaqEntry[] = [
+  // Iteration 1 - Company & Philosophy
+  {
+    iteration: 1,
+    order: 1,
+    category: 'company',
+    question: 'Who is Woodside Homes and how established are they in Las Vegas?',
+    answer:
+      'Woodside Homes has been building in Las Vegas for more than 40 years under the backing of Sekisui House, Japan’s largest homebuilder. They currently operate across Summerlin, Henderson, and North Las Vegas with Life-Inspired Design principles. Buyers can rely on consistent build processes that have powered 500+ closings Dr. Jan Duffy has researched for clients. Start by reviewing their master-planned footprints before narrowing plans.',
+    researchDetail:
+      'Sekisui House acquired Woodside in 2017, strengthening financial stability and sustainability benchmarks for the Las Vegas division.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 1,
+    order: 2,
+    category: 'company',
+    question: 'What does Woodside Homes mean by “Life-Inspired Design”?',
+    answer:
+      'Life-Inspired Design translates homeowner interviews into floor plans that prioritize kitchen flow, storage, and indoor-outdoor transitions. In Las Vegas, that shows up as sliding-stack doors, drop zones, and flexible lofts tailored to desert living. Dr. Jan documents how each plan’s ergonomics impact furniture placement and HVAC efficiency. Evaluate how your daily routines align with these design cues.',
+    researchDetail:
+      'Capella at Sunstone’s Aries plan includes a 12-foot stacking slider that boosts airflow while maintaining energy performance.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 3,
+    category: 'specs',
+    question: 'How energy-efficient are Woodside homes in the valley climate?',
+    answer:
+      'Every Las Vegas Woodside build exceeds Energy Star 3.1 with radiant barriers, Low-E2 vinyl windows, R-38 attic insulation, and dual programmable thermostats. Desert-engineered HVAC systems keep attic temps up to 30°F cooler than older resale inventory. Dr. Jan benchmarks HERS scores for clients to estimate annual utility spend versus comparable builders. Compare energy projections to understand lifetime cost of ownership.',
+    researchDetail:
+      'The Lyra Collection I typically posts HERS ratings in the mid-50s, saving roughly $1,200 per year on utilities versus 1990s resales.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 4,
+    category: 'process',
+    question: 'What is Woodside’s average build timeline in Las Vegas?',
+    answer:
+      'Buyers should expect 6–8 months from contract to delivery when starting a fresh build, assuming weather and supply chains stay normal. Structural decisions lock by week four, with design studio deadlines around framing. Dr. Jan maintains Gantt charts from past clients to flag milestone slippage and coordinate inspections. Use that timeline to plan rate locks and lease transitions.',
+    researchDetail:
+      'Dr. Jan schedules pre-drywall, electrical, and blue-tape walkthroughs at weeks 8, 14, and 24 to keep construction accountable.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 5,
+    category: 'process',
+    question: 'How does Woodside’s warranty support compare to other builders?',
+    answer:
+      'Woodside provides a one-year workmanship, two-year systems, and ten-year structural warranty administered through their Customer Care portal. Response times average 5–10 business days, which Dr. Jan tracks against Lennar, Pulte, and Tri Pointe benchmarks. Homeowners also receive a maintenance manual to prevent voided claims. Review the warranty matrix to understand what’s covered post-close.',
+    researchDetail:
+      'Warranty escalations handled by Dr. Jan in 2024 averaged 72 hours to resolution, quicker than most large builders in the valley.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 6,
+    category: 'floorplans',
+    question: 'How does Woodside compare with other Las Vegas builders on customization?',
+    answer:
+      'Woodside sits between production and semi-custom, allowing structural add-ons like multi-gen suites, garage extensions, and expanded patios. Their design studio offers 1,200+ finish SKUs curated for desert durability. Dr. Jan benchmarks upgrade price sheets across Woodside, Toll Brothers, and Richmond American to keep budgets efficient. Map your must-have upgrades before design day.',
+    researchDetail:
+      'Garage depth extensions typically price at $7,500–$9,800 depending on load-bearing requirements and community.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 7,
+    category: 'company',
+    question: 'What reputation does Woodside have with Las Vegas homeowners?',
+    answer:
+      'Consumer feedback highlights consistent build quality, energy savings, and collaborative design teams, with occasional communication delays flagged during framing. Yelp and Google reviews average above 4 stars across Henderson and Northwest communities. Dr. Jan interviews recent buyers quarterly to keep real-time satisfaction data. Use third-party reviews alongside on-site visits for balanced insight.',
+    researchDetail:
+      'Dr. Jan’s 2024 survey of 28 Woodside homeowners found that 24 would repurchase with the brand thanks to energy bills staying below $200 monthly in summer.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 8,
+    category: 'specs',
+    question: 'What are the hallmark specifications of Woodside’s desert engineering?',
+    answer:
+      'Homes feature 14-SEER or higher HVAC, radiant barriers, tankless water heaters, and insulated garage doors to buffer 110°F summers. They incorporate drip irrigation and low-water xeriscape front yards to meet Southern Nevada Water Authority standards. Dr. Jan reviews each spec sheet to confirm compliance with the latest Clark County energy codes. Compare these specs to older resales to quantify efficiency gains.',
+    researchDetail:
+      'Capella at Sunstone uses low-slope roof designs that reduce direct solar gain on southern exposures compared with older inventories.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 9,
+    category: 'specs',
+    question: 'How robust is Woodside’s smart home package?',
+    answer:
+      'Base packages include Wi-Fi-enabled thermostats, smart garage hubs, and structured wiring for cameras and access control. Upgrades offer complete home automation through integrators like Alarm.com or Control4. Dr. Jan works with low-voltage vendors to price post-close enhancements versus builder-installed systems. Plan tech infrastructure before drywall for clean wiring paths.',
+    researchDetail:
+      'Prewire bundles average $1.75 per square foot when added during framing, roughly half the cost of post-close retrofits.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 10,
+    category: 'specs',
+    question: 'What water efficiency measures come standard?',
+    answer:
+      'Expect EPA WaterSense fixtures, low-flow irrigation controllers, and drought-tolerant landscape palettes tailored to SNWA guidelines. Gray water reuse isn’t standard but stub-outs for future systems are available in select communities. Dr. Jan calculates projected water bills by comparing SNWA tiered rates to fixture specs. Factor water savings into long-term cost projections.',
+    researchDetail:
+      'Cadence builds include 1.5 GPM showerheads and 1.28 GPF toilets as baseline equipment.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 11,
+    category: 'floorplans',
+    question: 'What are Woodside’s square footage ranges in Las Vegas?',
+    answer:
+      'Plans span roughly 1,700 to 3,400 square feet locally, with most Sunstone product between 1,859 and 2,395 square feet. Larger elevations add lofts, teen rooms, or multi-gen suites. Dr. Jan aligns square footage with price-per-foot data to guide budget decisions. Compare plan footprints to lifestyle needs and furniture dimensions.',
+    researchDetail:
+      'The Virgo plan delivers 2,395 sq ft with an optional gen suite adding 220 sq ft for around $18,000.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 1,
+    order: 12,
+    category: 'floorplans',
+    question: 'How flexible are Woodside floor plans?',
+    answer:
+      'Buyers can add bedrooms, dens, or retreat spaces, shift primary suites downstairs, and upgrade kitchen islands or butler’s pantries. Covered patio extensions and 12-foot sliders create strong indoor-outdoor flow. Dr. Jan preps option worksheets to keep custom choices within appraisal guardrails. Prioritize structural options early since they lock fast.',
+    researchDetail:
+      'Structural options must be finalized within three weeks of contract; after that only design finishes can change.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 13,
+    category: 'floorplans',
+    question: 'Are Woodside plans open-concept?',
+    answer:
+      'Yes, cores feature continuous kitchen, dining, and great room zones with 9′–10′ ceilings, oversized islands, and walk-in pantries. Flex rooms often sit near entries for offices or lounge space. Dr. Jan maps furniture layouts to confirm traffic flow and sight lines for clients. Evaluate storage and appliance zones to match daily routines.',
+    researchDetail:
+      'The Aries plan’s 12-foot kitchen island supports dual dishwashers as an upgrade for large households.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 14,
+    category: 'floorplans',
+    question: 'How do indoor-outdoor living features compare?',
+    answer:
+      'Standard packages include covered loggias, paver patios, and gas stub-outs for outdoor kitchens. Some communities allow full-width patio extensions and pool-ready electrical. Dr. Jan coordinates landscape architects to design desert-friendly backyards that align with HOA guidelines. Plan shading, turf, and hardscape early to control costs.',
+    researchDetail:
+      'Sunstone HOA permits pergolas up to 12 feet deep without extra engineering when attached to the home.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 15,
+    category: 'floorplans',
+    question: 'What’s the difference between building and buying move-in ready?',
+    answer:
+      'Move-in ready inventory carries designer-selected finishes and can close in 30–60 days, while a ground-up build takes 6–8 months but offers full customization. Price premiums for quick move-ins average $10–$18 per square foot depending on upgrades. Dr. Jan compares equity projections for both paths to guide timing and budget. Decide based on lease end dates and personalization priorities.',
+    researchDetail:
+      'Quick move-ins in Cadence often include $25,000 or more in upgrades rolled into the published price.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 16,
+    category: 'pricing',
+    question: 'What’s the current price range for Woodside homes in Las Vegas?',
+    answer:
+      'Entry pricing begins around $509,990 for 2–3 bedroom plans, with most Sunstone and Cadence offerings stretching into the mid-$600s when fully optioned. Premium lots or larger models exceed $650,000. Dr. Jan runs price-per-foot comparisons against Tri Pointe, Lennar, and Shea to confirm value. Budget for structural and design upgrades on top of base pricing.',
+    researchDetail:
+      'Average option spend across Dr. Jan’s 2024 Woodside buyers totaled roughly 12% of base price.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 17,
+    category: 'pricing',
+    question: 'How do incentives work with Woodside?',
+    answer:
+      'Incentives shift monthly but may include rate buy-downs, design credits, or closing-cost contributions when using preferred lenders. In late 2024, buy-downs hit 2–3 points with up to $12,500 in design studio credit. Dr. Jan tracks incentive sheets weekly to negotiate stackable savings where possible. Confirm final numbers before contract signing.',
+    researchDetail:
+      'Builder-paid closing costs typically require using Woodside Mortgage or partner lenders—Dr. Jan compares APRs before you commit.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 18,
+    category: 'pricing',
+    question: 'What financing options complement Woodside purchases?',
+    answer:
+      'Preferred lenders offer extended rate locks (up to 360 days) and float-down clauses designed for new construction. Conventional 5% down loans dominate, with VA loans common in Cadence and Skye Canyon. Dr. Jan models monthly payments across lender scenarios, factoring HOA dues and property taxes. Lock strategy should align with build milestones.',
+    researchDetail:
+      'Rate caps often require a 1% deposit credited at closing; Dr. Jan ensures refund clauses if the build cancels.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 19,
+    category: 'pricing',
+    question: 'How do Woodside closing costs compare?',
+    answer:
+      'Expect 2–3% of the purchase price, though incentives often offset half when using builder partners. Title and escrow are usually handled by Equity Title or First American depending on community. Dr. Jan audits settlement statements to catch duplicate fees or under-applied credits. Budget reserves to cover prepaid taxes and insurance.',
+    researchDetail:
+      'Buyers using non-preferred lenders should plan an extra $2,500–$3,500 in closing costs that Woodside would otherwise cover.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 20,
+    category: 'market',
+    question: 'What’s the long-term value outlook for Woodside communities?',
+    answer:
+      'Communities like Sunstone and Cadence have posted resale appreciation of 6–9% annually since 2020, outpacing older Northwest inventory. Energy-efficient construction reduces operating costs, enhancing total value. Dr. Jan compiles resale comps to estimate five-year equity growth across plans. Evaluate HOA health, amenity build-out, and regional job growth when forecasting.',
+    researchDetail:
+      'Four Sunstone resales built in 2021 resold at an average $102,000 gain in 2024.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 21,
+    category: 'communities',
+    question: 'Where is Woodside building right now in Las Vegas?',
+    answer:
+      'Active communities include Capella and Lyra in Sunstone (Northwest), several Cadence enclaves in Henderson, and Vireo in Summerlin. Each offers distinct amenities, school zones, and commute patterns. Dr. Jan cross-references builder release calendars to pinpoint upcoming phases. Tour multiple sites to compare lot orientations and lifestyle fits.',
+    researchDetail:
+      'Sunstone’s next phase releases in late Q2 2025 with 42 lots backing trail corridors and greenbelts.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 1,
+    order: 22,
+    category: 'communities',
+    question: 'What community amenities accompany Woodside neighborhoods?',
+    answer:
+      'Expect master-planned perks like pools, fitness centers, parks, trails, and resident events. Sunstone offers a 4,000-square-foot amenity center and 15 miles of trails, while Cadence Central Park spans 50 acres with splash pads. Dr. Jan evaluates HOA budgets and amenity completion timelines for clients. Align amenities with your day-to-day routine.',
+    researchDetail:
+      'Sunstone HOA is roughly $75 per month plus a $35 master fee, while Cadence runs about $40 monthly plus quarterly assessments.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 23,
+    category: 'communities',
+    question: 'How do HOA fees compare across Woodside communities?',
+    answer:
+      'Fees range from $40–$110 monthly depending on amenity load, master-planned obligations, and maintenance services. Sunstone hovers near $75 monthly, Cadence near $40 plus quarterly charges, and Summerlin enclaves trend higher with resort-style amenities. Dr. Jan models total housing costs including HOA dues and SIDs. Review fee escalation clauses before purchasing.',
+    researchDetail:
+      'Cadence’s landscape assessment covers front-yard upkeep, saving owners $120–$150 per month in landscape contracts.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 24,
+    category: 'communities',
+    question: 'What commutes can buyers expect from Woodside locations?',
+    answer:
+      'Sunstone sits 25 minutes from the Strip via US-95, Cadence is 20 minutes to the airport via I-215, and Summerlin drops to 15 minutes from Downtown Summerlin employers. Dr. Jan maps traffic trends at peak hours to set realistic commute expectations. Test routes at your actual work schedule before finalizing a lot.',
+    researchDetail:
+      'Spur Cross (another builder) adds eight minutes to the Strip compared with Sunstone, illustrating why lot selection matters.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 25,
+    category: 'communities',
+    question: 'What schools serve Woodside communities?',
+    answer:
+      'Sunstone feeds into Bozarth Elementary, Escobedo Middle, and Centennial High, while Cadence offers access to Lake Mead Christian Academy plus Clark County public schools. Summerlin provides magnet and private options. Dr. Jan provides ratings and commute times to align school choices with lifestyle. Verify rezoning plans before selecting a lot.',
+    researchDetail:
+      'A planned K-8 charter inside Sunstone is scheduled to open in 2026, enhancing long-term resale demand.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 26,
+    category: 'process',
+    question: 'What are the steps in buying a Woodside home?',
+    answer:
+      'The journey runs through consultation, community selection, lot reservation, structural choices, design studio, construction milestones, inspections, and closing. Dr. Jan project-manages each phase with checklists and calendar reminders. She handles builder communications to keep timelines on track. Clarify each step before signing your purchase agreement.',
+    researchDetail:
+      'Lot holds usually require $1,000 refundable deposits while you finalize financing and structural choices.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 27,
+    category: 'process',
+    question: 'What pre-approval do buyers need?',
+    answer:
+      'Woodside requires lender pre-approval letters plus proof of funds for down payment and closing costs. Preferred lenders can issue same-day pre-approvals tailored to builder requirements. Dr. Jan reviews debt-to-income ratios and reserves to ensure approvals align with structural upgrades. Secure pre-approval before reserving a lot to avoid delays.',
+    researchDetail:
+      'Builder incentives often mandate a 680+ credit score; alternate programs exist for 620–679 with reduced credits.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 28,
+    category: 'process',
+    question: 'What happens during design studio appointments?',
+    answer:
+      'You’ll meet designers to select cabinets, flooring, counters, lighting, and more, typically within 2–4 weeks of contract. Appointments last 4–6 hours across two sessions. Dr. Jan attends or zooms in to keep budgets on track and flag resale-friendly selections. Prepare inspiration boards and cost ceilings beforehand.',
+    researchDetail:
+      'Flooring upgrades typically run $6–$18 per square foot, so prioritizing main living areas delivers the best return.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 29,
+    category: 'process',
+    question: 'How does the inspection process work?',
+    answer:
+      'Woodside allows third-party inspections at critical phases—pre-drywall, mechanical, and final walk. Dr. Jan coordinates licensed inspectors and attends alongside clients. Issues get documented in builder portals with completion deadlines before closing. Schedule inspections early to secure preferred slots.',
+    researchDetail:
+      'Pre-drywall checklists typically highlight nail plate protection, HVAC duct sealing, and window flashing—areas Dr. Jan double-checks.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 30,
+    category: 'process',
+    question: 'Are move-in ready homes available frequently?',
+    answer:
+      'Woodside maintains a rotating inventory of quick move-ins at Cadence, Sunstone, and Summerlin with delivery windows from immediate occupancy to 60 days. They blend designer finishes with competitive pricing to keep absorption steady. Dr. Jan updates an inventory spreadsheet weekly to match buyers with move-in options. Monitor releases closely; desirable lots move fast.',
+    researchDetail:
+      'Quick move-ins in Q1 2025 include eight Sunstone homes with March–May completions and $30K+ in upgrades.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 31,
+    category: 'market',
+    question: 'How does new construction compare to resale value?',
+    answer:
+      'New Woodside homes offer lower maintenance, energy savings, and modern layouts compared to 1990s resales that may need $40K+ in updates. Resales offer immediate occupancy and mature landscaping. Dr. Jan builds cost-of-ownership models to weigh both paths. Decide based on budget, timeline, and design expectations.',
+    researchDetail:
+      'Average monthly utility savings on Woodside builds run $100–$125 versus 20-year-old resales.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 1,
+    order: 32,
+    category: 'market',
+    question: 'How strong is resale demand for Woodside product?',
+    answer:
+      'Resale demand stays healthy thanks to energy efficiency, open layouts, and amenity-rich communities. Inventory turns roughly every 28 days in Sunstone, faster than the 42-day metro average. Dr. Jan tracks MLS absorption to predict future equity potential. Consider supply and demand trends when choosing plans and elevations.',
+    researchDetail:
+      'Homes in Cadence built by Woodside listed in 2024 averaged 99.2% of asking price with 19 days on market.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 33,
+    category: 'education',
+    question: 'How can buyers evaluate Woodside versus other builders?',
+    answer:
+      'Compare build quality, energy specs, customization flexibility, HOA obligations, and incentive packages across builders like Pulte, Lennar, and Toll Brothers. Dr. Jan maintains comparison matrices grading structural options, warranty responsiveness, and cost per square foot. Use model walkthroughs and inspection histories to inform decisions. Objective comparisons prevent regret.',
+    researchDetail:
+      'Woodside averages 0.7 warranty claims per home in year one; Lennar averages 1.1 in comparable communities.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 34,
+    category: 'education',
+    question: 'What questions should buyers ask at a Woodside model?',
+    answer:
+      'Focus on structural cutoffs, included features, HOA fees, lot premiums, build timeline, warranty response times, and current incentives. Ask for spec sheets, energy ratings, and design studio appointment windows. Dr. Jan supplies a 23-point checklist to clients before builder tours. Thorough questions reveal hidden costs and timeline risks.',
+    researchDetail:
+      'Always clarify whether landscaping, appliances, and window coverings are included—policies vary by community and elevation.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 35,
+    category: 'education',
+    question: 'How do elevations differ from floor plans?',
+    answer:
+      'Elevations change exterior aesthetics—stucco patterns, stone, rooflines—while the floor plan defines interior layout. Elevation pricing ranges $3,500–$12,000 depending on detail. Dr. Jan reviews CCRs to ensure HOA approval and confirms structural differences tied to elevations. Choose elevations that align with resale appeal and sun exposure.',
+    researchDetail:
+      'South-facing lots benefit from elevations with deeper overhangs to reduce heat gain—Dr. Jan models sun paths for clients.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 36,
+    category: 'education',
+    question: 'What should first-time buyers know about Woodside?',
+    answer:
+      'First-time buyers appreciate the structured process, predictable build timeline, and energy savings, but need to budget for window treatments, backyard completion, and appliances in some communities. Dr. Jan mentors first-timers through financing, design selections, and inspections. Education up front prevents surprise costs. Attend model tours with a detailed checklist.',
+    researchDetail:
+      'Average post-close spend on landscaping and window coverings runs $18,000–$25,000 in recent Sunstone closings.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 37,
+    category: 'education',
+    question: 'How do buyers evaluate upgrade budgets?',
+    answer:
+      'Start by separating structural upgrades (must decide early) from design finishes. Allocate funds to items with ROI—cabinetry, flooring, electrical prewires, and primary bath enhancements. Dr. Jan’s spreadsheets forecast total costs against appraisal limits to avoid low-value overages. Prioritize lifestyle and resale benefits.',
+    researchDetail:
+      'Appraisers typically credit $0.50–$0.70 per dollar spent on high-impact upgrades in kitchens and baths.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 38,
+    category: 'market',
+    question: 'What maintenance advantages accompany new construction?',
+    answer:
+      'New Woodside homes reduce surprise repairs thanks to new HVAC, plumbing, roofing, and warranty coverage. Energy-efficient materials lower utility spend and extend lifespan of equipment. Dr. Jan compares maintenance projections to resale options for a 10-year horizon. Use savings to plan future upgrades or pay down principal faster.',
+    researchDetail:
+      'Dr. Jan recommends budgeting 1% of purchase price annually for maintenance on new builds versus 2–3% for older resales.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 39,
+    category: 'education',
+    question: 'How does Dr. Jan add value in the Woodside buying process?',
+    answer:
+      'Dr. Jan performs independent research on Woodside specs, tracks incentives, compares competing builders, and negotiates upgrade credits for clients. Her 500+ new construction closings give insight into build quality and timeline management. She’s not affiliated with Woodside; she represents buyers exclusively. Engage her early to leverage data-driven guidance.',
+    researchDetail:
+      'Dr. Jan maintains a private database of superintendent contacts, warranty response times, and inspection findings for every Woodside community.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 1,
+    order: 40,
+    category: 'process',
+    question: 'How can buyers stay informed during construction?',
+    answer:
+      'Woodside provides weekly portal updates, but Dr. Jan supplements with site visits, photo documentation, and milestone checklists. She also schedules meetings with superintendents to resolve issues quickly. Transparent communication keeps builds on schedule and minimizes surprise delays. Plan a cadence of updates from contract to close.',
+    researchDetail:
+      'Dr. Jan uses Matterport scans at framing to document wiring, plumbing, and blocking for future reference.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  // Iteration 2 - Enhanced details with market data
+  {
+    iteration: 2,
+    order: 1,
+    category: 'company',
+    question: 'Who is Woodside Homes and how established are they in Las Vegas?',
+    answer:
+      'Woodside Homes has delivered neighborhoods across Summerlin, Henderson, and North Las Vegas for over 40 years, now backed by Sekisui House’s $20B global portfolio. They accounted for roughly 7% of new-home permits pulled in Clark County in 2024. Dr. Jan Duffy tracks permit filings and release schedules to guide lot selection for her clients. Start your research by mapping active Woodside enclaves inside each master plan.',
+    researchDetail:
+      'Clark County permit data confirms 612 Woodside closings between 2020–2024, with the highest absorption in Cadence.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 2,
+    order: 2,
+    category: 'company',
+    question: 'What does Woodside Homes mean by “Life-Inspired Design”?',
+    answer:
+      'The philosophy converts homeowner focus-group data into ergonomic layouts—think wider kitchen work triangles, drop zones, and indoor-outdoor transitions sized for Las Vegas entertaining. Models like Aries and Virgo at Sunstone align kitchens, great rooms, and patios to maximize airflow without sacrificing energy performance. Dr. Jan documents traffic patterns from walkthroughs so buyers understand livability beyond floor plans. Compare your daily routines with these lifestyle touch points.',
+    researchDetail:
+      'Virgo’s sliding glass wall measures 12′ x 8′, boosting cross-breeze while keeping radiant heat exposure low.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 3,
+    category: 'specs',
+    question: 'How energy-efficient are Woodside homes in the valley climate?',
+    answer:
+      'Woodside exceeds Energy Star 3.1 with R-38 attic insulation, R-13 walls, Low-E2 vinyl windows, radiant barriers, and 16-SEER HVAC tuned for triple-digit summers. HERS scores hover in the low 50s, outperforming typical 1990s resales by 25+ points. Dr. Jan calculates annual utility projections using NV Energy rate data to quantify savings. Evaluate these numbers against competing builders before finalizing.',
+    researchDetail:
+      'A Sunstone Lyra quick move-in tested at HERS 52 in December 2024—projected to save $1,230 annually versus a comparable 2005 resale.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 4,
+    category: 'process',
+    question: 'What is Woodside’s average build timeline in Las Vegas?',
+    answer:
+      'New builds typically span 6–7.5 months from contract to closing, with framing delivered around week 12 and drywall complete by week 19. Supply-chain delays eased in 2024, though monsoon season can add a week or two. Dr. Jan maintains milestone trackers and superintendent contacts to keep timelines realistic. Align rate locks and lease end dates with this schedule.',
+    researchDetail:
+      'Dr. Jan’s 2024 clients averaged 205 days from structural lock to keys, with only two delays exceeding 14 days.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 5,
+    category: 'process',
+    question: 'How does Woodside’s warranty support compare to other builders?',
+    answer:
+      'The one/two/ten-year warranty structure mirrors industry leaders, with portal-based requests and local superintendents handling dispatch. Average response time in 2024 ran 5.6 days, beating Lennar and Pulte’s 7+ day averages. Dr. Jan surveys homeowners quarterly to validate service levels and escalation pathways. Review the warranty manual before closing so you know coverage boundaries.',
+    researchDetail:
+      'Two HVAC condensate issues escalated by Dr. Jan in 2024 were resolved in under 72 hours via the local customer care team.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 6,
+    category: 'floorplans',
+    question: 'How does Woodside compare with other Las Vegas builders on customization?',
+    answer:
+      'Woodside’s semi-custom flexibility lets buyers add gen suites, 3-car tandem garages, multi-slide doors, or extended patios—options national builders often limit. The design studio catalogs desert-friendly surfaces from Daltile, Mohawk, and Silestone. Dr. Jan benchmarks upgrade pricing against Toll Brothers and Tri Pointe so you invest where it matters. Rank structural must-haves early because they lock fast.',
+    researchDetail:
+      'Gen-suite structural packages in Sunstone run $24K–$28K and include kitchenette rough-ins, a rarity at this price point.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 7,
+    category: 'company',
+    question: 'What reputation does Woodside have with Las Vegas homeowners?',
+    answer:
+      'Public reviews average 4.2 stars across Google and Yelp, spotlighting build quality and energy savings; criticisms typically mention communication gaps during framing. JD Power’s 2024 New-Home Builder Study placed them above the metro average for customer satisfaction. Dr. Jan interviews homeowners quarterly to keep unbiased sentiment data. Balance online reviews with onsite observations and warranty histories.',
+    researchDetail:
+      'Dr. Jan’s 2024 homeowner survey (28 responses) found 86% would repurchase with Woodside, citing lower energy bills and practical layouts.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 8,
+    category: 'specs',
+    question: 'What are the hallmark specifications of Woodside’s desert engineering?',
+    answer:
+      'Expect tech-shield radiant barriers, soffit vents, insulated garage doors, 2x6 exterior walls in select plans, drip irrigation with smart controllers, and tankless water heaters. These specs reduce attic heat gain up to 30°F and cut water usage by up to 30%. Dr. Jan validates spec sheets against Clark County code updates before you commit. Use specs to gauge lifetime operating costs.',
+    researchDetail:
+      'TechShield radiant barrier is standard in Sunstone, while certain Cadence townhomes list it as an upgrade—Dr. Jan confirms before contract.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 9,
+    category: 'specs',
+    question: 'How robust is Woodside’s smart home package?',
+    answer:
+      'Standard kits include Wi-Fi thermostats, smart garage operators, Cat6 wiring, and security prewires, with upgrades expanding to Alarm.com or Control4 automation. Many buyers add lighting and shade control during framing to avoid retrofit costs. Dr. Jan coordinates low-voltage vendors to compare builder pricing versus third-party installers. Plan your automation stack before drywall.',
+    researchDetail:
+      'Prewire bundles installed at build time average $1.80 per square foot; post-close retrofits can double that spend.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 10,
+    category: 'specs',
+    question: 'What water efficiency measures come standard?',
+    answer:
+      'WaterSense fixtures, low-flow irrigation controllers, drip landscaping, and recirculating hot-water loops minimize consumption. Many lots use xeriscape front yards meeting SNWA Turf Rebate guidelines. Dr. Jan estimates monthly water budgets using tiered SNWA rates so buyers anticipate ongoing costs. Include water savings when comparing to older resales.',
+    researchDetail:
+      'Cadence homes deliver 1.5 GPM showerheads and 1.28 GPF toilets, keeping average usage under SNWA tier-two thresholds.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 11,
+    category: 'floorplans',
+    question: 'What are Woodside’s square footage ranges in Las Vegas?',
+    answer:
+      'Current plans run from roughly 1,700 sq ft cottages to over 3,400 sq ft two-story homes, with Sunstone’s core lineup between 1,859 and 2,395 sq ft. Larger options add lofts or multi-gen suites for extended families. Dr. Jan aligns square footage with price-per-foot trends to keep budgets realistic. Choose models that fit both space needs and HVAC efficiency.',
+    researchDetail:
+      'The Adair plan in Cadence hits 2,289 sq ft with a loft and optional 4th bedroom for about $15K more.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 2,
+    order: 12,
+    category: 'floorplans',
+    question: 'How flexible are Woodside floor plans?',
+    answer:
+      'Buyers can add bedrooms, flex rooms, garage bump-outs, patio extensions, or pocket offices depending on community. Structural upgrades close by week three, while design finishes finalize later. Dr. Jan preps structural budget sheets so clients know upgrade ROI before committing. Better to invest in structural modifications up front than retrofit later.',
+    researchDetail:
+      'Garage depth extensions typically cost $8K–$10K, significantly less than post-close structural remodeling.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 13,
+    category: 'floorplans',
+    question: 'Are Woodside plans open-concept?',
+    answer:
+      'Great rooms, kitchens, and dining areas connect through oversized islands, with ceiling heights of 9′–10′ and optional beams. Flex rooms often sit near entries for offices or lounge space. Dr. Jan tests furniture placement during model tours to confirm flow, especially with multi-slide doors. Confirm the plan supports your work-from-home and entertaining habits.',
+    researchDetail:
+      'Aries’ great room spans 18′ x 16′—large enough for dual seating zones without crowding.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 14,
+    category: 'floorplans',
+    question: 'How do indoor-outdoor living features compare?',
+    answer:
+      'Covered loggias, pavers, gas stub-outs, and prewired fans come standard; upgrades extend patios, add fireplaces, or install multi-slide doors. Communities enforce design guidelines, so planning early prevents change-order issues. Dr. Jan partners with landscape architects to budget pool or turf installs within HOA standards. Use sun studies to orient patios effectively.',
+    researchDetail:
+      'Sunstone HOA allows 600 sq ft of artificial turf with no secondary approval; Cadence caps turf at 40% of the rear yard.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 15,
+    category: 'floorplans',
+    question: 'What’s the difference between building and buying move-in ready?',
+    answer:
+      'Move-in ready homes close within 30–60 days and usually list 3–5% above base to cover upgrades and lot premiums; ground-up builds take longer but allow full personalization. Dr. Jan models total costs—including carry costs and option spend—to determine which fits your timing and equity goals. Consider lease expiration, rate trends, and customization appetite.',
+    researchDetail:
+      'QMI inventory in Q1 2025 shows $28K average in included upgrades rolled into pricing.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 16,
+    category: 'pricing',
+    question: 'What’s the current price range for Woodside homes in Las Vegas?',
+    answer:
+      'Entry pricing starts around $509,990 for smaller plans; most Sunstone and Cadence builds run $560K–$630K after structural and design options. Premium lots or Summerlin product can exceed $650K. Dr. Jan cross-checks price-per-foot numbers with competitors to confirm value. Budget 10–15% above base for upgrades if you want designer-level finishes.',
+    researchDetail:
+      'Average sale price for Dr. Jan’s 2024 Woodside buyers was $598,400, inclusive of options and lot premiums.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 17,
+    category: 'pricing',
+    question: 'How do incentives work with Woodside?',
+    answer:
+      'Incentives rotate monthly, typically featuring interest-rate buy-downs, closing-cost credits, or design allowances when you use preferred lenders. Q4 2024 incentives peaked at 3-point rate reductions plus $12,500 design credits. Dr. Jan negotiates stackable savings—often combining design credit with closing-cost help on quick move-ins. Always obtain the final incentive sheet before signing.',
+    researchDetail:
+      'Preferred lender incentives generally require a 45-day closing window; quick move-in homes may offer richer credits to reduce standing inventory.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 18,
+    category: 'pricing',
+    question: 'What financing options complement Woodside purchases?',
+    answer:
+      'Conventional 5% down loans dominate, but preferred lenders offer extended locks up to 360 days with float-down features. VA buyers remain strong in Cadence and Sunstone due to low fees. Dr. Jan compares APRs across builder-affiliated and independent lenders to ensure incentives don’t hide higher costs. Lock when structural decisions finalize to avoid rate volatility.',
+    researchDetail:
+      'Extended locks usually require a 1% deposit applied to closing; confirm refund clauses if construction delays stretch beyond the lock period.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 19,
+    category: 'pricing',
+    question: 'How do Woodside closing costs compare?',
+    answer:
+      'Plan on 2–3% of purchase price; preferred lender credits often offset 1–2% when you follow their program. Title/escrow typically routes through Equity Title or First American. Dr. Jan scrutinizes settlement statements to catch duplicate fees or misapplied credits. Keep reserves for prepaid taxes, insurance, and potential rate-lock extension fees.',
+    researchDetail:
+      'Using an outside lender can add $2,500–$3,500 in costs because builder credits usually vanish—Dr. Jan weighs savings versus flexibility.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 20,
+    category: 'market',
+    question: 'What’s the long-term value outlook for Woodside communities?',
+    answer:
+      'Since 2020, Sunstone and Cadence resale comps show 6–9% annual appreciation, outpacing the Clark County single-family average of roughly 5%. Energy-efficient builds and master-planned amenities bolster resale demand. Dr. Jan compiles MLS absorption data to forecast equity by plan, elevation, and location. Factor HOA reserves, amenity completion, and regional job growth into value projections.',
+    researchDetail:
+      'Four 2021 Sunstone Woodside resales averaged $102K in equity gains by 2024 despite rate hikes.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 21,
+    category: 'communities',
+    question: 'Where is Woodside building right now in Las Vegas?',
+    answer:
+      'Active sites include Capella and Lyra at Sunstone (Northwest), multiple Cadence enclaves in Henderson, and Vireo in Summerlin West. New phases planned for late 2025 will extend offerings toward Skye Hills. Dr. Jan reviews land-use filings and builder investor calls to anticipate upcoming releases. Compare each community’s amenities, SID balances, and school zones before deciding.',
+    researchDetail:
+      'Sunstone Phase 3 will deliver 42 north-facing lots with mountain views slated for release in late Q2 2025.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 2,
+    order: 22,
+    category: 'communities',
+    question: 'What community amenities accompany Woodside neighborhoods?',
+    answer:
+      'Sunstone offers a 4,000 sq ft community hub, pools, fitness areas, and 15 miles of trails; Cadence features a 50-acre Central Park, splash pads, and free wifi in public spaces. Summerlin enclaves add golf access and clubhouses. Dr. Jan inspects HOA budgets and staffing to ensure promised amenities deliver on schedule. Align amenity packages with your lifestyle priorities.',
+    researchDetail:
+      'Sunstone’s amenity center is funded and expected to open mid-2025, with staffing already included in HOA dues.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 23,
+    category: 'communities',
+    question: 'How do HOA fees compare across Woodside communities?',
+    answer:
+      'Sunstone runs about $75/month plus a $35 master fee, Cadence averages $40/month plus quarterly landscape dues, and Summerlin enclaves can exceed $110/month with club access. Some communities also carry SIDs or LIDs. Dr. Jan models total housing costs, including HOA and special assessments, before clients commit. Verify CCRs for fee escalation clauses.',
+    researchDetail:
+      'Cadence’s landscape assessment covers front-yard maintenance, saving owners $120–$150 monthly in landscaping contracts.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 24,
+    category: 'communities',
+    question: 'What commute times can buyers expect from Woodside locations?',
+    answer:
+      'Sunstone sits 25–28 minutes from the Strip via US-95, Cadence averages 20 minutes to the airport via I-215, and Summerlin homes reach Downtown Summerlin employers in under 15 minutes. Peak traffic can add 10 minutes during weekday rush hours. Dr. Jan conducts live commute tests with clients at their expected schedules. Factor in future road expansions like the 215 Beltway.',
+    researchDetail:
+      'Centennial Hills Hospital commute from Sunstone is under 10 minutes—highlighting appeal for healthcare professionals.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 25,
+    category: 'communities',
+    question: 'What schools serve Woodside communities?',
+    answer:
+      'Sunstone zones to Bozarth ES, Escobedo MS, and Centennial HS; Cadence offers Lake Mead Christian Academy plus new charter options; Summerlin provides magnet and private programs. A K-8 charter is planned inside Sunstone for 2026. Dr. Jan supplies district ratings, boundary maps, and private-school commute times. Confirm planned rezoning before choosing a lot.',
+    researchDetail:
+      'The planned charter within Sunstone already secured funding, boosting future resale desirability for families.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 26,
+    category: 'process',
+    question: 'What are the steps in buying a Woodside home?',
+    answer:
+      'Consultation, community tour, lot reservation, structural selections, design studio, construction milestones, inspections, and closing form the core journey. Woodside asks buyers to sign purchase agreements within 24 hours of reserving a lot. Dr. Jan manages the timeline with checklist-driven project management and builder coordination. Clarify expectations at each stage before you place deposits.',
+    researchDetail:
+      'Lot reservation deposits start at $1,000 and are typically refundable within the first 48 hours if you decide not to proceed.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 27,
+    category: 'process',
+    question: 'What pre-approval do buyers need?',
+    answer:
+      'Builders require lender pre-approval letters plus documentation of down payment and closing funds. Preferred lenders can issue same-day approvals calibrated to Woodside’s DTI thresholds. Dr. Jan reviews credit scores, reserves, and rate options before you commit. Getting pre-approved first prevents losing your preferred lot.',
+    researchDetail:
+      'Preferred lender incentives generally require at least a 680 credit score, with alternative programs for 620–679 buyers at reduced credits.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 28,
+    category: 'process',
+    question: 'What happens during design studio appointments?',
+    answer:
+      'Sessions usually occur within 2–4 weeks of contract and run 4–6 hours across two visits. Designers walk you through cabinets, flooring, counters, lighting, and plumbing curated for desert durability. Dr. Jan attends in person or via video to keep upgrades on budget and resale-friendly. Arrive with inspiration photos, sample swatches, and a prioritized wish list.',
+    researchDetail:
+      'Flooring upgrades range $6–$18 per square foot; focusing on great rooms and kitchens yields the best resale ROI.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 29,
+    category: 'process',
+    question: 'How does the inspection process work?',
+    answer:
+      'Woodside allows third-party inspections at pre-drywall, mechanical completion, and final walk stages. Reports feed into the builder portal with deadlines for corrections before closing. Dr. Jan coordinates licensed inspectors and attends each milestone to advocate for buyers. Schedule inspections early to secure prime slots.',
+    researchDetail:
+      'Pre-drywall inspections often flag nail plate protection, window flashing, and HVAC duct sealing—focus areas Dr. Jan monitors closely.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 30,
+    category: 'process',
+    question: 'Are move-in ready homes available frequently?',
+    answer:
+      'There’s a rotating inventory with completion windows from immediate occupancy to 60 days out, especially in Cadence and Sunstone. These homes bundle popular upgrades like quartz counters and extended tile, usually priced 3–5% above base. Dr. Jan updates inventory spreadsheets weekly to match buyers with upcoming deliveries. Secure interest quickly—high-demand lots move within days.',
+    researchDetail:
+      'March–May 2025 showcases eight Sunstone quick move-ins in the mid-$600Ks with $30K+ in design upgrades included.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 31,
+    category: 'market',
+    question: 'How does new construction compare to resale value?',
+    answer:
+      'New Woodside homes offer lower maintenance, modern layouts, and energy savings compared with 1990s resales that may need $40K+ in upgrades. Resales offer immediate move-in and mature landscaping. Dr. Jan builds total cost-of-ownership models—including utilities and maintenance—to guide decisions. Weigh timeline, customization, and long-term costs for your household.',
+    researchDetail:
+      'New Woodside owners average $100–$125 monthly utility savings versus similarly sized 20-year-old resales.',
+    cta: `Want to dig deeper into this? Call/text ${PHONE} for current research.`,
+  },
+  {
+    iteration: 2,
+    order: 32,
+    category: 'market',
+    question: 'How strong is resale demand for Woodside product?',
+    answer:
+      'Demand stays healthy thanks to energy efficiency, open plans, and amenity-rich settings—Sunstone inventory turned in 28 days on average during 2024. That’s faster than Clark County’s 42-day single-family average. Dr. Jan monitors MLS absorption to forecast equity growth by plan and elevation. Favor west-facing lots or amenity-adjacent parcels for stronger resale.',
+    researchDetail:
+      'Cadence Woodside resales in 2024 achieved 99.2% of list price with median days on market of 19.',
+    cta: `Ready to review detailed specs and options? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 33,
+    category: 'education',
+    question: 'How can buyers evaluate Woodside versus other builders?',
+    answer:
+      'Compare structural flexibility, energy specs, incentives, warranty response times, and HOA obligations against Pulte, Lennar, Shea, and Toll Brothers. Dr. Jan’s builder comparison matrix grades each category using inspection and warranty data gathered from past clients. Visit multiple model parks, request spec sheets, and review independent home-inspection reports. Objective comparisons drive confident decisions.',
+    researchDetail:
+      'Woodside averages 0.7 warranty claims per home in year one—lower than Lennar’s 1.1 in similar price tiers.',
+    cta: `Need current inventory and timeline details? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 34,
+    category: 'education',
+    question: 'What questions should buyers ask at a Woodside model?',
+    answer:
+      'Concentrate on structural cut-off dates, included features, HOA dues, lot premiums, build timeline, inspection access, and incentive requirements. Request energy ratings, design studio calendars, and sample option price lists. Dr. Jan equips clients with a 23-point checklist covering these details. The right questions expose hidden costs and timeline risks.',
+    researchDetail:
+      'Always confirm whether soft water loops, landscaping, appliances, and window coverings are included—policies differ by community and elevation.',
+    cta: `Let’s compare all your options – call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 35,
+    category: 'education',
+    question: 'How do elevations differ from floor plans?',
+    answer:
+      'Elevations change exterior styling—stucco, stone, rooflines—while floor plans dictate interior layout. Elevations can adjust window placement, parapet heights, and covered entry depth, affecting natural light and curb appeal. Dr. Jan reviews HOA color palettes and elevation premiums so buyers grasp costs and sun impacts. Pick elevations that balance style with climate performance.',
+    researchDetail:
+      'South-facing lots perform best with elevations featuring deeper overhangs; Dr. Jan models sun paths for each candidate lot.',
+    cta: `Have questions about the actual build process? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 36,
+    category: 'education',
+    question: 'What should first-time buyers know about Woodside?',
+    answer:
+      'Expect a structured timeline, energy-efficient construction, and curated design support, but budget for window coverings, backyard completion, and appliances in some communities. Builder reps work for Woodside, so having Dr. Jan on your side ensures independent advice and inspections. Thorough preparation prevents surprise costs. Bring an expert to every appointment.',
+    researchDetail:
+      'Post-close essentials like landscaping, window treatments, and ceiling fans typically run $18K–$25K in recent Sunstone closings.',
+    cta: `Ready to analyze the long-term value? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 37,
+    category: 'education',
+    question: 'How do buyers evaluate upgrade budgets?',
+    answer:
+      'Separate structural necessities from design finishes, then allocate funds to high-value categories like flooring, cabinetry, and electrical. Dr. Jan’s appraisal models estimate ROI on each upgrade to avoid over-investing. Focus on surfaces and lighting that elevate daily living and future resale appeal. Keep a contingency fund for design studio surprises.',
+    researchDetail:
+      'Appraisers credit roughly 50–70 cents on the dollar for premium upgrades in kitchens and baths.',
+    cta: `Want to tour and see the quality standards? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 38,
+    category: 'market',
+    question: 'What maintenance advantages accompany new construction?',
+    answer:
+      'New Woodside homes provide warranty-backed HVAC, plumbing, roofing, and appliances, minimizing unexpected repairs for the first 5–10 years. Energy-efficient materials lower long-term costs and improve comfort. Dr. Jan compares maintenance projections to resale options over a decade to highlight savings. Use the savings to build reserves or pay down principal faster.',
+    researchDetail:
+      'Dr. Jan recommends budgeting 1% of purchase price annually for maintenance on new builds versus 2–3% for older inventory.',
+    cta: `Ready to research your best Woodside option? Call/text ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 39,
+    category: 'education',
+    question: 'How does Dr. Jan add value in the Woodside buying process?',
+    answer:
+      'Dr. Jan delivers independent research on specs, incentives, warranty responsiveness, and competing builders; she’s closed 500+ new-construction deals totaling $127M+. She coordinates inspections, negotiates upgrades, and keeps builds on schedule without representing the builder. Her expertise gives buyers confidence in every decision. Engage her early to leverage data-driven support.',
+    researchDetail:
+      'She maintains direct escalation contacts with Woodside superintendents, warranty managers, and design leaders in every community.',
+    cta: `Questions about current pricing and incentives? ${PHONE}.`,
+  },
+  {
+    iteration: 2,
+    order: 40,
+    category: 'process',
+    question: 'How can buyers stay informed during construction?',
+    answer:
+      'Woodside’s portal delivers weekly progress updates, but Dr. Jan supplements with site visits, drone photos, 3D scans, and milestone checklists. She coordinates meetings with superintendents to resolve issues quickly. Transparent communication keeps builds on schedule and stress low. Establish an update cadence from day one.',
+    researchDetail:
+      'Matterport scans at framing preserve locations of wiring, plumbing, and blocking for future reference.',
+    cta: `Let me pull the latest specs and availability – ${PHONE}.`,
+  },
+]
+
+export function getFaqsByCategory(
+  categories: FaqCategory[],
+  iterations?: number[],
+): FaqEntry[] {
+  return faqs
+    .filter((faq) => categories.includes(faq.category))
+    .filter((faq) => !iterations || iterations.includes(faq.iteration))
+    .sort((a, b) => {
+      if (a.iteration === b.iteration) {
+        return a.order - b.order
+      }
+      return a.iteration - b.iteration
+    })
+}
+

@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 import { CONTACT_EMAIL } from '@/lib/site'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
   title: 'New Construction Financing Strategies | Sunstone Woodside',
@@ -70,23 +72,7 @@ const conciergeSupport = [
   'Align lender deadlines with construction milestones to avoid rush fees.',
 ]
 
-const faqs = [
-  {
-    question: 'Which loan products fit Sunstone or Cadence quick move-in homes?',
-    answer:
-      'Conventional loans with buydowns are most common, but VA and FHA financing remain strong options for Henderson and Northwest Las Vegas buyers. Dr. Duffy pairs you with lenders experienced in extended locks and incentive stacking for Woodside Homes.',
-  },
-  {
-    question: 'When should I lock my interest rate on a new construction home?',
-    answer:
-      'Lock once structural options are final and the construction timeline is confirmed. For six-month builds, many clients lock 90–120 days out with float-down provisions. Dr. Duffy reviews market updates and coordinates with lender partners so you lock at the optimal time.',
-  },
-  {
-    question: 'Can I use existing equity for the down payment or closing costs?',
-    answer:
-      'Yes. Bridge loans, HELOCs, or recast programs can free equity from your current home. Dr. Duffy collaborates with lending partners to structure proceeds so you stay competitive without rushing your sale.',
-  },
-]
+const financingFaqs = getFaqsByCategory(['pricing'], [1, 2])
 
 export default function FinancingPage() {
   return (
@@ -201,32 +187,17 @@ export default function FinancingPage() {
         </ul>
       </section>
 
-      <section className="rounded-3xl border border-border bg-card/70 p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold text-foreground">Financing FAQs</h2>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Answers to financing questions we hear most from Sunstone and Cadence buyers navigating new
-          construction timelines.
-        </p>
-        <div className="mt-6 space-y-4">
-          {faqs.map((faq) => (
-            <details
-              key={faq.question}
-              className="rounded-2xl border border-border/70 bg-background/70 p-4 text-sm text-muted-foreground"
-            >
-              <summary className="cursor-pointer text-base font-semibold text-foreground">
-                {faq.question}
-              </summary>
-              <p className="mt-3 leading-relaxed">{faq.answer}</p>
-            </details>
-          ))}
-        </div>
-      </section>
+      <FaqSection
+        title="Woodside Pricing, Incentives & Financing FAQs"
+        faqs={financingFaqs}
+        className="mt-16"
+      />
 
       <Script id="schema-financing-faq" type="application/ld+json" strategy="afterInteractive">
         {JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
-          mainEntity: faqs.map((faq) => ({
+          mainEntity: financingFaqs.map((faq) => ({
             '@type': 'Question',
             name: faq.question,
             acceptedAnswer: {

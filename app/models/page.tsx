@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 import { CONTACT_EMAIL } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -9,6 +11,8 @@ export const metadata: Metadata = {
   description:
     'Compare the Aries, Taurus, and Virgo single-story plans with pricing, square footage, and concierge design insights for Sunstone Woodside Homes.',
 }
+
+const modelFaqs = getFaqsByCategory(['floorplans'], [1, 2])
 
 export default function ModelsIndexPage() {
   return (
@@ -62,6 +66,12 @@ export default function ModelsIndexPage() {
           </article>
         ))}
       </section>
+
+      <FaqSection
+        title="Woodside Floor Plan & Customization FAQs"
+        faqs={modelFaqs}
+        className="mt-16"
+      />
     </div>
   )
 }

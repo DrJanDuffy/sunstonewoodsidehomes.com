@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { models } from '@/lib/models'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 import { moveInReadyHomes } from '@/lib/move-in-ready'
 import {
   CONTACT_ADDRESS,
@@ -131,6 +133,8 @@ const resourceHighlights = [
     href: '/communities',
   },
 ]
+
+const homepageFaqs = getFaqsByCategory(['company'], [1, 2])
 
 export const metadata: Metadata = {
   title: 'Sunstone Woodside Homes | Las Vegas New Construction Concierge',
@@ -299,6 +303,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        title="Woodside Homes Company Knowledge Base"
+        faqs={homepageFaqs}
+        className="mt-12"
+      />
 
       <section id="models" className="mx-auto max-w-6xl px-4">
         <div className="text-center">

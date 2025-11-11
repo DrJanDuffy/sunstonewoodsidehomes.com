@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import { CONTACT_EMAIL, CONTACT_PHONE_LINK, CONTACT_PHONE } from '@/lib/site'
+import { FaqSection } from '@/components/faq-section'
+import { getFaqsByCategory } from '@/lib/faqs'
 
 export const metadata: Metadata = {
   title: 'Sunstone & Northwest Las Vegas Communities | Dr. Jan Duffy',
@@ -62,6 +64,8 @@ const areaSpotlights = [
       'Award-winning master plan living with golf, retail, and entertainment only 15 minutes away.',
   },
 ]
+
+const communityFaqs = getFaqsByCategory(['communities'], [1, 2])
 
 export default function CommunitiesPage() {
   return (
@@ -144,6 +148,12 @@ export default function CommunitiesPage() {
           </Link>
         </div>
       </section>
+
+      <FaqSection
+        title="Woodside Community & Lifestyle FAQs"
+        faqs={communityFaqs}
+        className="mt-16"
+      />
     </div>
   )
 }
