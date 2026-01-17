@@ -1579,7 +1579,7 @@ export const faqs: FaqEntry[] = [
     category: 'market',
     question: 'How does Woodside appreciate versus Shea or Toll Brothers over five years?',
     answer:
-      'Sunstone Woodside resales gained 31% since 2020, Shea\'s Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.',
+      "Sunstone Woodside resales gained 31% since 2020, Shea's Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.",
     researchDetail:
       'GLVAR data confirms average $102K equity gains on $520K Sunstone purchases between 2020 and 2024—numbers Dr. Duffy plugs into her projection models.',
     cta: `Let me pull the latest specs and availability – ${PHONE}.`,
@@ -2459,7 +2459,7 @@ export const faqs: FaqEntry[] = [
     category: 'market',
     question: 'How does Woodside appreciate versus Shea or Toll Brothers over five years?',
     answer:
-      'Sunstone Woodside resales gained 31% since 2020, Shea\'s Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.',
+      "Sunstone Woodside resales gained 31% since 2020, Shea's Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.",
     researchDetail:
       'GLVAR data confirms average $102K equity gains on $520K Sunstone purchases between 2020 and 2024—numbers Dr. Duffy plugs into her projection models.',
     cta: `Let me pull the latest specs and availability – ${PHONE}.`,
@@ -3339,7 +3339,7 @@ export const faqs: FaqEntry[] = [
     category: 'market',
     question: 'How does Woodside appreciate versus Shea or Toll Brothers over five years?',
     answer:
-      'Sunstone Woodside resales gained 31% since 2020, Shea\'s Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.',
+      "Sunstone Woodside resales gained 31% since 2020, Shea's Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.",
     researchDetail:
       'GLVAR data confirms average $102K equity gains on $520K Sunstone purchases between 2020 and 2024—numbers Dr. Duffy plugs into her projection models.',
     cta: `Let me pull the latest specs and availability – ${PHONE}.`,
@@ -4219,7 +4219,7 @@ export const faqs: FaqEntry[] = [
     category: 'market',
     question: 'How does Woodside appreciate versus Shea or Toll Brothers over five years?',
     answer:
-      'Sunstone Woodside resales gained 31% since 2020, Shea\'s Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.',
+      "Sunstone Woodside resales gained 31% since 2020, Shea's Spur Cross 28%, and Toll Brothers' Mira Villa around 24%, all beating the Clark County average of 22%. Energy efficiency and HOA quality sustain buyer demand even when rates rise. Dr. Duffy stress-tests appreciation scenarios using GLVAR comps and employment forecasts.",
     researchDetail:
       'GLVAR data confirms average $102K equity gains on $520K Sunstone purchases between 2020 and 2024—numbers Dr. Duffy plugs into her projection models.',
     cta: `Let me pull the latest specs and availability – ${PHONE}.`,
