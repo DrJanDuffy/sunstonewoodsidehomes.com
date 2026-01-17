@@ -106,100 +106,100 @@
 :root {
   --radius: 0.625rem;
   
-  /* Quiet Luxury 2026 Color Palette */
-  /* Primary: Universal Khaki - sophisticated & grounded */
-  --primary: #C3B091;
-  --primary-foreground: #3E3636; /* Charcoal Brown for text on khaki */
-  --primary-hover: #A47864; /* Mocha Mousse for hover states */
+  /* Next Step Realty Color Palette - Exact Match */
+  /* Primary: Dark Navy Blue - from their CSS (#173365) */
+  --primary: #173365; /* Dark navy for buttons, CTAs, links */
+  --primary-foreground: #FFFFFF; /* White text on blue */
+  --primary-hover: #0F2550; /* Darker navy for hover states */
   
-  /* Backgrounds: Cloud Dancer - airy & open gallery feel */
-  --background: #F0F0F0;
-  --card: #FAFAFA; /* Slightly lighter than background for depth */
-  --card-foreground: #3E3636; /* Charcoal Brown */
-  --popover: #FAFAFA;
-  --popover-foreground: #3E3636;
+  /* Backgrounds: Clean whites */
+  --background: #FFFFFF;
+  --card: #FFFFFF; /* White cards */
+  --card-foreground: #292929; /* Dark text from their CSS */
+  --popover: #FFFFFF;
+  --popover-foreground: #292929;
   
-  /* Typography: Charcoal Brown & Warm Slate - high contrast, premium look */
-  --foreground: #3E3636; /* Charcoal Brown for headings */
-  --muted-foreground: #5A5A5A; /* Softer gray for body text */
+  /* Typography: Exact colors from Next Step Realty */
+  --foreground: #292929; /* Dark text from their CSS */
+  --muted-foreground: #A5A5A5; /* Muted grey from their CSS */
   
-  /* Accents: Brushed Gold - elite status indicator */
-  --accent: #D4AF37; /* Brushed Gold for hover states and borders */
-  --accent-foreground: #3E3636;
+  /* Accents: Subtle, professional */
+  --accent: #173365; /* Same as primary */
+  --accent-foreground: #FFFFFF;
   
   /* Secondary & Muted */
-  --secondary: #E8E8E8; /* Lighter than background for subtle contrast */
-  --secondary-foreground: #3E3636;
-  --muted: #F5F5F5; /* Very subtle for backgrounds */
+  --secondary: #F5F5F5; /* Light grey */
+  --secondary-foreground: #292929;
+  --muted: #F9F9F9; /* Very light grey */
   
   /* System colors */
-  --destructive: #C85A5A; /* Softer red that fits luxury palette */
-  --border: #D4D4D4; /* Subtle borders */
-  --input: #E0E0E0; /* Input backgrounds */
-  --ring: #C3B091; /* Focus rings match primary */
+  --destructive: #DC2626; /* Standard red for errors */
+  --border: #EEEEEE; /* Light border from their CSS */
+  --input: #FFFFFF; /* White input backgrounds */
+  --ring: #173365; /* Focus rings match primary */
   
-  /* Chart colors - refined to match palette */
-  --chart-1: #C3B091; /* Universal Khaki */
-  --chart-2: #A47864; /* Mocha Mousse */
-  --chart-3: #D4AF37; /* Brushed Gold */
-  --chart-4: #8B7355; /* Deeper khaki variant */
-  --chart-5: #B8A082; /* Lighter khaki variant */
+  /* Chart colors - matching their palette */
+  --chart-1: #173365; /* Primary navy */
+  --chart-2: #0F2550; /* Darker navy */
+  --chart-3: #292929; /* Dark text */
+  --chart-4: #A5A5A5; /* Muted grey */
+  --chart-5: #4A90E2; /* Lighter blue accent */
   
   /* Sidebar */
-  --sidebar: #FAFAFA;
-  --sidebar-foreground: #3E3636;
-  --sidebar-primary: #C3B091;
-  --sidebar-primary-foreground: #3E3636;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #292929;
+  --sidebar-primary: #173365;
+  --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #F5F5F5;
-  --sidebar-accent-foreground: #3E3636;
-  --sidebar-border: #D4D4D4;
-  --sidebar-ring: #C3B091;
+  --sidebar-accent-foreground: #292929;
+  --sidebar-border: #EEEEEE;
+  --sidebar-ring: #173365;
 }
 
 .dark {
-  /* Dark mode - maintaining luxury feel with deeper tones */
-  --background: #1a1a1a;
-  --foreground: #E8E8E8; /* Light text for dark backgrounds */
-  --card: #242424;
-  --card-foreground: #E8E8E8;
-  --popover: #242424;
-  --popover-foreground: #E8E8E8;
+  /* Dark mode - maintaining professional blue theme */
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
   
-  /* Primary colors - slightly lighter for dark mode visibility */
-  --primary: #D4C4A8; /* Lighter khaki for dark mode */
-  --primary-foreground: #2F2F2F; /* Warm Slate for text on light khaki */
-  --primary-hover: #B89A7A; /* Mocha Mousse variant */
+  /* Primary colors - lighter blue for dark mode */
+  --primary: #3B82F6; /* Lighter blue for dark backgrounds */
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #2563EB;
   
-  --secondary: #2F2F2F;
-  --secondary-foreground: #E8E8E8;
-  --muted: #2F2F2F;
-  --muted-foreground: #A0A0A0;
+  --secondary: #1E293B;
+  --secondary-foreground: #F1F5F9;
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
   
-  /* Accents - Brushed Gold works well in dark mode */
-  --accent: #D4AF37; /* Brushed Gold */
-  --accent-foreground: #2F2F2F;
+  /* Accents */
+  --accent: #FFB800; /* Gold accent */
+  --accent-foreground: #0F172A;
   
-  --destructive: #D87A7A; /* Softer red for dark mode */
-  --border: #3A3A3A;
-  --input: #2F2F2F;
-  --ring: #D4C4A8; /* Lighter khaki for focus rings */
+  --destructive: #EF4444;
+  --border: #334155;
+  --input: #1E293B;
+  --ring: #3B82F6;
   
-  /* Chart colors - luxury palette adapted for dark */
-  --chart-1: #D4C4A8;
-  --chart-2: #B89A7A;
-  --chart-3: #D4AF37;
-  --chart-4: #9B8568;
-  --chart-5: #C8B89C;
+  /* Chart colors */
+  --chart-1: #3B82F6;
+  --chart-2: #2563EB;
+  --chart-3: #FFB800;
+  --chart-4: #64748B;
+  --chart-5: #60A5FA;
   
   /* Sidebar */
-  --sidebar: #242424;
-  --sidebar-foreground: #E8E8E8;
-  --sidebar-primary: #D4C4A8;
-  --sidebar-primary-foreground: #2F2F2F;
-  --sidebar-accent: #2F2F2F;
-  --sidebar-accent-foreground: #E8E8E8;
-  --sidebar-border: #3A3A3A;
-  --sidebar-ring: #D4C4A8;
+  --sidebar: #1E293B;
+  --sidebar-foreground: #F1F5F9;
+  --sidebar-primary: #3B82F6;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #1E293B;
+  --sidebar-accent-foreground: #F1F5F9;
+  --sidebar-border: #334155;
+  --sidebar-ring: #3B82F6;
 }
 
 @layer base {
@@ -210,7 +210,7 @@
     @apply bg-background text-foreground font-sans;
   }
   html {
-    font-family: var(--font-body), 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: var(--font-body), 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   h1,
   h2,
@@ -218,45 +218,75 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-heading), 'Montserrat', 'Source Sans 3', sans-serif;
+    font-family: var(--font-heading), 'Archivo', 'Manrope', sans-serif;
     font-weight: 600;
     letter-spacing: -0.01em;
-    color: #3E3636; /* Charcoal Brown for premium look */
+    color: #292929; /* Next Step Realty dark text */
   }
   
-  /* Glassmorphism utility classes */
+  /* Next Step Realty Header Style */
   .glass-effect {
-    background: rgba(250, 250, 250, 0.7);
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
-    border: 1px solid rgba(212, 175, 55, 0.1); /* Subtle Brushed Gold border */
+    background: #FFFFFF;
+    border-bottom: 1.2px solid #EEEEEE;
   }
   
-  /* Luxury hover effects */
-  .luxury-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Professional hover effects - matching Next Step */
+  .hover-lift {
+    transition: all 0.2s ease;
   }
   
-  .luxury-hover:hover {
-    border-color: #D4AF37; /* Brushed Gold on hover */
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.15);
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(23, 51, 101, 0.1);
   }
   
-  /* Card hover effects with luxury styling */
+  /* Card hover effects - matching their border style */
   article:hover,
   .card-hover:hover {
-    border-color: rgba(212, 175, 55, 0.3); /* Subtle Brushed Gold border */
-    box-shadow: 0 8px 24px rgba(195, 176, 145, 0.12);
+    border-color: #EEEEEE;
+    box-shadow: 0 4px 16px rgba(23, 51, 101, 0.08);
   }
   
-  /* Link hover states - use Brushed Gold accent */
+  /* Link hover states - matching their underline style */
   a:hover {
-    color: var(--accent);
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
   }
   
-  /* Ensure primary links maintain hierarchy */
-  a.text-primary:hover {
-    color: var(--accent);
+  /* Next Step Realty button style */
+  .btn-nextstep {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1.2px solid #A4A4A4;
+    background-color: #173365;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-nextstep:hover {
+    background-color: #0F2550;
+  }
+  
+  .btn-nextstep-outline {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1.2px solid #EEEEEE;
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-nextstep-outline:hover {
+    background-color: #F5F5F5;
   }
 }
 

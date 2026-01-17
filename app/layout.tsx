@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next'
-import { Montserrat, Source_Sans_3 } from 'next/font/google'
+import { Manrope, Archivo, Roboto } from 'next/font/google'
 import Script from 'next/script'
 import { ThemeProvider } from 'next-themes'
 import SiteFooter from '@/components/site-footer'
@@ -11,17 +11,27 @@ import {
 } from '@/lib/site'
 import './globals.css'
 
-const headingFont = Montserrat({
+// Next Step Realty uses Manrope as primary font
+const bodyFont = Manrope({
   subsets: ['latin'],
-  variable: '--font-heading',
-  weight: ['400', '600', '700'],
+  variable: '--font-body',
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
   display: 'swap',
 })
 
-const bodyFont = Source_Sans_3({
+// Archivo for headings (as seen in their hero section)
+const headingFont = Archivo({
   subsets: ['latin'],
-  variable: '--font-body',
-  weight: ['400', '600'],
+  variable: '--font-heading',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+})
+
+// Roboto for testimonials and specific sections
+const testimonialFont = Roboto({
+  subsets: ['latin'],
+  variable: '--font-testimonial',
+  weight: ['100', '300', '400', '500', '700', '900'],
   display: 'swap',
 })
 
@@ -170,7 +180,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
+        className={`${headingFont.variable} ${bodyFont.variable} ${testimonialFont.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

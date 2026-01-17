@@ -149,99 +149,173 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16">
-      {/* Hero section - LCP element - optimized for early rendering */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#F5F5F5] via-background to-[#FAFAFA] pt-24 pb-32 sm:pt-32 sm:pb-40">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(195,176,145,0.08),_rgba(244,244,244,0))]" />
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
-          <div className="flex-1 space-y-6 text-center lg:text-left">
-            <span className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-sm shadow-primary/20 luxury-hover">
-              Limited Time $20K Savings
-            </span>
-            <h1 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              Capella at Sunstone — single-story luxury in Northwest Las Vegas
-            </h1>
-            <p className="text-lg text-muted-foreground sm:text-xl">
-              Explore Woodside Homes' newest collection of one-level residences with premium finishes,
-              energy efficiency, and sweeping mountain views. Learn about each neighborhood inside our{' '}
-              <Link href="/service-areas" className="text-primary underline-offset-2 hover:text-accent transition-colors duration-300">
-                service area guide
-              </Link>{' '}
-              and preview fully furnished options in the{' '}
-              <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:text-accent transition-colors duration-300">
-                move-in-ready collection
-              </Link>
-              .
-            </p>
-            <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-start">
-              <a
-                href={CONTACT_PHONE_LINK}
-                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm luxury-hover hover:bg-[#A47864] hover:border-accent/30"
-              >
-                Call to book a tour
-              </a>
-              <a
-                href="#models"
-                className="inline-flex items-center justify-center rounded-full border-2 border-primary/30 px-6 py-3 text-base font-semibold text-foreground luxury-hover hover:border-accent hover:text-accent"
-              >
-                View home plans
-              </a>
+      {/* Hero section - Next Step Realty style with prominent form */}
+      <section className="relative bg-white pt-20 pb-16 sm:pt-24 sm:pb-20">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Left: Headline and value props */}
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+                  The Easiest & Quickest Way to Find Your Las Vegas Home
+                </h1>
+                <p className="text-xl text-muted-foreground">
+                  We are a leading real estate advisor in Las Vegas, specializing in a seamless, personalized home search experience.
+                </p>
+              </div>
+              
+              {/* Key benefits grid */}
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-foreground">FRIENDLY & EFFICIENT AGENTS</h3>
+                  <p className="text-sm text-muted-foreground">Expert guidance every step of the way</p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-foreground">EXPERIENCE A SEAMLESS JOURNEY</h3>
+                  <p className="text-sm text-muted-foreground">From discovery to closing day</p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-foreground">90 PERCENT SUCCESS RATE</h3>
+                  <p className="text-sm text-muted-foreground">When clients work with Dr. Duffy</p>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-semibold text-foreground">COMPREHENSIVE ACCESS</h3>
+                  <p className="text-sm text-muted-foreground">To all Las Vegas new construction</p>
+                </div>
+              </div>
             </div>
-            <Link
-              href="/service-areas"
-              className="inline-flex items-center justify-center text-sm font-semibold text-primary underline-offset-2 hover:text-accent transition-colors duration-300"
-            >
-              Explore all Sunstone and Cadence communities &rsaquo;
-            </Link>
+
+            {/* Right: Lead capture form */}
+            <div className="lg:sticky lg:top-24 lg:h-fit">
+              <div className="rounded-lg border border-border bg-card p-6 shadow-lg">
+                <h2 className="mb-6 text-2xl font-bold text-foreground">Find Your Home</h2>
+                <form
+                  action={`mailto:${CONTACT_EMAIL}`}
+                  method="post"
+                  className="space-y-4"
+                >
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <label className="flex flex-col gap-2">
+                      <span className="text-sm font-medium text-foreground">First Name *</span>
+                      <input
+                        name="firstName"
+                        type="text"
+                        required
+                        className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                      />
+                    </label>
+                    <label className="flex flex-col gap-2">
+                      <span className="text-sm font-medium text-foreground">Last Name *</span>
+                      <input
+                        name="lastName"
+                        type="text"
+                        required
+                        className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                      />
+                    </label>
+                  </div>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-sm font-medium text-foreground">Email *</span>
+                    <input
+                      name="email"
+                      type="email"
+                      required
+                      className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-sm font-medium text-foreground">Phone Number *</span>
+                    <input
+                      name="phone"
+                      type="tel"
+                      required
+                      className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </label>
+                  <label className="flex flex-col gap-2">
+                    <span className="text-sm font-medium text-foreground">Move-In Timeline</span>
+                    <input
+                      name="moveInDate"
+                      type="text"
+                      placeholder="e.g., Spring 2026, Fall 2026"
+                      className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </label>
+                  <button
+                    type="submit"
+                    className="w-full rounded-md bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm transition hover:bg-primary-hover"
+                  >
+                    SIGN UP
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div className="flex-1 space-y-4">
-            <div className="rounded-3xl border border-border/70 bg-card/90 p-6 shadow-lg luxury-hover">
-              <h2 className="text-xl font-semibold text-foreground">Sales Center &amp; Contact</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{CONTACT_ADDRESS}</p>
-              <dl className="mt-6 space-y-4 text-sm">
-                <div className="flex items-start gap-3">
-                  <dt className="text-muted-foreground">Hours</dt>
-                  <dd className="font-medium text-foreground">{SALES_HOURS}</dd>
-                </div>
-                <div className="flex items-start gap-3">
-                  <dt className="text-muted-foreground">Phone</dt>
-                  <dd>
-                    <Link
-                      href={CONTACT_PHONE_LINK}
-                      className="font-semibold text-primary transition-colors duration-300 hover:text-accent"
-                    >
-                      {CONTACT_PHONE}
-                    </Link>
-                  </dd>
-                </div>
-                <div className="flex items-start gap-3">
-                  <dt className="text-muted-foreground">Email</dt>
-                  <dd>
-                    <a
-                      href={`mailto:${CONTACT_EMAIL}`}
-                      className="font-semibold text-primary transition-colors duration-300 hover:text-accent"
-                    >
-                      {CONTACT_EMAIL}
-                    </a>
-                  </dd>
-                </div>
-              </dl>
-              <p className="mt-4 text-xs uppercase tracking-wide text-muted-foreground">
-                Equal Housing Opportunity • Brokered by Sunstone Woodside Homes
-              </p>
+        </div>
+      </section>
+
+      {/* Feature grid - Next Step Realty style */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Happy Hunting</h3>
+              <p className="text-muted-foreground">We Make Home Buying Fun Again.</p>
             </div>
-            <div className="hidden rounded-3xl border border-dashed border-border/70 bg-background/80 p-6 text-sm text-muted-foreground shadow-sm lg:block luxury-hover">
-              <p className="font-semibold text-foreground">Design gallery coming soon</p>
-              <p className="mt-1">
-                Reserve your spot to receive professional photography, model walkthrough videos, and
-                design studio palettes as soon as they are released.
-              </p>
-              <Link
-                href="/contact"
-                className="mt-4 inline-flex items-center font-semibold text-primary transition-colors duration-300 hover:text-accent"
-              >
-                Connect with our concierge &rsaquo;
-              </Link>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Fast and Friendly</h3>
+              <p className="text-muted-foreground">Find your home in weeks, not months.</p>
             </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">A Seamless Journey</h3>
+              <p className="text-muted-foreground">8 in 10 Clients Find Home Quickly.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">One Stop Shop</h3>
+              <p className="text-muted-foreground">Comprehensive access to the entire marketplace.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Search Now. Pay Later.</h3>
+              <p className="text-muted-foreground">No Costs Until Success.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Efficiency At It's Finest</h3>
+              <p className="text-muted-foreground">See 5-12 Curated Homes in Just 2-4 Hours.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Happiest Clients in Las Vegas</h3>
+              <p className="text-muted-foreground">9 in 10 home tours turn into successful purchases.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Find Home.</h3>
+              <p className="text-muted-foreground">One appointment. Every home for you.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-xl font-bold text-foreground">Luxury at the Right Price.</h3>
+              <p className="text-muted-foreground">More Amenities, at a Lower Cost.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Home Awaits section */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">Home Awaits</h2>
+          <p className="mb-8 text-lg text-muted-foreground">
+            Through a comprehensive, concierge-style tour, one of our qualified agents will show you 5-12 curated homes in 2-4 hours.
+          </p>
+          <p className="mb-8 text-lg text-muted-foreground">
+            Providing expert guidance and a 90% success rate, we've earned the highest customer satisfaction in Las Vegas.
+          </p>
+          <div className="space-y-2">
+            <p className="text-xl font-semibold italic text-foreground">Welcome to Dr. Duffy Realty. Welcome Home.</p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-base font-semibold text-primary-foreground shadow-sm transition hover:bg-primary-hover"
+            >
+              SIGN UP
+            </a>
           </div>
         </div>
       </section>
@@ -258,7 +332,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4">
-        <div className="grid gap-6 rounded-3xl border border-border bg-gradient-to-br from-[#1d4ed8]/10 via-background to-[#f7faff] p-8 shadow-sm lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid gap-6 rounded-3xl border border-border bg-gradient-to-br from-primary/5 via-background to-secondary p-8 shadow-sm lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
               Move-In Ready Collection
@@ -524,7 +598,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#1d4ed8] via-[#0f172a] to-[#0b1120] py-20 text-primary-foreground">
+      <section className="bg-gradient-to-br from-primary via-primary-hover to-[#004494] py-20 text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-center">
           <div className="flex-1 space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent">
@@ -533,8 +607,8 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold sm:text-4xl">
               Concierge guidance loved by Las Vegas homeowners
             </h2>
-            <p className="text-base text-[#cfe2d9]">
-              Hear how Sunstone buyers leveraged Dr. Duffy’s strategy, partner network, and construction monitoring to move
+            <p className="text-base text-white/90">
+              Hear how Sunstone buyers leveraged Dr. Duffy's strategy, partner network, and construction monitoring to move
               with total confidence.
             </p>
           </div>
@@ -542,12 +616,12 @@ export default function HomePage() {
             {testimonials.map((testimonial) => (
               <blockquote
                 key={testimonial.name}
-                className="h-full rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-[#e9f2ee]"
+                className="h-full rounded-3xl border border-white/20 bg-white/10 p-6 text-sm text-white/95"
               >
-                <p className="italic leading-relaxed">“{testimonial.quote}”</p>
+                <p className="italic leading-relaxed">"{testimonial.quote}"</p>
                 <footer className="mt-4">
                   <p className="font-semibold text-primary-foreground">{testimonial.name}</p>
-                  <p className="text-xs text-[#cfe2d9]">{testimonial.detail}</p>
+                  <p className="text-xs text-white/80">{testimonial.detail}</p>
                 </footer>
               </blockquote>
             ))}

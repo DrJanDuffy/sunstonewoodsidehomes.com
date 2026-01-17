@@ -15,33 +15,50 @@ const navItems = [
 
 export default function SiteHeader() {
   return (
-    <header className="glass-effect sticky top-0 z-50 border-b border-accent/20 shadow-sm">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-4 px-4 py-5 sm:flex-nowrap sm:gap-6">
-        <div className="flex flex-1 flex-col sm:flex-row sm:items-center sm:gap-6">
-          <Link
-            href={CONTACT_PHONE_LINK}
-            className="text-lg font-semibold tracking-tight text-foreground luxury-hover transition-colors hover:text-accent"
-          >
-            {CONTACT_PHONE}
-          </Link>
-        </div>
-        <nav className="order-2 flex w-full flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-muted-foreground sm:order-none sm:w-auto sm:flex-nowrap">
+    <header className="sticky top-0 z-50 border-b border-[#EEEEEE] bg-white">
+      <div className="mx-auto flex max-w-[1448px] items-center justify-between gap-5 px-12 py-8">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-xl font-semibold tracking-tight text-foreground"
+          style={{ fontFamily: 'var(--font-body), Manrope, sans-serif' }}
+        >
+          Dr. Duffy Realty
+        </Link>
+        
+        {/* Navigation - Center */}
+        <nav className="hidden items-center gap-[34px] md:flex">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="luxury-hover transition-colors hover:text-accent"
+              className="text-base font-medium text-foreground transition-all hover:text-primary hover:underline"
+              style={{
+                fontFamily: 'var(--font-body), Manrope, sans-serif',
+                textDecorationThickness: '2px',
+                textUnderlineOffset: '4px',
+              }}
             >
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 justify-end">
+        
+        {/* CTA Section - Right */}
+        <div className="flex items-center gap-5">
           <Link
             href={CONTACT_PHONE_LINK}
-            className="text-sm font-semibold text-foreground luxury-hover transition-colors hover:text-accent sm:text-base"
+            className="text-base font-medium text-foreground transition-colors hover:text-primary"
+            style={{ fontFamily: 'var(--font-body), Manrope, sans-serif' }}
           >
             {CONTACT_PHONE}
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-[10px] border border-[#A4A4A4] bg-primary px-5 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-primary-hover"
+            style={{ fontFamily: 'var(--font-body), Manrope, sans-serif' }}
+          >
+            SIGN UP
           </Link>
         </div>
       </div>
