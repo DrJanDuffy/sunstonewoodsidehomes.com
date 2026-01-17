@@ -150,11 +150,11 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16">
       {/* Hero section - LCP element - optimized for early rendering */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#e1e9fb] via-background to-[#f8faff] pt-24 pb-32 sm:pt-32 sm:pb-40">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.16),_rgba(8,17,30,0))]" />
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#F5F5F5] via-background to-[#FAFAFA] pt-24 pb-32 sm:pt-32 sm:pb-40">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(195,176,145,0.08),_rgba(244,244,244,0))]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
           <div className="flex-1 space-y-6 text-center lg:text-left">
-            <span className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-sm shadow-primary/30">
+            <span className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary-foreground shadow-sm shadow-primary/20 luxury-hover">
               Limited Time $20K Savings
             </span>
             <h1 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
@@ -163,11 +163,11 @@ export default function HomePage() {
             <p className="text-lg text-muted-foreground sm:text-xl">
               Explore Woodside Homes' newest collection of one-level residences with premium finishes,
               energy efficiency, and sweeping mountain views. Learn about each neighborhood inside our{' '}
-              <Link href="/service-areas" className="text-primary underline-offset-2 hover:underline">
+              <Link href="/service-areas" className="text-primary underline-offset-2 hover:text-accent transition-colors duration-300">
                 service area guide
               </Link>{' '}
               and preview fully furnished options in the{' '}
-              <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:underline">
+              <Link href="/move-in-ready" className="text-primary underline-offset-2 hover:text-accent transition-colors duration-300">
                 move-in-ready collection
               </Link>
               .
@@ -175,26 +175,26 @@ export default function HomePage() {
             <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-start">
               <a
                 href={CONTACT_PHONE_LINK}
-                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-base font-semibold text-primary-foreground shadow-sm luxury-hover hover:bg-[#A47864] hover:border-accent/30"
               >
                 Call to book a tour
               </a>
               <a
                 href="#models"
-                className="inline-flex items-center justify-center rounded-full border border-input px-6 py-3 text-base font-semibold text-foreground transition hover:bg-muted"
+                className="inline-flex items-center justify-center rounded-full border-2 border-primary/30 px-6 py-3 text-base font-semibold text-foreground luxury-hover hover:border-accent hover:text-accent"
               >
                 View home plans
               </a>
             </div>
             <Link
               href="/service-areas"
-              className="inline-flex items-center justify-center text-sm font-semibold text-primary underline-offset-2 hover:underline"
+              className="inline-flex items-center justify-center text-sm font-semibold text-primary underline-offset-2 hover:text-accent transition-colors duration-300"
             >
               Explore all Sunstone and Cadence communities &rsaquo;
             </Link>
           </div>
           <div className="flex-1 space-y-4">
-            <div className="rounded-3xl border border-border/70 bg-card/90 p-6 shadow-lg">
+            <div className="rounded-3xl border border-border/70 bg-card/90 p-6 shadow-lg luxury-hover">
               <h2 className="text-xl font-semibold text-foreground">Sales Center &amp; Contact</h2>
               <p className="mt-2 text-sm text-muted-foreground">{CONTACT_ADDRESS}</p>
               <dl className="mt-6 space-y-4 text-sm">
@@ -207,7 +207,7 @@ export default function HomePage() {
                   <dd>
                     <Link
                       href={CONTACT_PHONE_LINK}
-                      className="font-semibold text-primary transition hover:text-primary/80"
+                      className="font-semibold text-primary transition-colors duration-300 hover:text-accent"
                     >
                       {CONTACT_PHONE}
                     </Link>
@@ -218,7 +218,7 @@ export default function HomePage() {
                   <dd>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="font-semibold text-primary transition hover:text-primary/80"
+                      className="font-semibold text-primary transition-colors duration-300 hover:text-accent"
                     >
                       {CONTACT_EMAIL}
                     </a>
@@ -229,7 +229,7 @@ export default function HomePage() {
                 Equal Housing Opportunity • Brokered by Sunstone Woodside Homes
               </p>
             </div>
-            <div className="hidden rounded-3xl border border-dashed border-border/70 bg-background/80 p-6 text-sm text-muted-foreground shadow-sm lg:block">
+            <div className="hidden rounded-3xl border border-dashed border-border/70 bg-background/80 p-6 text-sm text-muted-foreground shadow-sm lg:block luxury-hover">
               <p className="font-semibold text-foreground">Design gallery coming soon</p>
               <p className="mt-1">
                 Reserve your spot to receive professional photography, model walkthrough videos, and
@@ -237,7 +237,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/contact"
-                className="mt-4 inline-flex items-center font-semibold text-primary transition hover:text-primary/80"
+                className="mt-4 inline-flex items-center font-semibold text-primary transition-colors duration-300 hover:text-accent"
               >
                 Connect with our concierge &rsaquo;
               </Link>
