@@ -668,7 +668,7 @@ export const faqs: FaqEntry[] = [
     answer:
       'Great rooms, kitchens, and dining areas connect through oversized islands, with ceiling heights of 9′–10′ and optional beams. Flex rooms often sit near entries for offices or lounge space. Dr. Duffy tests furniture placement during model tours to confirm flow, especially with multi-slide doors. Confirm the plan supports your work-from-home and entertaining habits.',
     researchDetail:
-      'Aries' great room spans 18′ x 16′—large enough for dual seating zones without crowding.',
+      "Aries' great room spans 18′ x 16′—large enough for dual seating zones without crowding.",
     cta: `Need current inventory and timeline details? ${PHONE}.`,
   },
   {
@@ -1416,7 +1416,7 @@ export const faqs: FaqEntry[] = [
     answer:
       'Life-Inspired plans emphasize sight lines, storage, and indoor-outdoor flow, while Lennar\'s Next Gen suites often sacrifice pantry space and loft functionality. Dr. Duffy overlays plan schematics to show Woodside kitchens averaging 18% more counter frontage and smoother circulation. Touring with her annotated floor plans helps you visualize real-life routines.',
     researchDetail:
-      'Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy\'s walkthroughs.',
+      "Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy's walkthroughs.",
     cta: `Need current inventory and timeline details? ${PHONE}.`,
   },
   {
@@ -2296,7 +2296,7 @@ export const faqs: FaqEntry[] = [
     answer:
       'Life-Inspired plans emphasize sight lines, storage, and indoor-outdoor flow, while Lennar\'s Next Gen suites often sacrifice pantry space and loft functionality. Dr. Duffy overlays plan schematics to show Woodside kitchens averaging 18% more counter frontage and smoother circulation. Touring with her annotated floor plans helps you visualize real-life routines.',
     researchDetail:
-      'Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy\'s walkthroughs.',
+      "Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy's walkthroughs.",
     cta: `Need current inventory and timeline details? ${PHONE}.`,
   },
   {
@@ -3176,7 +3176,7 @@ export const faqs: FaqEntry[] = [
     answer:
       'Life-Inspired plans emphasize sight lines, storage, and indoor-outdoor flow, while Lennar\'s Next Gen suites often sacrifice pantry space and loft functionality. Dr. Duffy overlays plan schematics to show Woodside kitchens averaging 18% more counter frontage and smoother circulation. Touring with her annotated floor plans helps you visualize real-life routines.',
     researchDetail:
-      'Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy\'s walkthroughs.',
+      "Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy's walkthroughs.",
     cta: `Need current inventory and timeline details? ${PHONE}.`,
   },
   {
@@ -4056,7 +4056,7 @@ export const faqs: FaqEntry[] = [
     answer:
       'Life-Inspired plans emphasize sight lines, storage, and indoor-outdoor flow, while Lennar\'s Next Gen suites often sacrifice pantry space and loft functionality. Dr. Duffy overlays plan schematics to show Woodside kitchens averaging 18% more counter frontage and smoother circulation. Touring with her annotated floor plans helps you visualize real-life routines.',
     researchDetail:
-      'Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy\'s walkthroughs.',
+      "Aries' pantry offers 54 cubic feet of storage versus Lennar's comparable 41 cubic feet—measurements taken during Dr. Duffy's walkthroughs.",
     cta: `Need current inventory and timeline details? ${PHONE}.`,
   },
   {
