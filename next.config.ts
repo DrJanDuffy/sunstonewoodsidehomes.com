@@ -41,10 +41,8 @@ const nextConfig: NextConfig = {
     ]
   },
   
-  // Production optimizations
-  swcMinify: true,
-  
   // Reduce JavaScript bundle size
+  // Note: SWC minification is enabled by default in Next.js 16
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? {
       exclude: ['error', 'warn'],

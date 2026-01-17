@@ -28,13 +28,13 @@ export const faqCategoryMeta: Record<
     title: 'Woodside Homes Background & Builder Positioning',
     description:
       "Understand Woodside Homes' history, corporate backing, and why Dr. Duffy evaluates their process differently from other Las Vegas builders.",
-    anchor: \'company',
+    anchor: 'company',
   },
   specs: {
     title: 'Specifications, Energy Performance & Smart Technology',
     description:
       "Dive into the technical details—energy efficiency, smart-home integrations, structural engineering, and finish quality verified through Dr. Duffy's field research.",
-    anchor: \'specs',
+    anchor: 'specs',
   },
   floorplans: {
     title: 'Floor Plans, Customization Paths & Indoor-Outdoor Flow',
@@ -46,7 +46,7 @@ export const faqCategoryMeta: Record<
     title: 'Pricing, Incentives, Financing & Cost Planning',
     description:
       "See how incentives, rate buy-downs, closing costs, and appraisal strategies align with Woodside's new construction offerings.",
-    anchor: \'pricing',
+    anchor: 'pricing',
   },
   communities: {
     title: 'Communities, Amenities & Lifestyle Fit',
@@ -58,7 +58,7 @@ export const faqCategoryMeta: Record<
     title: 'Buying Process, Inspections & Construction Management',
     description:
       "Learn each step—from lot reservation to move-in—with Dr. Duffy's checklists, inspection protocols, and coordination strategies.",
-    anchor: \'process',
+    anchor: 'process',
   },
   market: {
     title: 'Market Research, Equity Forecasts & Investment Planning',
