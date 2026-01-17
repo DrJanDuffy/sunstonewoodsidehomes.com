@@ -149,6 +149,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16">
+      {/* Hero section - LCP element - optimized for early rendering */}
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#e1e9fb] via-background to-[#f8faff] pt-24 pb-32 sm:pt-32 sm:pb-40">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,99,235,0.16),_rgba(8,17,30,0))]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:items-start">
@@ -160,7 +161,7 @@ export default function HomePage() {
               Capella at Sunstone — single-story luxury in Northwest Las Vegas
             </h1>
             <p className="text-lg text-muted-foreground sm:text-xl">
-              Explore Woodside Homes’ newest collection of one-level residences with premium finishes,
+              Explore Woodside Homes' newest collection of one-level residences with premium finishes,
               energy efficiency, and sweeping mountain views. Learn about each neighborhood inside our{' '}
               <Link href="/service-areas" className="text-primary underline-offset-2 hover:underline">
                 service area guide

@@ -61,6 +61,10 @@ export const metadata: Metadata = {
       'Personalized Las Vegas real estate strategies for buyers, sellers, and investors.',
     images: ['/og-image.png'],
   },
+  // Performance hints
+  other: {
+    'x-dns-prefetch-control': 'on',
+  },
 }
 
 export default function RootLayout({
@@ -71,11 +75,22 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preconnect to Google Fonts for faster font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Preconnect to Google Tag Manager for faster connection */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
+        {/* Defer Google Tag Manager to reduce main thread blocking */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1HCM0VVVP8"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
